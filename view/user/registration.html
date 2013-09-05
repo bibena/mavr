@@ -1,0 +1,33 @@
+<form class="form-horizontal" method="post" action="<?=SUB_DIR?>/user/registration">
+	<div class="control-group<?php if(isset($content['error']['email'])): ?> error<?php endif; ?>">
+		<label class="control-label" for="inputEmail"><?=REGISTRATION_EMAIL_TITLE?></label>
+		<div class="controls">
+			<input autofocus="autofocus" tabindex="1" type="email"<?php if(count($content)): echo'value="'.$content['data']['email'].'"'; endif; ?> required="required" name="email" id="inputEmail" placeholder="<?=REGISTRATION_EMAIL_TITLE?>">
+			<span class="help-inline"><?php if(isset($content['error']['email'])): echo REGISTRATION_EMAIL_ERROR; endif; ?></span>
+		</div>
+	</div>
+	<div class="control-group<?php if(isset($content['error']['password'])): ?> error<?php endif; ?>">
+		<label class="control-label" for="inputPassword"><?=REGISTRATION_PASSWORD_TITLE?></label>
+		<div class="controls">
+			<input tabindex="2" type="password" required="required" name="password" id="inputPassword" placeholder="<?=REGISTRATION_PASSWORD_TITLE?>">
+			<span class="help-inline"><?php if(isset($content['error']['password'])): echo REGISTRATION_PASSWORD_ERROR; endif; ?></span>
+		</div>
+	</div>
+	<div class="control-group<?php if(isset($content['error']['name'])): ?> error<?php endif; ?>">
+		<label class="control-label" for="inputName"><?=REGISTRATION_NAME_TITLE?></label>
+		<div class="controls">
+			<input tabindex="3" type="text"<?php if(count($content)): echo'value="'.$content['data']['name'].'"'; endif; ?> required="required" name="name" id="inputName" placeholder="<?=REGISTRATION_NAME_TITLE?>">
+			<span class="help-inline"><?php if(isset($content['error']['name'])): echo REGISTRATION_NAME_ERROR; endif; ?></span>
+		</div>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div class="control-group<?php if(isset($content['error']['agreement'])): ?> error<?php endif; ?> eula">
+		<div class="controls">
+			<label class="checkbox inline">
+				<input tabindex="4" name="agreement"<?php if(count($content)): echo'checked="checked"'; endif; ?> required="required" type="checkbox"><?=REGISTRATION_AGREEMENT_TITLE?>
+				<span class="help-inline"><?php if(isset($content['error']['agreement'])): echo REGISTRATION_AGREEMENT_ERROR; endif; ?></span>
+			</label>
+			<button tabindex="5" type="submit" class="btn"><?=REGISTRATION_BUTTON_TITLE?></button>
+		</div>
+	</div>
+</form>

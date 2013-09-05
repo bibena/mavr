@@ -1,0 +1,25 @@
+<form class="form-horizontal" method="post" action="<?=SUB_DIR?>/user/login">
+	<div class="control-group<?php if(isset($content['error'])): ?> error<?php endif; ?>">
+		<label class="control-label" for="inputEmail"><?=LOGIN_EMAIL_TITLE?></label>
+		<div class="controls">
+			<input autofocus="autofocus" tabindex="1" type="email"<?php if(count($content)): echo'value="'.$content['email'].'"'; endif; ?> required="required" name="email" id="inputEmail" placeholder="<?=LOGIN_EMAIL_TITLE?>">
+			<span class="help-inline"><?php if(isset($content['error'])): echo LOGIN_ERROR; endif; ?></span>
+		</div>
+	</div>
+	<div class="control-group<?php if(isset($content['error'])): ?> error<?php endif; ?>">
+		<label class="control-label" for="inputPassword"><a href="'.SUB_DIR.'/user/forgotpassword"><?=FOGOTTEN_PASSWORD?></a></label>
+		<div class="controls">
+			<input tabindex="2" type="password" required="required" name="password" id="inputPassword" placeholder="<?=LOGIN_PASSWORD_TITLE?>">
+			<span class="help-inline"><?php if(isset($content['error']['password'])): echo LOGIN_ERROR; endif; ?></span>
+		</div>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div class="control-group remember">
+		<div class="controls">
+			<label class="checkbox inline">
+				<input tabindex="3" name="remember"<?php if(isset($content['remember'])): echo'checked="checked"'; endif; ?> type="checkbox"><?=LOGIN_REMEMBER_TITLE?>
+			</label>
+			<button tabindex="4" type="submit" class="btn"><?=LOGIN_BUTTON_TITLE?></button>
+		</div>
+	</div>
+</form>

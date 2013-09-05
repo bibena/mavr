@@ -1,0 +1,21 @@
+<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span>секунд. 
+	<a href="<?=SUB_DIR?>">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="<?=SUB_DIR?>";
+				}
+			}, 1000);
+		});
+</script>

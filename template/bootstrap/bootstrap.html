@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+
+		<?php if (isset($content['shortcut'])):
+			echo '<link rel="shortcut icon" href="'.$content['shortcut'].'" />';
+		endif; ?>
+
+		<?php if (isset($content['title'])):
+			echo '<title>'.$content['title'].'</title>';
+		endif; ?>
+
+		<?php if (isset($content['assets'])):
+			echo $content['assets'];
+		endif; ?>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="row">
+				<nav class="navbar span12">
+					<div class="navbar-inner">
+
+						<a class="brand" href="<?= SUB_DIR; ?>">Mavr</a>
+
+						<ul class="nav">
+							<li>
+								<a href="<?= SUB_DIR; ?>/user/registration">Registration</a>
+							</li>
+
+							<li>
+								<a href="<?= SUB_DIR; ?>/user/login">Login</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<section class="row">
+				<div class="span12">
+					<div class="row">
+						<div class="span12">
+						<?php if (isset($content['error_message'])):
+							echo $content['error_message'];
+						endif; ?>
+						<?php if (isset($content['error'])):
+							echo $content['error'];
+						endif; ?>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="span12">
+						<?php if (isset($content['content'])):
+							echo $content['content'];
+						endif; ?>
+						</div>
+					</div>
+
+<!--					<div class="row">
+						<div class="span12">
+							<p><a href="<?= SUB_DIR; ?>/user/registration">Registration</a></p>
+							<img src="<?= SUB_DIR; ?>/image/cool_photo.jpeg">
+						</div>
+					</div>-->
+				</div>
+			</section>
+
+<!--			<footer class="row">
+				<div class="span12">
+					<p>Footer</p>
+				</div>
+			</footer>-->
+		</div>
+	</body>
+</html>
