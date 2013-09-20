@@ -52,7 +52,7 @@ class User_Model extends Pattern_Model
 //include css and js
 			$content['assets']=implode("\n",$this->assets)."\n";
 //if form was sent from this site
-			if(strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
+			if(!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
 				{
 //take data from form. If form was sent
 				if(isset($_POST['flag']) && $_POST['flag'])
@@ -134,7 +134,7 @@ class User_Model extends Pattern_Model
 //include css and js
 			$content['assets']=implode("\n",$this->assets)."\n";
 //if form was sent from this site
-			if(strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
+			if(!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
 				{
 //take data from form. If form was sent
 				if(isset($_POST['flag']) && $_POST['flag'])
