@@ -14,9 +14,16 @@ catch (Flag_Error $e)
 $config=Config::Get_Instance()->Get_Config();
 if($config['subdir']!=='')
 	{
-	define('SUB_DIR',DS.$config['subdir']);
+	define('SUB_DIR',DS.$config['subdir'].DS);
 	}
 else
 	{
-	define('SUB_DIR','');
+	if(preg_match('@^/mavr/@',$_SERVER["REQUEST_URI"]))
+		{
+		define('SUB_DIR',DS.'mavr'.DS);
+		}
+	else
+		{
+		define('SUB_DIR',DS);
+		}
 	}

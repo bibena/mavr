@@ -38,14 +38,14 @@ class Pattern_Model
 			{
 			if(!is_dir($this->dir.$js))
 				{
-				$this->assets[]='<script src="'.SUB_DIR.DS.'template'.DS.$config['template'].DS.'js'.DS.$js.'"></script>';
+				$this->assets[]='<script src="'.SUB_DIR.'template'.DS.$config['template'].DS.'js'.DS.$js.'"></script>';
 				}
 			}
 		foreach($this->css as $css)
 			{
 			if(!is_dir($this->dir.$css))
 				{
-				$this->assets[]='<link rel="stylesheet" href="'.SUB_DIR.DS.'template'.DS.$config['template'].DS.'css'.DS.$css.'" />';
+				$this->assets[]='<link rel="stylesheet" href="'.SUB_DIR.'template'.DS.$config['template'].DS.'css'.DS.$css.'" />';
 				}
 			}
 		}

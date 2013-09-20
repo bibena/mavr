@@ -3,10 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-
-		<?php if (isset($content['shortcut'])):
-			echo '<link rel="shortcut icon" href="'.$content['shortcut'].'" />';
-		endif; ?>
+		<link rel="shortcut icon" href="favicon.ico" />
 
 		<?php if (isset($content['title'])):
 			echo '<title>'.$content['title'].'</title>';
@@ -27,11 +24,11 @@
 
 						<ul class="nav">
 							<li>
-								<a href="<?= SUB_DIR; ?>/user/registration">Registration</a>
+								<a href="<?= SUB_DIR; ?>user/registration">Registration</a>
 							</li>
 
 							<li>
-								<a href="<?= SUB_DIR; ?>/user/login">Login</a>
+								<a href="<?= SUB_DIR; ?>user/login">Login</a>
 							</li>
 						</ul>
 					</div>

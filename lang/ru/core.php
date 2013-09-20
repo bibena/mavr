@@ -15,7 +15,7 @@ define('REGISTRATION_NAME_TITLE','Имя');
 define('REGISTRATION_NAME_ERROR','Ошибка при заполнении имени');
 define('REGISTRATION_PASSWORD_TITLE','Пароль');
 define('REGISTRATION_PASSWORD_ERROR','Ошибка при заполнении пароля');
-define('REGISTRATION_AGREEMENT_TITLE','Согласен на <a href="'.SUB_DIR.'/user/eula">все</a>');
+define('REGISTRATION_AGREEMENT_TITLE','Согласен на <a href="'.SUB_DIR.'user/eula">все</a>');
 define('REGISTRATION_AGREEMENT_ERROR','Ошибка при акцептировании условий');
 define('REGISTRATION_BUTTON_TITLE','Регистрация');
 define('LOGIN_EMAIL_TITLE','Email');
