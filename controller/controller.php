@@ -12,7 +12,7 @@ catch (Flag_Error $e)
 	}
 
 /*-------------------------------------------------------------------------
-* Ensister of all controllers
+* Ancestor of all controllers
 *
 * new Controller;
 *
@@ -56,5 +56,9 @@ class Controller
 			{
 			$class->$mname();
 			}
+		$session=new Session;
+		$session->Set_User(array('firstname'=>'John','lastname'=>'Doe'));
+		$session->Erase('user');
+		var_dump($session->Get());
 		}
 	}

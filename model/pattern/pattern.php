@@ -12,7 +12,7 @@ catch (Flag_Error $e)
 	}
 
 /*-------------------------------------------------------------------------
-* Ensister of all models
+* Ancestor of all models
 *
 * new Pattern_Model;
 *

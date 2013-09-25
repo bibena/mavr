@@ -12,7 +12,7 @@ catch (Flag_Error $e)
 	}
 
 /*-------------------------------------------------------------------------
-* Ensister of all controllers
+* Ancestor of all controllers
 *
 * new Pattern_Controller;
 *

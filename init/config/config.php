@@ -60,7 +60,7 @@ class Config
 		{
 		try
 			{
-			if(!$this->config=parse_ini_file(ROOT_DIR.'/config'))
+			if(!$this->config=parse_ini_file(ROOT_DIR.DS.'config'))
 				{
 				throw new Error('Error reading config file');
 				}

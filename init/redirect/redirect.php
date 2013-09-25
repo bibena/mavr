@@ -74,7 +74,7 @@ class Redirect
 			$path=trim($path," \n\r\t\0\x0B/");
 			if($path==='')
 				{
-				$redirect=$_SERVER['HTTP_HOST'].DS.$config['subdir'];
+				$redirect=$_SERVER['HTTP_HOST'].$config['subdir'];
 				}
 			elseif($path==='.')
 				{
@@ -82,12 +82,12 @@ class Redirect
 				}
 			else
 				{
-				$parray=explode(DS,$path);
-				if(count($parray)==2 || count($parray)==3)
+				$patharray=explode(DS,$path);
+				if(count($patharray)==2 || count($patharray)==3)
 					{
-					if(file_exists(ROOT_DIR.DS.'controller'.DS.$parray[0].DS.$parray[0].'.php'))
+					if(file_exists(ROOT_DIR.DS.'controller'.DS.$patharray[0].DS.$patharray[0].'.php'))
 						{
-						$redirect=$_SERVER['HTTP_HOST'].DS.$config['subdir'].DS.implode(DS,$parray);
+						$redirect=$_SERVER['HTTP_HOST'].$config['subdir'].DS.implode(DS,$patharray);
 						}
 					else
 						{

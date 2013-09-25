@@ -12,7 +12,7 @@ catch (Flag_Error $e)
 	}
 
 /*-------------------------------------------------------------------------
-* Ensister of all views
+* Ancestor of all views
 *
 * new Pattern_View;
 *
