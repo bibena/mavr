@@ -26,6 +26,7 @@ class Pattern_Model
 --------------------------------------------------------------------------*/
 	function __construct()
 		{
+		$this->session=new Session;
 //read the name of template from config
 		$config=Config::Get_Instance()->Get_Config();
 		$this->dir=ROOT_DIR.DS.'template'.DS.$config['template'].DS;

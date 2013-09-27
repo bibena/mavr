@@ -56,9 +56,24 @@ class Controller
 			{
 			$class->$mname();
 			}
-		$session=new Session;
-		$session->Set_User(array('firstname'=>'John','lastname'=>'Doe'));
-		$session->Erase('user');
-		var_dump($session->Get());
+		/*$session=new Session;
+
+		//$session->Set_User(array('firstname'=>'John','lastname'=>'Doe'));
+		echo'<pre>';
+		print_r($session->Get());
+		echo'</pre>';
+		//$session->Erase('user');
+		/*$start = microtime(true);
+// тело скрипта
+
+		require_once('password.php');
+		$options = array('cost' => 9);
+		$hash=password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options);
+		if (password_verify('rasmuslerdorf', $hash)) {
+			echo 'Password is valid!<br>'.$hash;
+		} else {
+			echo 'Invalid password.';
+		}
+		echo 'Время выполнения скрипта: '.(microtime(true) - $start).' сек.'; */
 		}
 	}

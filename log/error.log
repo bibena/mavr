@@ -124,3 +124,181 @@ Thu, 26 Sep 2013 02:18:14 +0300
 	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 2048 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 60 - Non-static method Session::Set_User() should not be called statically, assuming $this from incompatible context
 	Trace:
 	a:3:{i:0;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:60;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2048;i:1;s:111:"Non-static method Session::Set_User() should not be called statically, assuming $this from incompatible context";i:2;s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";i:3;i:60;i:4;a:6:{s:10:"controller";s:4:"page";s:6:"method";s:4:"main";s:5:"cname";s:15:"Page_Controller";s:5:"mname";s:4:"Main";s:5:"class";O:15:"Page_Controller":2:{s:5:"model";O:10:"Page_Model":5:{s:3:"dir";s:47:"/media/DISK_A1/web/www/mavr/template/bootstrap/";s:3:"css";a:4:{i:0;s:1:".";i:1;s:2:"..";i:2;s:13:"bootstrap.css";i:3;s:12:"template.css";}s:2:"js";a:5:{i:0;s:1:".";i:1;s:2:"..";i:2;s:9:"jquery.js";i:3;s:12:"jquery_ui.js";i:4;s:15:"js_bootstrap.js";}s:6:"assets";a:5:{i:0;s:56:"<script src="/template/bootstrap/js/jquery.js"></script>";i:1;s:59:"<script src="/template/bootstrap/js/jquery_ui.js"></script>";i:2;s:62:"<script src="/template/bootstrap/js/js_bootstrap.js"></script>";i:3;s:70:"<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css" />";i:4;s:69:"<link rel="stylesheet" href="/template/bootstrap/css/template.css" />";}s:4:"view";O:4:"View":1:{s:8:"template";s:61:"/media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html";}}s:4:"view";O:4:"View":1:{s:8:"template";s:61:"/media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html";}}s:7:"session";O:7:"Session":0:{}}}}i:1;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 00:09:59 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:09:59 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:09:59 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:09:59 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:00 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:01 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:01 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:01 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:01 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:01 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:10:02 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/controller/controller.php on line 66 - Call to undefined function password_hash()
+Fri, 27 Sep 2013 00:30:07 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 2 in file /media/DISK_A1/web/www/mavr/controller/password.php on line 24 - Missing argument 2 for password_hash(), called in /media/DISK_A1/web/www/mavr/controller/controller.php on line 70 and defined
+	Trace:
+	a:4:{i:0;a:6:{s:4:"file";s:51:"/media/DISK_A1/web/www/mavr/controller/password.php";s:4:"line";i:24;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:126:"Missing argument 2 for password_hash(), called in /media/DISK_A1/web/www/mavr/controller/controller.php on line 70 and defined";i:2;s:51:"/media/DISK_A1/web/www/mavr/controller/password.php";i:3;i:24;i:4;a:1:{s:8:"password";s:13:"rasmuslerdorf";}}}i:1;a:4:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:70;s:8:"function";s:13:"password_hash";s:4:"args";a:1:{i:0;s:13:"rasmuslerdorf";}}i:2;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 00:59:42 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/session/session.php on line 175 - Wrong session section requested
+	Trace:
+	a:3:{i:0;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:65;s:8:"function";s:5:"Erase";s:5:"class";s:7:"Session";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:4:"user";}}i:1;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:02:31 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 159 - Undefined variable: session
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:159;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: session";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:159;i:4;a:2:{s:7:"content";a:1:{s:6:"assets";s:321:"<script src="/template/bootstrap/js/jquery.js"></script>
+<script src="/template/bootstrap/js/jquery_ui.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";}s:9:"user_data";a:6:{s:2:"id";s:2:"29";s:5:"email";s:11:"trew@gfd.rt";s:3:"age";N;s:5:"fname";s:6:"lfybkf";s:5:"lname";N;s:5:"cdate";s:10:"1380232875";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:07:41 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 159 - Undefined property: User_Model::$session
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:159;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:40:"Undefined property: User_Model::$session";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:159;i:4;a:2:{s:7:"content";a:1:{s:6:"assets";s:321:"<script src="/template/bootstrap/js/jquery.js"></script>
+<script src="/template/bootstrap/js/jquery_ui.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";}s:9:"user_data";a:6:{s:2:"id";s:2:"29";s:5:"email";s:11:"trew@gfd.rt";s:3:"age";N;s:5:"fname";s:6:"lfybkf";s:5:"lname";N;s:5:"cdate";s:10:"1380232875";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:11:55 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/session/session.php on line 91 - trying to set wrong user section to session
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:159;s:8:"function";s:8:"Set_User";s:5:"class";s:7:"Session";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:6:{s:2:"id";s:2:"29";s:5:"email";s:11:"trew@gfd.rt";s:3:"age";N;s:5:"fname";s:6:"lfybkf";s:5:"lname";N;s:5:"cdate";s:10:"1380232875";}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:27:17 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/session/session.php on line 91 - trying to set wrong user section to session
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:159;s:8:"function";s:8:"Set_User";s:5:"class";s:7:"Session";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:6:{s:2:"id";s:2:"29";s:5:"email";s:11:"trew@gfd.rt";s:3:"age";N;s:5:"fname";s:6:"lfybkf";s:5:"lname";N;s:5:"cdate";s:10:"1380232875";}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:35:58 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 2 in file /media/DISK_A1/web/www/mavr/init/redirect/redirect.php on line 69 - Missing argument 1 for Redirect::Page(), called in /media/DISK_A1/web/www/mavr/model/user/user.php on line 204 and defined
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/init/redirect/redirect.php";s:4:"line";i:69;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:122:"Missing argument 1 for Redirect::Page(), called in /media/DISK_A1/web/www/mavr/model/user/user.php on line 204 and defined";i:2;s:54:"/media/DISK_A1/web/www/mavr/init/redirect/redirect.php";i:3;i:69;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:204;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:62;s:8:"function";s:6:"Logout";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:6:"Logout";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 27 Sep 2013 01:37:42 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/helper.php on line 143 - Call to a member function execute() on a non-object
+Fri, 27 Sep 2013 01:54:12 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/helper.php on line 143 - Call to a member function execute() on a non-object
+Fri, 27 Sep 2013 02:01:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/helper.php on line 142 - Call to a member function execute() on a non-object
+Fri, 27 Sep 2013 02:15:39 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/helper.php on line 142 - Call to a member function execute() on a non-object
+Fri, 27 Sep 2013 02:17:54 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/helper.php on line 142 - Call to a member function execute() on a non-object
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:44:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 12 - syntax error, unexpected '<'
+Fri, 27 Sep 2013 02:45:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:19 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:20 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:45:20 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/template/bootstrap/bootstrap.html on line 34 - syntax error, unexpected '?>', expecting ':'
+Fri, 27 Sep 2013 02:47:28 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/session/session.php on line 175 - Wrong session section requested
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:203;s:8:"function";s:5:"Erase";s:5:"class";s:7:"Session";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:4:"user";}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:62;s:8:"function";s:6:"Logout";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:6:"Logout";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}

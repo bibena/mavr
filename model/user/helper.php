@@ -116,7 +116,7 @@ class User_Helper
 		{
 		try
 			{
-			$prepare=Db::Get_Instance()->prepare("SELECT `password` FROM `users` where `email` = :email");
+			$prepare=Db::Get_Instance()->prepare("SELECT * FROM `users` where `email` = :email");
 			$prepare->execute(array(':email'=>$email));
 			}
 		catch (PDOException $e)
@@ -130,7 +130,7 @@ class User_Helper
 			}
 		else
 			{
-			return $answer[0]['password'];
+			return $answer[0];
 			}
 		}
 
@@ -138,13 +138,13 @@ class User_Helper
 		{
 		try
 			{
-			$prepare=Db::Get_Instance()->prepare("INSERT INTO `users` (`email`,`password`,`age`,`fname`,`lname`,`cdate`) VALUES (:email,:password,:age,:fname,:lname,:cdate);");
+			$prepare=Db::Get_Instance()->prepare("INSERT INTO `users` (`email`,`password`,`lastname`,`firstname`,`phone`,`timeofregistration`) VALUES (:email,:password,:lastname,:firstname,:phone,:timeofregistration);");
 			$prepare->execute($params);
 			}
 		catch (PDOException $e)
 			{
 			die("Error!: ".$e->getMessage()."<br/>");
 			}
-		return $prepare->fetchAll(PDO::FETCH_ASSOC);
+		//return $prepare->fetchAll(PDO::FETCH_ASSOC);
 		}
 	}

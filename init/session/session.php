@@ -22,8 +22,8 @@ class Session
 	{
 	public function __construct()
 		{
-		session_cache_expire(1440);
 		$this->Set_Agent();
+		$this->Set_Request();
 		}
 	private function __clone()
 		{}
@@ -123,6 +123,33 @@ class Session
 
 
 /*-------------------------------------------------------------------------
+ * Set sessions user_request section
+ *
+ * Session::Set_Request()
+ *
+ * Return: nothing
+--------------------------------------------------------------------------*/
+	private function Set_Request()
+		{
+		try
+			{
+			$_SESSION['request']['host']=$_SERVER['HTTP_HOST'];
+			$_SESSION['request']['uri']=$_SERVER['REQUEST_URI'];
+			$_SESSION['request']['serverport']=$_SERVER['SERVER_PORT'];
+			$_SESSION['request']['protocol']=$_SERVER['SERVER_PROTOCOL'];
+			$_SESSION['request']['method']=$_SERVER['REQUEST_METHOD'];
+			$_SESSION['request']['query']=$_SERVER['QUERY_STRING'];
+			$_SESSION['request']['userport']=$_SERVER['REMOTE_PORT'];
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		}
+
+
+
+/*-------------------------------------------------------------------------
  * Delete session or section
  *
  * Session::Unset()
@@ -135,7 +162,7 @@ class Session
 			{
 			if($section=='')
 				{				
-				session_unset($_SESSION['user']);
+				session_unset();
 				}
 			else
 				{

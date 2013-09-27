@@ -66,7 +66,7 @@ class Redirect
  *
  * Return: nothing
 --------------------------------------------------------------------------*/
-	public static function Page($path)
+	public static function Page($path='')
 		{
 		try
 			{
@@ -78,7 +78,7 @@ class Redirect
 				}
 			elseif($path==='.')
 				{
-				$redirect=$_SERVER['HTTP_HOST'].DS.$_SERVER['REQUEST_URI'];
+				$redirect=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 				}
 			else
 				{

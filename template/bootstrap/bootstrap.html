@@ -23,13 +23,19 @@
 						<a class="brand" href="<?= SUB_DIR; ?>">Mavr</a>
 
 						<ul class="nav">
-							<li>
-								<a href="<?= SUB_DIR; ?>user/registration">Registration</a>
-							</li>
+							<?php if(!isset($_SESSION['user'])): ?>
+								<li>
+									<a href="<?= SUB_DIR; ?>user/registration">Registration</a>
+								</li>
 
-							<li>
-								<a href="<?= SUB_DIR; ?>user/login">Login</a>
-							</li>
+								<li>
+									<a href="<?= SUB_DIR; ?>user/login">Login</a>
+								</li>
+							<?php else: ?>
+								<li>
+									<a href="<?= SUB_DIR; ?>user/logout">Logout</a>
+								</li>
+							<?php endif; ?>
 						</ul>
 					</div>
 				</nav>

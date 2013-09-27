@@ -28,6 +28,7 @@ class User_Model extends Pattern_Model
 		{
 		parent::__construct();
 		$this->view=new View;
+		require_once('password.php');
 		require_once('helper.php');
 		$this->helper=new User_Helper;
 		}
@@ -82,11 +83,11 @@ class User_Model extends Pattern_Model
 //check data from this form
 						$this->helper->Create_User(array(
 												':email'=>$_POST['email'],
-												':password'=>md5($_POST['password']),
-												':fname'=>$_POST['name'],
-												':lname'=>NULL,
-												':age'=>NULL,
-												':cdate'=>time()
+												':password'=>password_hash($_POST['password'],PASSWORD_BCRYPT,array('cost'=>9)),
+												':lastname'=>NULL,
+												':firstname'=>$_POST['name'],
+												':phone'=>NULL,
+												':timeofregistration'=>time()
 												));
 						$id_user=Db::Get_Instance()->lastInsertId();
 						$content['content']='All right! User was added with id = '.$id_user;
@@ -149,12 +150,13 @@ class User_Model extends Pattern_Model
 						}
 					else
 						{
-						$password_hash=$this->helper->Login_Exists($_POST['email']);
-						if($password_hash)
+						$user_data=$this->helper->Login_Exists($_POST['email']);
+						if($user_data)
 							{
-							if($password_hash==md5($_POST['password']))
+							if(password_verify($_POST['password'],$user_data['password']))
 								{
-								//do smthg
+								unset($user_data['password']);
+								$this->session->Set_User($user_data);
 								}
 							else
 								{
@@ -198,7 +200,8 @@ class User_Model extends Pattern_Model
 		}
 	function Logout()
 		{
-		echo "Запущен метод ".__METHOD__;
+		$this->session->Erase('user');
+		Redirect::Page();
 		}
 	function Update()
 		{
