@@ -30,6 +30,5 @@ class Model
 		$mname=implode('_',array_map('ucfirst',explode('_',$method)));
 		$class=new $cname;
 		$class->$mname();*/
-		}
-	
+		}	
 	}

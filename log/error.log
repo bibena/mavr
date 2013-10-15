@@ -302,3 +302,557 @@ Fri, 27 Sep 2013 02:47:28 +0300
 	Error: 0 in file /media/DISK_A1/web/www/mavr/init/session/session.php on line 175 - Wrong session section requested
 	Trace:
 	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:203;s:8:"function";s:5:"Erase";s:5:"class";s:7:"Session";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:4:"user";}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:62;s:8:"function";s:6:"Logout";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:6:"Logout";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 01:19:30 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Undefined property: User_Model::$form
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:53;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:37:"Undefined property: User_Model::$form";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:53;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 01:19:42 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Undefined property: User_Model::$form
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:53;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:37:"Undefined property: User_Model::$form";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:53;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 01:20:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 01:24:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 01:32:26 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:26 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:27 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:28 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:29 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:29 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:29 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:29 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:32:29 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:48 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:33:59 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:00 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:01 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:34:01 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:05 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:07 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:35:08 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 44 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:44 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:44 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:44 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:44 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:45 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:46 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:36:47 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:40:24 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 01:44:52 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 56 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 01:46:58 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 56 - syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting :: (T_PAAMAYIM_NEKUDOTAYIM)
+Fri, 11 Oct 2013 01:48:06 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 56 - syntax error, unexpected '[', expecting '('
+Fri, 11 Oct 2013 01:50:15 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:15 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:15 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:15 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:16 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:17 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:50:18 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 29 - syntax error, unexpected 'protected' (T_PROTECTED)
+Fri, 11 Oct 2013 01:51:05 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 56 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 01:56:12 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 58 - Access to undeclared static property: Pattern_Model::$form
+Fri, 11 Oct 2013 02:02:48 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 53 - Undefined property: User_Model::$form
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:53;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:37:"Undefined property: User_Model::$form";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:53;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 02:04:28 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 85 - Undefined index: password
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:85;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:25:"Undefined index: password";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:85;i:4;a:1:{s:7:"content";a:1:{s:6:"assets";s:321:"<script src="/template/bootstrap/js/jquery.js"></script>
+<script src="/template/bootstrap/js/jquery_ui.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 02:19:16 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 87 - Undefined index: password
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:87;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:25:"Undefined index: password";i:2;s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";i:3;i:87;i:4;a:1:{s:7:"content";a:1:{s:6:"assets";s:321:"<script src="/template/bootstrap/js/jquery.js"></script>
+<script src="/template/bootstrap/js/jquery_ui.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 11 Oct 2013 02:24:01 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:01 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:01 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:02 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:03 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:24:04 +0300
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 30 - syntax error, unexpected 'try' (T_TRY), expecting ',' or ';'
+Fri, 11 Oct 2013 02:28:47 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 512 in file /media/DISK_A1/web/www/mavr/model/user/password.php on line 30 - password_hash(): Password must be a string
+	Trace:
+	a:7:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:512;i:1;s:42:"password_hash(): Password must be a string";i:2;s:51:"/media/DISK_A1/web/www/mavr/model/user/password.php";i:3;i:30;i:4;a:3:{s:8:"password";a:5:{s:5:"email";s:12:"reerwt@dh.rt";s:8:"password";s:9:"ertertert";s:4:"name";s:6:"ertert";s:4:"flag";s:1:"1";s:9:"agreement";s:2:"on";}s:4:"algo";i:1;s:7:"options";a:1:{s:4:"cost";i:9;}}}}i:1;a:4:{s:4:"file";s:51:"/media/DISK_A1/web/www/mavr/model/user/password.php";s:4:"line";i:30;s:8:"function";s:13:"trigger_error";s:4:"args";a:2:{i:0;s:42:"password_hash(): Password must be a string";i:1;i:512;}}i:2;a:4:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:87;s:8:"function";s:13:"password_hash";s:4:"args";a:3:{i:0;a:5:{s:5:"email";s:12:"reerwt@dh.rt";s:8:"password";s:9:"ertertert";s:4:"name";s:6:"ertert";s:4:"flag";s:1:"1";s:9:"agreement";s:2:"on";}i:1;i:1;i:2;a:1:{s:4:"cost";i:9;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:48;s:8:"function";s:12:"Registration";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:12:"Registration";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 00:26:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:30 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:31 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:50 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:51 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:26:51 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:25 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:27:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:26 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:27 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:28 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:28:29 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:45 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:46 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:47 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:48 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 00:30:49 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 103 - Class 'Error' not found
+Tue, 15 Oct 2013 01:02:53 +0300
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/user/user.php on line 34 - Call to private method Pattern_Model::Check() from context 'User_Model'
+Tue, 15 Oct 2013 01:38:51 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 01:40:39 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 01:40:51 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 01:45:31 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 01:50:06 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 01:59:44 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 02:00:02 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 15 Oct 2013 02:00:52 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 5 - Undefined index: email
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:5;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: email";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:5;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:1:{s:5:"error";i:1;}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:171;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:1:{s:5:"error";i:1;}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 16 Oct 2013 01:12:33 +0300
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/user/login.html on line 30 - Undefined index: error
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";s:4:"line";i:30;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:22:"Undefined index: error";i:2;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";i:3;i:30;i:4;a:4:{s:6:"method";s:17:"User_Model::Login";s:7:"content";a:0:{}s:6:"folder";s:4:"User";s:4:"file";s:5:"Login";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:48:"/media/DISK_A1/web/www/mavr/view/user/login.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/user/user.php";s:4:"line";i:180;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:17:"User_Model::Login";i:1;a:0:{}}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/user/user.php";s:4:"line";i:55;s:8:"function";s:5:"Login";s:5:"class";s:10:"User_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:5:"Login";s:5:"class";s:15:"User_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}

@@ -31,7 +31,11 @@ class User_Model extends Pattern_Model
 		require_once('password.php');
 		require_once('helper.php');
 		$this->helper=new User_Helper;
+		$this->form=parent::Check();
 		}
+
+
+
 	function Show()
 		{
 		echo "Запущен метод ".__METHOD__;
@@ -52,63 +56,54 @@ class User_Model extends Pattern_Model
 			{
 //include css and js
 			$content['assets']=implode("\n",$this->assets)."\n";
-//if form was sent from this site
-			if(!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
+//if was sent form
+			if(count($this->form)>0)
 				{
-//take data from form. If form was sent
-				if(isset($_POST['flag']) && $_POST['flag'])
+				if(!(isset($this->form['email']) && $this->form['email'] && $this->helper->Email_Check($this->form['email'])))
 					{
-					if(!(isset($_POST['email']) && $_POST['email'] && $this->helper->Email_Check($_POST['email'])))
-						{
-						$error['error']['email']=1;
-						}
-					if(!(isset($_POST['password']) && $this->helper->Password_Check($_POST['password'])))
-						{
-						$error['error']['password']=1;
-						}
-					if(!(isset($_POST['agreement']) && $_POST['agreement']))
-						{
-						$error['error']['agreement']=1;
-						}
-					if(!(isset($_POST['name']) && $_POST['name']))
-						{
-						$error['error']['name']=1;
-						}
-					if($this->helper->Login_Exists($_POST['email']))
-						{
-						$error['error']['email']=1;
-						}
-					if(!isset($error))
-						{
+					$error['error']['email']=1;
+					}
+				if(!(isset($this->form['password']) && $this->helper->Password_Check($this->form['password'])))
+					{
+					$error['error']['password']=1;
+					}
+				if(!(isset($this->form['agreement']) && $this->form['agreement']))
+					{
+					$error['error']['agreement']=1;
+					}
+				if(!(isset($this->form['name']) && $this->form['name']))
+					{
+					$error['error']['name']=1;
+					}
+				if($this->helper->Login_Exists($this->form['email']))
+					{
+					$error['error']['email']=1;
+					}
+				if(!isset($error))
+					{
 //check data from this form
-						$this->helper->Create_User(array(
-												':email'=>$_POST['email'],
-												':password'=>password_hash($_POST['password'],PASSWORD_BCRYPT,array('cost'=>9)),
-												':lastname'=>NULL,
-												':firstname'=>$_POST['name'],
-												':phone'=>NULL,
-												':timeofregistration'=>time()
-												));
-						$id_user=Db::Get_Instance()->lastInsertId();
-						$content['content']='All right! User was added with id = '.$id_user;
-						}
-					else
-						{
-//else print the form with error message
-						$error['data']=$_POST;
-						$content['content']=$this->view->Content_Create(__METHOD__,$error);
-						}
+					$this->helper->Create_User(array(
+											':email'=>$this->form['email'],
+											':password'=>password_hash($this->form['password'],PASSWORD_BCRYPT,array('cost'=>9)),
+											':lastname'=>NULL,
+											':firstname'=>$this->form['name'],
+											':phone'=>NULL,
+											':timeofregistration'=>time()
+											));
+					$id_user=Db::Get_Instance()->lastInsertId();
+					$content['content']='All right! User was added with id = '.$id_user;
 					}
 				else
 					{
-//else print the form
-					$content['content']=$this->view->Content_Create(__METHOD__,array());
+//else print the form with error message
+					$error['data']=$this->form;
+					$content['content']=$this->view->Content_Create(__METHOD__,$error);
 					}
 				}
 			else
 				{
-//else throw an exception
-				throw new Error('Wrong URL. Form wasn`t sent from this site.');
+//else print the form
+				$content['content']=$this->view->Content_Create(__METHOD__,array());
 				}
 			}
 		catch (Error $e)
@@ -134,62 +129,55 @@ class User_Model extends Pattern_Model
 			{
 //include css and js
 			$content['assets']=implode("\n",$this->assets)."\n";
-//if form was sent from this site
-			if(!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])!==false)
+//if was sent form
+			if(count($this->form)>0)
 				{
-//take data from form. If form was sent
-				if(isset($_POST['flag']) && $_POST['flag'])
+//take data from form. If form was sentbtn-success
+				if(!(isset($this->form['password']) && $this->helper->Password_Check($this->form['password'])))
 					{
-					if(!(isset($_POST['password']) && $this->helper->Password_Check($_POST['password'])))
+					$error['error']=1;
+					}
+				if(!(isset($this->form['email']) && $this->form['email'] && $this->helper->Email_Check($this->form['email'])))
+					{
+					$error['error']=1;
+					}
+				else
+					{
+					$user_data=$this->helper->Login_Exists($this->form['email']);
+					if($user_data)
 						{
-						$error['error']=1;
-						}
-					if(!(isset($_POST['email']) && $_POST['email'] && $this->helper->Email_Check($_POST['email'])))
-						{
-						$error['error']=1;
-						}
-					else
-						{
-						$user_data=$this->helper->Login_Exists($_POST['email']);
-						if($user_data)
+						if(password_verify($this->form['password'],$user_data['password']))
 							{
-							if(password_verify($_POST['password'],$user_data['password']))
-								{
-								unset($user_data['password']);
-								$this->session->Set_User($user_data);
-								}
-							else
-								{
-								$error['error']=1;
-								}
+							unset($user_data['password']);
+							$this->session->Set_User($user_data);
 							}
 						else
 							{
 							$error['error']=1;
 							}
 						}
-
-					if(!isset($error))
-						{
-						$content['content']='All right! User was loged in';
-						}
 					else
 						{
-//else print the form with error message
-						$error= array_merge($error,$_POST);
-						$content['content']=$this->view->Content_Create(__METHOD__,$error);
+						$error['error']=1;
 						}
+					}
+
+				if(!isset($error))
+					{
+					//$content['content']='All right! User was loged in';
+					Redirect::Page();
 					}
 				else
 					{
-//else print the form
-					$content['content']=$this->view->Content_Create(__METHOD__,array());
+	//else print the form with error message
+					$error= array_merge($error,$this->form);
+					$content['content']=$this->view->Content_Create(__METHOD__,$error);
 					}
 				}
 			else
 				{
-//else throw an exception
-				throw new Error('Wrong URL. Form wasn`t sent from this site.');
+//else print the form
+				$content['content']=$this->view->Content_Create(__METHOD__,array());
 				}
 			}
 		catch (Error $e)

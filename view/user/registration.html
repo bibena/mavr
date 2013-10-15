@@ -1,33 +1,45 @@
-<form class="form-horizontal" method="post" action="<?=SUB_DIR?>user/registration">
-	<div class="control-group<?php if(isset($content['error']['email'])): ?> error<?php endif; ?>">
-		<label class="control-label" for="inputEmail"><?=REGISTRATION_EMAIL_TITLE?></label>
-		<div class="controls">
-			<input autofocus="autofocus" tabindex="1" type="email"<?php if(count($content)): echo'value="'.$content['data']['email'].'"'; endif; ?> required="required" name="email" id="inputEmail" placeholder="<?=REGISTRATION_EMAIL_TITLE?>">
-			<span class="help-inline"><?php if(isset($content['error']['email'])): echo REGISTRATION_EMAIL_ERROR; endif; ?></span>
+<form class="form-horizontal registration_form" role="form" method="post" action="<?=SUB_DIR?>user/registration">
+	<div class="form-group<?php if(isset($content['error']['email'])): ?> has-error<?php endif; ?>">
+		<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputEmail"><?=REGISTRATION_EMAIL_TITLE?></label>
+		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<input autofocus="autofocus" tabindex="1" type="email"<?php if(count($content)): echo'value="'.$content['data']['email'].'"'; endif; ?> required="required" name="email" class="form-control" id="inputEmail" placeholder="<?=REGISTRATION_EMAIL_TITLE?>">
+		</div>
+		<div>
+			<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php if(isset($content['error']['email'])): echo REGISTRATION_EMAIL_ERROR; endif; ?></span>
 		</div>
 	</div>
-	<div class="control-group<?php if(isset($content['error']['password'])): ?> error<?php endif; ?>">
-		<label class="control-label" for="inputPassword"><?=REGISTRATION_PASSWORD_TITLE?></label>
-		<div class="controls">
-			<input tabindex="2" type="password" required="required" name="password" id="inputPassword" placeholder="<?=REGISTRATION_PASSWORD_TITLE?>">
-			<span class="help-inline"><?php if(isset($content['error']['password'])): echo REGISTRATION_PASSWORD_ERROR; endif; ?></span>
+
+	<div class="form-group<?php if(isset($content['error']['password'])): ?> has-error<?php endif; ?>">
+		<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputPassword"><?=REGISTRATION_PASSWORD_TITLE?></label>
+		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<input tabindex="2" type="password" required="required" name="password" class="form-control" id="inputPassword" placeholder="<?=REGISTRATION_PASSWORD_TITLE?>">
+		</div>
+		<div>
+			<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php if(isset($content['error']['password'])): echo REGISTRATION_PASSWORD_ERROR; endif; ?></span>
 		</div>
 	</div>
-	<div class="control-group<?php if(isset($content['error']['name'])): ?> error<?php endif; ?>">
-		<label class="control-label" for="inputName"><?=REGISTRATION_NAME_TITLE?></label>
-		<div class="controls">
-			<input tabindex="3" type="text"<?php if(count($content)): echo'value="'.$content['data']['name'].'"'; endif; ?> required="required" name="name" id="inputName" placeholder="<?=REGISTRATION_NAME_TITLE?>">
-			<span class="help-inline"><?php if(isset($content['error']['name'])): echo REGISTRATION_NAME_ERROR; endif; ?></span>
+	<div class="form-group<?php if(isset($content['error']['name'])): ?> has-error<?php endif; ?>">
+		<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputName"><?=REGISTRATION_NAME_TITLE?></label>
+		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<input tabindex="3" type="text"<?php if(count($content)): echo'value="'.$content['data']['name'].'"'; endif; ?> required="required" name="name" class="form-control" id="inputName" placeholder="<?=REGISTRATION_NAME_TITLE?>">
+		</div>
+		<div>
+			<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php if(isset($content['error']['name'])): echo REGISTRATION_NAME_ERROR; endif; ?></span>
 		</div>
 	</div>
 	<input type="hidden" name="flag" value="1">
-	<div class="control-group<?php if(isset($content['error']['agreement'])): ?> error<?php endif; ?> eula">
-		<div class="controls">
+
+	<div class="form-group remember<?php if(isset($content['error']['agreement'])): ?> has-error<?php endif; ?> eula">
+		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
 			<label class="checkbox inline">
 				<input tabindex="4" name="agreement"<?php if(count($content)): echo'checked="checked"'; endif; ?> required="required" type="checkbox"><?=REGISTRATION_AGREEMENT_TITLE?>
-				<span class="help-inline"><?php if(isset($content['error']['agreement'])): echo REGISTRATION_AGREEMENT_ERROR; endif; ?></span>
 			</label>
-			<button tabindex="5" type="submit" class="btn"><?=REGISTRATION_BUTTON_TITLE?></button>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<button tabindex="5" type="submit" class="btn btn-info"><?=REGISTRATION_BUTTON_TITLE?></button>
+		</div>
+		<div>
+			<span class="help-inline"><?php if(isset($content['error']['agreement'])): echo REGISTRATION_AGREEMENT_ERROR; endif; ?></span>
 		</div>
 	</div>
 </form>

@@ -24,7 +24,7 @@ class Pattern_Model
 /*-------------------------------------------------------------------------
 * Constructor of Pattern_Model
 --------------------------------------------------------------------------*/
-	function __construct()
+	protected function __construct()
 		{
 		$this->session=new Session;
 //read the name of template from config
@@ -53,6 +53,7 @@ class Pattern_Model
 
 
 
+
 /*-------------------------------------------------------------------------
 * Example of __call method
 *
@@ -60,7 +61,46 @@ class Pattern_Model
 *
 * Return: throw an exception.
 --------------------------------------------------------------------------*/
-	function __call($name, $arguments)
+	protected function Check()
+		{
+		$form=array();
+		try
+			{
+			if(isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])===false)
+				{
+				throw new Error('Wrong URL. Form wasn`t sent from this site.');
+				}
+			else
+				{
+				if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['flag']) && $_POST['flag'])
+					{
+					$_SESSION['form'][$_SERVER['REQUEST_URI']]=$_POST;
+					Redirect::Page('.');
+					}
+				if($_SERVER['REQUEST_METHOD']==='GET' && isset($_SESSION['form'][$_SERVER['REQUEST_URI']]))
+					{
+					$form=$_SESSION['form'][$_SERVER['REQUEST_URI']];
+					unset($_SESSION['form'][$_SERVER['REQUEST_URI']]);
+					}
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $form;
+		}
+
+
+
+/*-------------------------------------------------------------------------
+* Example of __call method
+*
+* Class::Unknown_Method();
+*
+* Return: throw an exception.
+--------------------------------------------------------------------------*/
+	public function __call($name, $arguments)
 		{
 //---if were calling unknown method throw an exception
 		try
