@@ -23,20 +23,16 @@
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="<?= SUB_DIR; ?>">Mavr</a>
+						<a id="page_main" class="navbar-brand" href="<?= SUB_DIR; ?>">Mavr</a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="<?= SUB_DIR; ?>">Home</a></li>
+							<li><a href="<?= SUB_DIR; ?>" class="link">Home</a></li>
 						</ul>
 						<?php if(IS_LOGIN): ?>
-							<form method="get" action="<?= SUB_DIR; ?>user/logout" class="navbar-form navbar-right">
-								<button type="submit" class="btn btn-warning">Sign out</button>
-							</form>
+							<a href="/user/logout" class="link btn btn-warning navbar-right">Sing up</a>
 						<?php else: ?>
-							<form method="get" action="<?= SUB_DIR; ?>user/registration" class="navbar-form navbar-right">
-								<button type="submit" class="btn btn-info">Sign up</button>
-							</form>
+							<a href="/user/registration" class="link btn btn-info navbar-right">Sing up</a>
 							<form method="post" action="<?= SUB_DIR; ?>user/login" class="navbar-form navbar-right">
 								<div class="form-group">
 									<input type="email"  required="required" name="email" placeholder="<?=LOGIN_EMAIL_TITLE?>" class="form-control">
@@ -69,7 +65,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div id="cntnt" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<?php if (isset($content['content'])):
 							echo $content['content'];
 						endif; ?>
