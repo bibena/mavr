@@ -48,12 +48,12 @@ class Ajax_Model
 				default:
 					break;
 				}
-	//---processing the request
+//---processing the request
 			$cname=ucfirst($controller).'_Model';
 			$mname=implode('_',array_map('ucfirst',explode('_',$method)));
-	//---create example of the requested class
+//---create example of the requested class
 			$class=new $cname;
-	//---call requested method in class
+//---call requested method in class
 			if(isset($argument))
 				{
 				$content=$class->$mname($argument);
@@ -68,7 +68,6 @@ class Ajax_Model
 			$e->Error();
 			}
 		return $content['content'];
-		}
-	
+		}	
 	}
 ?>

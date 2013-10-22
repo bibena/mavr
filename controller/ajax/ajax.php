@@ -25,7 +25,6 @@ class Ajax_Controller
 		{
 		$html=new Ajax_Model;
 		echo $html->Link($_POST['link']);
-		//echo $_POST['link'];
 		}
 	}
 /*

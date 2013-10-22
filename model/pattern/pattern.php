@@ -63,7 +63,6 @@ class Pattern_Model
 --------------------------------------------------------------------------*/
 	protected function Check()
 		{
-		$form=array();
 		try
 			{
 			if(isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])===false)
@@ -72,6 +71,7 @@ class Pattern_Model
 				}
 			else
 				{
+				$form=array();
 				if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['flag']) && $_POST['flag'])
 					{
 					$_SESSION['form'][$_SERVER['REQUEST_URI']]=$_POST;
