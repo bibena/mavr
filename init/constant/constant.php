@@ -30,3 +30,4 @@ else
 	}
 
 define('IS_LOGIN',isset($_SESSION['user'])?true:false);
+define('IS_ADMIN',(isset($_SESSION['user']) && isset($_SESSION['user']['is_admin']))?true:false);

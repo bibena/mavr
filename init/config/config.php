@@ -56,11 +56,11 @@ class Config
  *
  * Return: array with config.
 --------------------------------------------------------------------------*/
-	public function Get_Config()
+	public function Get_Config($section=false)
 		{
 		try
 			{
-			if(!$this->config=parse_ini_file(ROOT_DIR.DS.'config'))
+			if(!$this->config=parse_ini_file(ROOT_DIR.DS.'config',$section))
 				{
 				throw new Error('Error reading config file');
 				}

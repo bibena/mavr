@@ -36,20 +36,20 @@ class Ajax_Model
 					throw new Error('Wrong URI');
 					break;
 				case 1: 
-					$controller='page';
+					$model='page';
 					$method='main';
 					break;
 				case 3:
 					$argument=$link_array[2];
 				case 2:
-					$controller=$link_array[0];
+					$model=$link_array[0];
 					$method=$link_array[1];
 					break;
 				default:
 					break;
 				}
 //---processing the request
-			$cname=ucfirst($controller).'_Model';
+			$cname=ucfirst($model).'_Model';
 			$mname=implode('_',array_map('ucfirst',explode('_',$method)));
 //---create example of the requested class
 			$class=new $cname;

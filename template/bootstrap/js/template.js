@@ -1,31 +1,39 @@
-$(function()
+//$(function(){})
+function uriLoader(uri,flag)
 	{
-	$("a.link[href*='/']").bind('click',function()
-		{
-		var url=$(this).attr('href');
-		$.ajax(
+	$.ajax({
+		url:'/ajax/link',
+		dataType:'text',
+		type:'post',
+		data:{'link':uri},
+		statusCode:
 			{
-			url:'/ajax/link',
-			dataType:'text',
-			type:'post',
-			data:{'link':$(this).attr('href')},
-			statusCode:
+			404: function()
 				{
-				404: function()
-					{
-					window.location.replace("page/error/404");
-					},
-				500: function()
-					{
-					window.location.replace("page/error/500");
-					}
+				window.location.replace("/page/error/404");
 				},
-			success:function(data)
+			500: function()
 				{
-				$('#cntnt').html(data);
-				window.history.pushState({'page':url}, url, url);
+				window.location.replace("/page/error/500");
 				}
-			});
-		return false;
-		})
+			},
+		success:function(data)
+			{
+			$('#cntnt').html(data);
+			$('#errr').html('');
+			if(flag)
+				{
+				window.history.pushState({'page':uri}, uri, uri);
+				}
+			}
+		});
+	}
+$(document).on('click',"a.link[href*='/']",function()
+	{
+	uriLoader($(this).attr('href'),1);
+	return false;
 	})
+window.onpopstate = function(event) 
+	{
+	uriLoader(document.location.pathname,0);
+	};

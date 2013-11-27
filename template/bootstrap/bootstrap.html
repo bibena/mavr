@@ -28,11 +28,12 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="<?= SUB_DIR; ?>" class="link">Home</a></li>
+							<li><a href="<?= SUB_DIR; ?>admin/config" class="link">Admin</a></li>
 						</ul>
 						<?php if(IS_LOGIN): ?>
-							<a href="/user/logout" class="link btn btn-warning navbar-right">Sing up</a>
+							<a href="/user/logout" class="link btn btn-warning navbar-right"><?=LOGOUT_BUTTON_TITLE?></a>
 						<?php else: ?>
-							<a href="/user/registration" class="link btn btn-info navbar-right">Sing up</a>
+							<a href="/user/registration" class="link btn btn-info navbar-right"><?=REGISTRATION_BUTTON_TITLE?></a>
 							<form method="post" action="<?= SUB_DIR; ?>user/login" class="navbar-form navbar-right">
 								<div class="form-group">
 									<input type="email"  required="required" name="email" placeholder="<?=LOGIN_EMAIL_TITLE?>" class="form-control">
@@ -54,11 +55,11 @@
 			<section class="row container">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<?php if (isset($content['error_message'])):
-							echo $content['error_message'];
-						endif; ?>
-						<?php if (isset($content['error'])):
+						<div id="errr" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<?php if(isset($content['error_message'])):?>
+							<?=$content['error_message'];?>
+						<?php endif; ?>
+						<?php if(isset($content['error'])):
 							echo $content['error'];
 						endif; ?>
 						</div>

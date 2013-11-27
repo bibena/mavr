@@ -24,3 +24,7 @@ define('LOGIN_ERROR','Ошибка при вводе связки логина/�
 define('FOGOTTEN_PASSWORD','Забыли пароль?');
 define('LOGIN_REMEMBER_TITLE','Remember me');
 define('LOGIN_BUTTON_TITLE','Войти');
+define('LOGOUT_BUTTON_TITLE','Выйти');
+define('ADMIN_SAVE_BUTTON_TITLE','Сохранить');
+define('YES','Да');
+define('NO','Нет');
