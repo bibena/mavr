@@ -62,10 +62,35 @@ class View
 --------------------------------------------------------------------------*/
 	function Display($content)
 		{
+		$content['menu']=$this->Menu();
 //output content to the browser
 		ob_start();
 		include_once($this->template);
 		ob_end_flush();
+		}
+
+
+
+/*-------------------------------------------------------------------------
+* Example of Menu method
+*
+* Class::Menu();
+*
+* Return menu content.
+--------------------------------------------------------------------------*/
+	function Menu()
+		{
+		$db=Db::Get_Instance();
+		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `visible`='1' ORDER BY `sort`;";
+		$request=$db->prepare($sql);
+		$request->execute();
+		$menus=$request->fetchAll();
+		$content='';
+		foreach($menus as $menu)
+			{
+			$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+			}
+		return $content;
 		}
 
 

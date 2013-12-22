@@ -1,0 +1,87 @@
+<form action="<?= SUB_DIR; ?>admin/menu" method="post" role="form" class="form-horizontal">
+	<div class="row" id="admin_menu_editor">
+		<?=$content;?>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div class="admin-menu-buttons">
+		<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+			<button class="btn btn-info">Создать</button>
+		</div>
+		<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<button type="submit" class="btn btn-success">Сохранить</button>
+		</div>
+	</div>
+</form>
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	var $row=$(this).parent().parent();
+	if($row.children("input[name*='id']").val()>-1)
+		{
+		$row.hide();
+		$row.children("input[name*='delete']").val(1);		
+		}
+	else
+		{
+		$row.remove();
+		}
+	});
+
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var new_position=0;
+	$(this).parent().parent().parent().children('#admin_menu_editor').children('.admin_menu_item').each(function()
+		{
+		var position=parseInt($(this).children("input[name*='visible']").attr('name'));
+		new_position=(position>=new_position)?(position+1):new_position;
+		});
+	var content='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Path" value="" name="'+new_position+'[path]" class="form-control"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Title" required="required" value="" name="'+new_position+'[title]" class="form-control"></div><input type="hidden" value="1" name="'+new_position+'[visible]"><input type="hidden" value="-1" name="'+new_position+'[id]"><input type="hidden" value="0" name="'+new_position+'[delete]"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$(this).parent().parent().parent().children('#admin_menu_editor').append(content);
+	return false;
+	});
+
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	$(this).parent().parent().parent().children('#admin_menu_editor').children('.admin_menu_item').each(function(position)
+		{
+		$(this).children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		$(this).children().children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		$(this).children().children('.form-control').prop('disabled',false);
+		});
+	});
+</script>

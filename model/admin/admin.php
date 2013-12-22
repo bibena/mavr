@@ -119,10 +119,28 @@ class Admin_Model extends Pattern_Model
 		}
 
 
-	function Logout()
+	function Menu()
 		{
-		echo "Запущен метод ".__METHOD__;
+		try
+			{
+			if(count($this->form)>0)
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Menu($this->form));
+				}
+			else
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Menu());
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($include);
 		}
+
+
+
 	function Update()
 		{
 		echo "Запущен метод ".__METHOD__;

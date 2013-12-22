@@ -1260,3 +1260,2462 @@ Wed, 27 Nov 2013 01:45:43 +0200
 	Error: 0 in file /media/DISK_A1/web/www/mavr/model/pattern/pattern.php on line 108 - Wrong URL. Error calling unknow method Config0
 	Trace:
 	a:6:{i:0;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:6:"__call";s:5:"class";s:13:"Pattern_Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:7:"Config0";i:1;a:0:{}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:7:"Config0";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:14:"/admin/config0";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:29 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:2:{s:6:"assets";s:402:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";s:7:"content";s:49:"<div><p>Главная страница</p></div>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:57;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:2:{s:6:"assets";s:402:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+";s:7:"content";s:49:"<div><p>Главная страница</p></div>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Main";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:29 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:29 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:29 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:29 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:29 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:30 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:30 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:30 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:30 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:30 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:30 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:30 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:30 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:30 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:30 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:31 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:32 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:32 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:32 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:32 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Wed, 27 Nov 2013 21:54:32 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:65;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:31:"Undefined property: View::$Menu";i:2;s:41:"/media/DISK_A1/web/www/mavr/view/view.php";i:3;i:65;i:4;a:1:{s:7:"content";a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}}i:1;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/page/page.php";s:4:"line";i:50;s:8:"function";s:7:"Display";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:4:{s:6:"assets";s:448:"<script src="/template/bootstrap/js/jquery-2.0.3.min.js"></script>
+<script src="/template/bootstrap/js/jquery-ui.min.js"></script>
+<script src="/template/bootstrap/js/js_bootstrap.min.js"></script>
+<script src="/template/bootstrap/js/template.js"></script>
+<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/template/bootstrap/css/template.css" />
+<meta http-equiv="Refresh" content="6; URL=/">";s:13:"error_message";s:0:"";s:5:"error";s:487:"<div class="error-div well well-large">
+							<p class="text-error">Ой! У нас случилась ошибка.</p>
+							<p class="text-error">Но не переживайте администратору было отправлено автоматическое уведомление об этом.</p>
+							<p class="text-error">Возможно ошибка незначительна и он уже работает над её исправлением.</p>
+							</div>";s:7:"content";s:425:"<p>Вы будете переадресованы на главную страницу через 
+	<span class="time">5</span> секунд. 
+	<a href="/">Перейти сразу</a>
+</p>
+<script>
+	$(document).ready(function()
+		{
+		setInterval(function()
+			{
+			var time = $(".time").text();
+			if(time > 0)
+				{
+				$(".time").text(--time);
+				}
+			else
+				{
+				location.href="/";
+				}
+			}, 1000);
+		});
+</script>";}}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:53;s:8:"function";s:5:"Error";s:5:"class";s:15:"Page_Controller";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:3:"500";}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 27 Nov 2013 21:54:32 +0200
+	Fatal Error: 8 in file /media/DISK_A1/web/www/mavr/view/view.php on line 65 - Undefined property: View::$Menu
+Thu, 28 Nov 2013 00:37:19 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(255): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 255, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(155): Admin_Helper->Display_Menu()
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Thu, 28 Nov 2013 01:09:11 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 245 - Call to a member function execute() on a non-object
+Thu, 28 Nov 2013 01:54:03 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 266 - syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$'
+Fri, 29 Nov 2013 01:45:55 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Tue, 03 Dec 2013 01:22:49 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(155): Admin_Helper->Display_Menu()
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Tue, 03 Dec 2013 01:31:32 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Wed, 04 Dec 2013 01:09:32 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Wed, 04 Dec 2013 02:02:05 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 252 - syntax error, unexpected '=', expecting ')'
+Wed, 04 Dec 2013 02:02:14 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 252 - syntax error, unexpected '=', expecting ')'
+Wed, 04 Dec 2013 02:03:13 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 65 - Wrong attribute name
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:252;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:2:{i:0;s:5:"input";i:1;a:5:{s:5:"class";s:12:"form-control";s:4:"type";s:4:"text";s:5:"value";s:12:"admin/config";s:8:"disabled";s:8:"disabled";s:11:"placeholder";s:8:"Путь";}}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:155;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 04 Dec 2013 02:03:23 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 65 - Wrong attribute name
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:252;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:2:{i:0;s:5:"input";i:1;a:5:{s:5:"class";s:12:"form-control";s:4:"type";s:4:"text";s:5:"value";s:12:"admin/config";s:8:"disabled";s:8:"disabled";s:11:"placeholder";s:8:"Путь";}}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:155;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 04 Dec 2013 02:04:33 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 60 - Wrong attribute value
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:252;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:2:{i:0;s:5:"input";i:1;a:5:{s:5:"class";s:12:"form-control";s:4:"type";s:4:"text";s:5:"value";s:12:"admin/config";s:8:"disabled";s:8:"disabled";s:11:"placeholder";s:8:"Путь";}}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:155;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 05 Dec 2013 01:05:56 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 163 - Undefined variable: include
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:163;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: include";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:163;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 05 Dec 2013 01:06:14 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 163 - Undefined variable: include
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:163;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: include";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:163;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 05 Dec 2013 01:06:22 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 163 - Undefined variable: include
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:163;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: include";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:163;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 05 Dec 2013 01:06:36 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 163 - Undefined variable: include
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:163;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: include";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:163;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 05 Dec 2013 01:37:23 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Thu, 05 Dec 2013 13:21:39 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 162 - Undefined index: HTTP_REQUEST
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:162;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:29:"Undefined index: HTTP_REQUEST";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:162;i:4;a:1:{s:7:"include";s:5537:"<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" type="hidden" value="1"><input class="admin_menu_id" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<!--<form class="form-horizontal" role="form" method="post" action="/admin/menu">
+		<button type="submit" class="btn btn-success">Сохранить</button>-->
+		<button type="submit" class="btn btn-success">Сохранить</button>
+		<!--<input type="hidden" name="flag" value="1">-->
+		</form>
+	</div>
+</div>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y'});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item"></div><input type="hidden" value="1" class="admin_menu_state"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 06 Dec 2013 00:11:35 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Fri, 06 Dec 2013 10:40:03 +0200
+	Fatal Error: 32 in file Unknown on line 0 - PHP Startup: Unable to load dynamic library '/media/DISK_A1/system/usr/lib/php/xml.so' - File not found
+Fri, 06 Dec 2013 12:28:31 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 165 - Undefined variable: _SESSION
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:165;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:28:"Undefined variable: _SESSION";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:165;i:4;a:1:{s:7:"include";s:5677:"<form action="/admin/menu" method="post" role="form" class="form-horizontal">
+<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" name="path_1" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_item" name="item_1" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" name="state_1" type="hidden" value="1"><input class="admin_menu_id" name="id_1" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+<input type="hidden" name="flag" value="1">
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button type="submit" class="btn btn-success">Сохранить</button>
+	</div>
+</div>
+</form>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path" name="path_'+new_index_of_array+'"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item" name="item_'+new_index_of_array+'"></div><input type="hidden" value="1" class="admin_menu_state" name="state_'+new_index_of_array+'"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id" name="id_'+new_index_of_array+'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	return false;
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	//$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 06 Dec 2013 12:33:26 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 165 - Undefined variable: _SESSION
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:165;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:28:"Undefined variable: _SESSION";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:165;i:4;a:1:{s:7:"include";s:5677:"<form action="/admin/menu" method="post" role="form" class="form-horizontal">
+<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" name="path_1" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_item" name="item_1" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" name="state_1" type="hidden" value="1"><input class="admin_menu_id" name="id_1" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+<input type="hidden" name="flag" value="1">
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button type="submit" class="btn btn-success">Сохранить</button>
+	</div>
+</div>
+</form>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path" name="path_'+new_index_of_array+'"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item" name="item_'+new_index_of_array+'"></div><input type="hidden" value="1" class="admin_menu_state" name="state_'+new_index_of_array+'"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id" name="id_'+new_index_of_array+'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	return false;
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	//$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 06 Dec 2013 12:33:45 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 165 - Undefined variable: _SESSION
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:165;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:28:"Undefined variable: _SESSION";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:165;i:4;a:1:{s:7:"include";s:5677:"<form action="/admin/menu" method="post" role="form" class="form-horizontal">
+<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" name="path_1" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_item" name="item_1" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" name="state_1" type="hidden" value="1"><input class="admin_menu_id" name="id_1" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+<input type="hidden" name="flag" value="1">
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button type="submit" class="btn btn-success">Сохранить</button>
+	</div>
+</div>
+</form>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path" name="path_'+new_index_of_array+'"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item" name="item_'+new_index_of_array+'"></div><input type="hidden" value="1" class="admin_menu_state" name="state_'+new_index_of_array+'"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id" name="id_'+new_index_of_array+'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	return false;
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	//$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 06 Dec 2013 12:43:37 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 165 - Undefined variable: _SESSION
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:165;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:28:"Undefined variable: _SESSION";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:165;i:4;a:1:{s:7:"include";s:5677:"<form action="/admin/menu" method="post" role="form" class="form-horizontal">
+<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" name="path_1" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_item" name="item_1" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" name="state_1" type="hidden" value="1"><input class="admin_menu_id" name="id_1" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+<input type="hidden" name="flag" value="1">
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button type="submit" class="btn btn-success">Сохранить</button>
+	</div>
+</div>
+</form>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path" name="path_'+new_index_of_array+'"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item" name="item_'+new_index_of_array+'"></div><input type="hidden" value="1" class="admin_menu_state" name="state_'+new_index_of_array+'"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id" name="id_'+new_index_of_array+'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	return false;
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	//$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 06 Dec 2013 13:00:14 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 160 - syntax error, unexpected '$include' (T_VARIABLE), expecting catch (T_CATCH)
+Fri, 06 Dec 2013 13:00:25 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 160 - syntax error, unexpected '$include' (T_VARIABLE), expecting catch (T_CATCH)
+Fri, 06 Dec 2013 13:01:54 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 164 - Undefined variable: _SESSION
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:164;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:28:"Undefined variable: _SESSION";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:164;i:4;a:1:{s:7:"include";s:5677:"<form action="/admin/menu" method="post" role="form" class="form-horizontal">
+<div class="row" id="admin_menu_editor">
+	<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="/admin/config" class="link">Config</a></li>
+			<li><a href="/admin/menu" class="link">Menu</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+		<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_path" name="path_1" type="text" value="admin/config" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control admin_menu_item" name="item_1" type="text" value="Admin" disabled="disabled" placeholder="Item menu"></div><input class="admin_menu_state" name="state_1" type="hidden" value="1"><input class="admin_menu_id" name="id_1" type="hidden" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>	<!--</div>-->
+</div>
+<input type="hidden" name="flag" value="1">
+
+
+<div class="admin-menu-buttons">
+	<div class="admin-menu-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<button class="btn btn-info">Создать</button>
+	</div>
+	<div class="admin-menu-safe col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button type="submit" class="btn btn-success">Сохранить</button>
+	</div>
+</div>
+</form>
+
+
+
+<script>
+$(function()
+	{
+	$('#admin_menu_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	})
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children('input.admin_menu_state').val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	})
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	$(this).parent().parent().remove();
+	})
+$(document).on('click','div.admin-menu-add>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var id=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		id[id.length]=$(this).children('.admin_menu_id').val();
+		});
+	var new_index_of_array=(Math.max.apply(null,id)+1);
+	var content='<div class="admin_menu_item col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" class="form-control admin_menu_path" name="path_'+new_index_of_array+'"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Item menu" class="form-control admin_menu_item" name="item_'+new_index_of_array+'"></div><input type="hidden" value="1" class="admin_menu_state" name="state_'+new_index_of_array+'"><input type="hidden" value="'+new_index_of_array+'" class="admin_menu_id" name="id_'+new_index_of_array+'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$container.html($container.html()+content);
+	return false;
+	})
+$(document).on('click','div.admin-menu-safe>button',function()
+	{
+	var $container=$(this).parent().parent().parent().children('#admin_menu_editor');
+	var answer=[];
+	$container.children('.admin_menu_item').each(function()
+		{
+		var field={};
+		field.id=$(this).children('.admin_menu_id').val();
+		field.state=$(this).children('.admin_menu_state').val();
+		field.path=$(this).children().children('.admin_menu_path').val();
+		field.item=$(this).children().children('.admin_menu_item').val();
+		answer[answer.length]=field;
+		});
+	//$.post('/admin/menu',{'flag':'1','data':answer},function(data){},'json');
+	})
+</script>
+
+
+<!--
+
+
+
+<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default" style="position: relative; top: 0px; left: 0px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Путь" class="form-control">
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+		<input placeholder="Пункт меню" class="form-control">
+	</div>
+	<input type="hidden" value="1" class="admin_menu_state">
+	<input type="hidden" value="###" class="admin_menu_id">
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-eye-open"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-edit"></span>
+	</div>
+	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		<span class="glyphicon glyphicon-trash"></span>
+	</div>
+</div>
+
+-->
+";}}}i:1;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:63;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Mon, 09 Dec 2013 10:10:32 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:32 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:33 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:33 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:33 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:33 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:35 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:35 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:35 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:35 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Mon, 09 Dec 2013 10:10:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/index.php(9): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 9, Array)
+#5 {main}
+  thrown
+Fri, 13 Dec 2013 00:02:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:36 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:02:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:11 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:11 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:12 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:13 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:13 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:13 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:13 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:13 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:14 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:15 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:03:15 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:54 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:56 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:56 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:56 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:56 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:56 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:57 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:57 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:12:57 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:42 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:42 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:42 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Fri, 13 Dec 2013 00:39:42 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 22:58:49 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 165 - Undefined variable: include
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:165;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:27:"Undefined variable: include";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:165;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 17 Dec 2013 23:37:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:37 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:38 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:39 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:40 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:49 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:50 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:50 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:50 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:50 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:50 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:52 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:52 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:52 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:52 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:52 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Tue, 17 Dec 2013 23:37:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/view/view.php on line 86 - Call to a member function execute() on a non-object
+Wed, 18 Dec 2013 00:08:56 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 60 - Wrong attribute value
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:252;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:2:{i:0;s:5:"input";i:1;a:6:{s:5:"class";s:28:"form-control admin_menu_path";s:4:"name";s:7:"1[path]";s:4:"type";s:4:"text";s:5:"value";s:12:"admin/config";s:8:"disabled";s:8:"disabled";s:11:"placeholder";s:4:"Path";}}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:158;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 18 Dec 2013 21:41:19 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(260): Php_Error->Other_Error_Catcher(8, 'Undefined varia...', '/media/DISK_A1/...', 260, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(158): Admin_Helper->Display_Menu()
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Wed, 18 Dec 2013 21:57:58 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/model/admin/admin.php on line 128 - Undefined index: sort
+	Trace:
+	a:5:{i:0;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:128;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:21:"Undefined index: sort";i:2;s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";i:3;i:128;i:4;a:0:{}}}i:1;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Thu, 19 Dec 2013 03:07:44 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 292 - syntax error, unexpected '}'
+Thu, 19 Dec 2013 03:08:47 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(8, 'Undefined index...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Thu, 19 Dec 2013 03:11:30 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(8, 'Undefined index...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Thu, 19 Dec 2013 03:14:46 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(8, 'Undefined index...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Thu, 19 Dec 2013 03:17:44 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 289 - Call to a member function execute() on a non-object
+Thu, 19 Dec 2013 03:20:18 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 289 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 00:11:53 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 289 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 00:28:45 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 289 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 00:38:57 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(2, 'Illegal string ...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Fri, 20 Dec 2013 00:43:41 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(2, 'Illegal string ...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Fri, 20 Dec 2013 00:44:51 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(279): Php_Error->Other_Error_Catcher(2, 'Illegal string ...', '/media/DISK_A1/...', 279, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Fri, 20 Dec 2013 00:48:55 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/init/error/error.php on line 86 - Uncaught exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' in /media/DISK_A1/web/www/mavr/init/error/error.php:86
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 /media/DISK_A1/web/www/mavr/init/error/error.php(86): serialize(Array)
+#2 /media/DISK_A1/web/www/mavr/init/error/error.php(45): Error->Create_String()
+#3 /media/DISK_A1/web/www/mavr/init/error/php/php.php(43): Error->Error()
+#4 /media/DISK_A1/web/www/mavr/model/admin/helper.php(283): Php_Error->Other_Error_Catcher(2, 'Illegal string ...', '/media/DISK_A1/...', 283, Array)
+#5 /media/DISK_A1/web/www/mavr/model/admin/admin.php(128): Admin_Helper->Check_Menu(Array)
+#6 /media/DISK_A1/web/www/mavr/controller/admin/admin.php(62): Admin_Model->Menu()
+#7 /media/DISK_A1/web/www/mavr/controller/controller.php(57): Admin_Controller->Menu()
+#8 /media/DISK_A1/web/www/mavr/init/init.php(56): Controller->__construct()
+#9 /media/DISK_A1/web/www/mavr/index.php(8): include_once('/media/DISK_A1/...')
+#10 {main}
+  thrown
+Fri, 20 Dec 2013 00:58:05 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 291 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 01:05:33 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 291 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 01:25:34 +0200
+	Fatal Error: 1 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 291 - Call to a member function execute() on a non-object
+Fri, 20 Dec 2013 01:59:34 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 65 - Wrong attribute name
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:265;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:3:{i:0;s:3:"div";i:1;a:2:{s:5:"class";s:90:"col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default ui-state-disabled admin_menu_item";s:5:"style";s:13:"opacity: 0.5;";}i:2;s:824:"<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control" name="2[path]" type="text" value="google" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control" name="2[title]" type="text" value="Google" disabled="disabled" required="required" placeholder="Title"></div><input name="2[visible]" type="hidden" value="0"><input name="2[id]" type="hidden" value="3"><input name="2[delete]" type="hidden" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-close"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>";}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:132;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:62;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Menu";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Fri, 20 Dec 2013 02:00:12 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/html/html.php on line 60 - Wrong attribute value
+	Trace:
+	a:7:{i:0;a:6:{s:4:"file";s:50:"/media/DISK_A1/web/www/mavr/model/admin/helper.php";s:4:"line";i:265;s:8:"function";s:3:"Tag";s:5:"class";s:4:"Html";s:4:"type";s:2:"::";s:4:"args";a:3:{i:0;s:3:"div";i:1;a:2:{s:5:"class";s:90:"col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default ui-state-disabled admin_menu_item";s:5:"style";s:13:"opacity: 0.5;";}i:2;s:824:"<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control" name="2[path]" type="text" value="google" disabled="disabled" placeholder="Path"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input class="form-control" name="2[title]" type="text" value="Google" disabled="disabled" required="required" placeholder="Title"></div><input name="2[visible]" type="hidden" value="0"><input name="2[id]" type="hidden" value="3"><input name="2[delete]" type="hidden" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-close"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div>";}}i:1;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:132;s:8:"function";s:12:"Display_Menu";s:5:"class";s:12:"Admin_Helper";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:67;s:8:"function";s:4:"Menu";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:27;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"/admin/menu";}}i:4;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:57;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:6;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}

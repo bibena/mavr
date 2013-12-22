@@ -8,8 +8,7 @@ try{
 	}
 catch (Flag_Error $e)
 	{
-	echo $e;
-	exit();
+	$e->Error();
 	}
 
 /*-------------------------------------------------------------------------
@@ -20,12 +19,51 @@ catch (Flag_Error $e)
 --------------------------------------------------------------------------*/
 
 
-class Mysql_Db extends Pattern_Db
+class Mysql_Db
 	{
-	public static $count_last;
+	private $connection;
 /*-------------------------------------------------------------------------
 * Constructor of MySQL database driver
 --------------------------------------------------------------------------*/
+	public function __construct()
+		{
+//---create variable with config
+		$this->config=Config::Get_Instance()->Get_Config();
+//---create variable with connection
+		try
+			{
+			$this->connection=new PDO('mysql:host='.$this->config['dbhost'].';dbname='.$this->config['dbname'],$this->config['dbuser'],$this->config['dbpassword']);
+			}
+		catch (PDOException $e)
+			{
+			try
+				{
+				throw new Db_Error('Error connecting to database');
+				}
+			catch (Db_Error $e)
+				{
+				$e->Error();
+				}
+			}
+		}
+
+
+
+/*-------------------------------------------------------------------------
+* Example of Get_PDO function
+*
+* Mysql_Db->Get_PDO();
+*
+* Return: PDO class.
+--------------------------------------------------------------------------*/
+	public function Get_PDO()
+		{
+		return $this->connection;
+		}
+/*	public static $count_last;
+/*-------------------------------------------------------------------------
+* Constructor of MySQL database driver
+--------------------------------------------------------------------------
 	public function __construct()
 		{
 		try
@@ -83,7 +121,7 @@ class Mysql_Db extends Pattern_Db
 * $db->Create_Database();
 *
 * Return: true.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Create_Database()
 		{
 //---check or create database
@@ -120,7 +158,7 @@ class Mysql_Db extends Pattern_Db
 * 							));
 *
 * Return: bool true.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Create_Table(array $data)
 		{
 		try
@@ -285,7 +323,7 @@ class Mysql_Db extends Pattern_Db
 *						);
 *
 * Return: bool true.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Drop_Table(array $data)
 		{
 		try
@@ -346,7 +384,7 @@ class Mysql_Db extends Pattern_Db
 * 					));
 *
 * Return: int number of inserted row.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Insert(array $data)
 		{
 		try
@@ -429,7 +467,7 @@ class Mysql_Db extends Pattern_Db
 * 							);
 *
 * Return: int number of inserted row.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Multi_Insert(array $data)
 		{
 		try
@@ -511,7 +549,7 @@ class Mysql_Db extends Pattern_Db
 * 						));
 *
 * Return: int number of replaced row.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Replace(array $data)
 		{
 		try
@@ -588,7 +626,7 @@ class Mysql_Db extends Pattern_Db
 * 					));
 *
 * Return: int number of updated row.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Update(array $data)
 		{
 		try
@@ -702,7 +740,7 @@ class Mysql_Db extends Pattern_Db
 * 					));
 *
 * Return: assoc array of result or NULL.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Select(array $data)
 		{
 		try
@@ -837,7 +875,7 @@ class Mysql_Db extends Pattern_Db
 * 							));
 *
 * Return: assoc array of result or NULL.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Select_Join(array $data)
 		{
 		try
@@ -994,7 +1032,7 @@ class Mysql_Db extends Pattern_Db
 * 					));
 *
 * Return: int number of deleted row.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Delete(array $data)
 		{
 		try
@@ -1077,7 +1115,7 @@ class Mysql_Db extends Pattern_Db
 * 					));
 *
 * Return: int of count.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Count(array $data)
 		{
 		try
@@ -1151,7 +1189,7 @@ class Mysql_Db extends Pattern_Db
 * $db->Count_Last();
 *
 * Return: int count of last query.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Count_Last()
 		{
 		return self::$count_last;
@@ -1165,7 +1203,7 @@ class Mysql_Db extends Pattern_Db
 * $db->Insert_Id();
 *
 * Return: int autoincrement id of last query.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Insert_Id()
 		{
 		return $this->connection->insert_id;
@@ -1179,7 +1217,7 @@ class Mysql_Db extends Pattern_Db
 * $db->Query($sql);
 *
 * Return: result from database.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Query($sql)
 		{
 		try
@@ -1203,9 +1241,9 @@ class Mysql_Db extends Pattern_Db
 
 /*-------------------------------------------------------------------------
 * Destructor of MySQL database driver
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function __destruct()
 		{
 		$this->connection->close();
-		}
+		}*/
 	}

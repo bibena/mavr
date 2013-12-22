@@ -26,6 +26,11 @@ class Ajax_Controller
 		$html=new Ajax_Model;
 		echo $html->Link($_POST['link']);
 		}
+	function Addmenuitem()
+		{
+		$html=new Ajax_Model;
+		echo $html->Addmenuitem();
+		}
 	}
 /*
 $url=array_reverse(explode('/',$_POST['url']));

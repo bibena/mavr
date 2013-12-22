@@ -1,4 +1,39 @@
-//$(function(){})
+$(function()
+	{
+	menuSwitcher();
+	})
+function menuSwitcher()
+	{
+	$('.nav.navbar-nav').children('li').each(function()
+		{
+		$(this).removeClass('active');
+		if(document.location.pathname=='' || document.location.pathname=='/')
+			{
+			if($(this).children('a').attr('href')==document.location.pathname)
+				{
+				$(this).addClass('active');
+				}
+			}
+		else
+			{
+			if($(this).children('a').attr('href').split('/')[1]==document.location.pathname.split('/')[1])
+				{
+				$(this).addClass('active');
+				if(document.location.pathname.split('/')[1]=='admin')
+					{
+					$('.nav.nav-pills.nav-stacked').children('li').each(function()
+						{
+						$(this).removeClass('active');
+						if($(this).children('a').attr('href').split('/')[2]==document.location.pathname.split('/')[2])
+							{
+							$(this).addClass('active');
+							}
+						});
+					}
+				}
+			}
+		});
+	}
 function uriLoader(uri,flag)
 	{
 	$.ajax({
@@ -25,6 +60,7 @@ function uriLoader(uri,flag)
 				{
 				window.history.pushState({'page':uri}, uri, uri);
 				}
+			menuSwitcher();
 			}
 		});
 	}

@@ -56,9 +56,12 @@ class Admin_Controller extends Pattern_Controller
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
-	function Logout()
+	function Menu()
 		{
-		echo "Запущен метод ".__METHOD__;
+//---call User_Model::Registration();
+		$model_answer=$this->model->Menu();
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
 		}
 	function Update()
 		{

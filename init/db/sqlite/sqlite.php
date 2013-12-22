@@ -83,7 +83,7 @@ class Sqlite_Db
 
 
 
-
+/*
 	public function Create_Database()
 		{
 		try
@@ -128,7 +128,7 @@ class Sqlite_Db
 * 							));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Create_Table(array $data)
 		{
 		try
@@ -311,7 +311,7 @@ class Sqlite_Db
 *						);
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Drop_Table(array $data)
 		{
 		try
@@ -372,7 +372,7 @@ class Sqlite_Db
 * 					));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Insert(array $data)
 		{
 		try
@@ -461,7 +461,7 @@ class Sqlite_Db
 * 							)));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Multi_Insert(array $data)
 		{
 		try
@@ -557,7 +557,7 @@ class Sqlite_Db
 * 						));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Replace(array $data)
 		{
 		try
@@ -641,7 +641,7 @@ class Sqlite_Db
 * 					));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Update(array $data)
 		{
 		try
@@ -782,7 +782,7 @@ class Sqlite_Db
 * 					));
 *
 * Return: assoc array of result or NULL or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Select(array $data)
 		{
 		try
@@ -982,7 +982,7 @@ class Sqlite_Db
 * 							));
 *
 * Return: assoc array of result or NULL or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Select_Join(array $data)
 		{
 		try
@@ -1195,7 +1195,7 @@ class Sqlite_Db
 * 					));
 *
 * Return: true or throw an exception if error.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Delete(array $data)
 		{
 		try
@@ -1314,7 +1314,7 @@ class Sqlite_Db
 * 					));
 *
 * Return: int of count.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Count(array $data)
 		{
 		try
@@ -1435,7 +1435,7 @@ class Sqlite_Db
 * $db->Last_Insert_Id();
 *
 * Return: int autoincrement id of last query.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Last_Insert_Id()
 		{
 		return $this->connection->lastInsertId();
@@ -1449,7 +1449,7 @@ class Sqlite_Db
 * $db->Query($sql);
 *
 * Return: result from database.
---------------------------------------------------------------------------*/
+--------------------------------------------------------------------------
 	public function Query($sql)
 		{
 		try

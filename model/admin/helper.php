@@ -237,4 +237,76 @@ class Admin_Helper
 			}
 		return $error;
 		}
+	function Display_Menu()
+		{
+		$db=Db::Get_Instance();
+		$sql="SELECT * FROM `menus` ORDER BY `sort`;";
+		$request=$db->prepare($sql);
+		$request->execute();
+		$menus=$request->fetchAll();
+		$content='';
+		foreach($menus as $menu)
+			{
+			$trash=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-trash')));
+			$edit=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-edit')));
+			$link=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[path]','type'=>'text','value'=>$menu['link'],'disabled'=>'disabled','placeholder'=>'Path')));
+			$title=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[title]','type'=>'text','value'=>$menu['title'],'disabled'=>'disabled','required'=>'required','placeholder'=>'Title')));
+			$hvisible=Html::Tag('input',array('name'=>$menu['sort'].'[visible]','type'=>'hidden','value'=>$menu['visible']));
+			$id=Html::Tag('input',array('name'=>$menu['sort'].'[id]','type'=>'hidden','value'=>$menu['id']));
+			$delete=Html::Tag('input',array('name'=>$menu['sort'].'[delete]','type'=>'hidden','value'=>0));
+			if($menu['visible'])
+				{
+				$visible=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-eye-open')));
+				$content.=Html::Tag('div',array('class'=>'col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item'),$link.$title.$hvisible.$id.$delete.$visible.$edit.$trash);
+				}
+			else
+				{
+				$visible=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-eye-close')));
+				$content.=Html::Tag('div',array('class'=>'col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default ui-state-disabled admin_menu_item','style'=>'opacity: 0.5;'),$link.$title.$hvisible.$id.$delete.$visible.$edit.$trash);
+				}
+			}
+		return $content;
+		}
+	function Check_Menu($form)
+		{
+		try {
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`visible`=:visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`visible`) VALUES (:sort,:link,:title,:visible);";
+			$delete_sql="DELETE FROM `menus` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					$form_data=array(':sort'=>$sort,':link'=>trim(SUB_DIR.$value['path'],'/'),':title'=>$value['title'],':visible'=>$value['visible']);
+					if($value['id']>0 && $value['id']!=-1)
+						{
+						if($value['delete'])
+							{
+							$request=$db->prepare($delete_sql);
+							$form_data=array(':id'=>$value['id']);
+							}
+						else
+							{
+							$request=$db->prepare($update_sql);
+							$form_data[':id']=$value['id'];
+							}
+						}
+					else
+						{
+						$request=$db->prepare($insert_sql);
+						}
+					$request->execute($form_data);		
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		return $this->Display_Menu();
+		}
 	}
