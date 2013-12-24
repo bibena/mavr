@@ -45,21 +45,21 @@ class User_Controller extends Pattern_Controller
 	function Registration()
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Registration();
+		$model_answer=$this->model->Registration($this->mname);
 //---call View::Display();
 		$this->view->Display($model_answer);
 		}
 	function Login()
 		{
 //---call User_Model::Login();
-		$model_answer=$this->model->Login();
+		$model_answer=$this->model->Login($this->mname);
 //---call View::Display();
 		$this->view->Display($model_answer);
 		}
 	function Logout()
 		{
 //---call User_Model::Logout();
-		$model_answer=$this->model->Logout();
+		$model_answer=$this->model->Logout($this->mname);
 		}
 	function Update()
 		{

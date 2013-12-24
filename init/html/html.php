@@ -49,15 +49,15 @@ class Html
 					$value=trim($value);
 					$attr=strtolower($attr);
 					if(in_array($attr,array('class','id','name','required','value','type','tabindex','disabled','multiple
-','size','checked','for','href','placeholder','style')))
+','size','checked','for','href','placeholder','style','data-toggle','role','method','action')))
 						{
-						if(preg_match('|^[A-Za-z0-9- _/*+.,;:\[\]]*$|',$value))
+						//if(preg_match('|^[A-Za-z0-9- _/*+#.,;:\[\]]*$|',$value))
 							{
 							$result.=' '.$attr.'="'.$value.'"';
 							}
-						else
+						//else
 							{
-							throw new Error('Wrong attribute value');
+							//throw new Error('Wrong attribute value');
 							}
 						}
 					else
@@ -67,7 +67,7 @@ class Html
 					}
 				$result.='>';
 				$result.=$content;
-				if(in_array($tag,array('select','option','div','label','li','a','button','span')))
+				if(in_array($tag,array('select','option','div','label','li','a','button','span','ul','form')))
 					{
 					$result.='</'.$tag.'>';
 					}

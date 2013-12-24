@@ -1,0 +1,90 @@
+<div class="tab-content admin-shop-tab">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#countries" data-toggle="tab">Countries</a></li>
+		<li><a href="#cities" data-toggle="tab">Cities</a></li>
+		<li><a href="#shipment" data-toggle="tab">Shipment</a></li>
+		<li><a href="payment" data-toggle="tab">Payment</a></li>
+	</ul>
+	<div class="tab-pane active" id="countries">
+		<form class="form-horizontal" role="form" method="post" action="/admin/shop">
+			<div id="admin_countries_editor">
+				<?=$content['countries'];?>
+				<input type="hidden" value="1" name="flag">				
+			</div>
+			<div class="admin-countries-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3"><button class="btn btn-info">Добавить</button></div>
+			<div class="admin-countries-save col-xs-2 col-sm-2 col-md-2 col-lg-2"><button class="btn btn-success" type="submit">Сохранить</button></div>
+		</form>
+	</div>
+	<div class="tab-pane" id="cities"><?=$content['cities'];?></div>
+	<div class="tab-pane" id="shipment"><?=$content['shipment'];?></div>
+	<div class="tab-pane" id="payment"><?=$content['payment'];?></div>
+</div>
+
+<script>
+/*$(function()
+	{
+	$('#admin_countries_editor').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});*/
+
+$('#nav-tabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$(document).on('click','.glyphicon.glyphicon-edit',function()
+	{
+	var $input=$(this).parent().parent().children().children('input.form-control');
+	$input.prop('disabled',!$input.prop('disabled'));
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	var $row=$(this).parent().parent();
+	if($row.children("input[name*='new']").val()=='1')
+		{
+		$row.remove();	
+		}
+	else
+		{
+		$row.hide();
+		$row.children("input[name*='delete']").val(1);	
+		}
+	});
+
+$(document).on('click','div.admin-countries-add>button',function()
+	{
+	var new_position=0;
+	$(this).parent().parent().children('#admin_countries_editor').children('.admin_countries_item').each(function()
+		{
+		var position=parseInt($(this).children("input[name*='visible']").attr('name'));
+		new_position=(position>=new_position)?(position+1):new_position;
+		});	
+	var content='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[name]" value="Country" placeholder="Country"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[phone_code]" value="+##" required="required" placeholder="Phone code"></div><input type="hidden" name="'+new_position+'[visible]" value="1"><input type="hidden" name="'+new_position+'[new]" value="1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$(this).parent().parent().children('#admin_countries_editor').append(content);
+	return false;
+	});
+
+$(document).on('click','div.admin-countries-save>button',function()
+	{
+	$(this).parent().parent().children('#admin_countries_editor').children('.admin_countries_item').each(function(position)
+		{
+		$(this).children().children('.form-control').prop('disabled',false);
+		});
+	});
+</script>

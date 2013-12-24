@@ -27,11 +27,11 @@ class Pattern_Controller
 	function __construct()
 		{
 //---create name for model and view
-		$mname=str_replace('Controller','Model',get_class($this));
-		//$vname=str_replace('Controller','View',get_class($this));
+		$this->mname=str_replace('Controller','Model',get_class($this));
 //---and call they
-		$this->model=new $mname;
+		$this->model=new Model;
 		$this->view=new View;
+		//$this->modelinstance=new Model;
 		}
 
 

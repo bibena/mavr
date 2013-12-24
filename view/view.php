@@ -81,7 +81,7 @@ class View
 	function Menu()
 		{
 		$db=Db::Get_Instance();
-		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `visible`='1' ORDER BY `sort`;";
+		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `is_visible`='1' ORDER BY `sort`;";
 		$request=$db->prepare($sql);
 		$request->execute();
 		$menus=$request->fetchAll();

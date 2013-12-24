@@ -26,28 +26,35 @@ class Pattern_Model
 --------------------------------------------------------------------------*/
 	protected function __construct()
 		{
-		$this->session=new Session;
-//read the name of template from config
-		$config=Config::Get_Instance()->Get_Config();
-		$this->dir=ROOT_DIR.DS.'template'.DS.$config['template'].DS;
-//scan css and js dir of template
-		$this->css=scandir($this->dir.'css');
-		$this->js=scandir($this->dir.'js');
- //include all css and js file from theese dir
-		$this->assets=array();
-		foreach($this->js as $js)
+		try
 			{
-			if(!is_dir($this->dir.$js))
+			$this->session=new Session;
+	//read the name of template from config
+			$config=Config::Get_Instance()->Get_Config();
+			$this->dir=ROOT_DIR.DS.'template'.DS.$config['template'].DS;
+	//scan css and js dir of template
+			$this->css=scandir($this->dir.'css');
+			$this->js=scandir($this->dir.'js');
+	 //include all css and js file from theese dir
+			$this->assets=array();
+			foreach($this->js as $js)
 				{
-				$this->assets[]='<script src="'.SUB_DIR.'template'.DS.$config['template'].DS.'js'.DS.$js.'"></script>';
+				if(!is_dir($this->dir.$js))
+					{
+					$this->assets[]='<script src="'.SUB_DIR.'template'.DS.$config['template'].DS.'js'.DS.$js.'"></script>';
+					}
+				}
+			foreach($this->css as $css)
+				{
+				if(!is_dir($this->dir.$css))
+					{
+					$this->assets[]='<link rel="stylesheet" href="'.SUB_DIR.'template'.DS.$config['template'].DS.'css'.DS.$css.'" />';
+					}
 				}
 			}
-		foreach($this->css as $css)
+		catch(Error $e)
 			{
-			if(!is_dir($this->dir.$css))
-				{
-				$this->assets[]='<link rel="stylesheet" href="'.SUB_DIR.'template'.DS.$config['template'].DS.'css'.DS.$css.'" />';
-				}
+			$e->Error();
 			}
 		}
 

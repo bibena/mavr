@@ -28,10 +28,6 @@ class Page_Controller extends Pattern_Controller
 		{
 		parent::__construct();
 		}
-	function Show()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
 
 
 
@@ -45,14 +41,16 @@ class Page_Controller extends Pattern_Controller
 	function Error($number='404',$error_message='')
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Error($number,$error_message);
+		$model_answer=$this->model->Error($this->mname,array($number,$error_message));
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
 	function Main()
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Main();
+		$model_answer=$this->model->Main($this->mname);
+		//var_dump(new Model($this->mname,'Main'));
+		//$model_answer=$this->model->Main();
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}

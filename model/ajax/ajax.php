@@ -24,14 +24,11 @@ class Ajax_Model
 /*-------------------------------------------------------------------------
 * Constructor of User_Model
 --------------------------------------------------------------------------*/
-	function Addmenuitem()
-		{
-		echo'22';
-		}
-	function Link($link)
+	function Link(array $args)
 		{
 		try
 			{
+			list($link)=$args;
 			$link=trim($link,'/');
 			$link_array=explode('/',$link);
 			switch(count($link_array))
@@ -56,15 +53,15 @@ class Ajax_Model
 			$cname=ucfirst($model).'_Model';
 			$mname=implode('_',array_map('ucfirst',explode('_',$method)));
 //---create example of the requested class
-			$class=new $cname;
+			$class=new Model;
 //---call requested method in class
 			if(isset($argument))
 				{
-				$content=$class->$mname($argument);
+				$content=$class->$mname($cname,array($argument));
 				}
 			else
 				{
-				$content=$class->$mname();
+				$content=$class->$mname($cname);
 				}
 			}
 		catch (Error $e)

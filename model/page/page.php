@@ -43,10 +43,11 @@ class Page_Model extends Pattern_Model
 *
 * Display error page.
 --------------------------------------------------------------------------*/
-	function Error($number,$error_message='')
+	function Error(array $args)
 		{
 		try
 			{
+			list($number,$error_message)=$args;
 			if(is_numeric($number))
 				{
 //include css and js

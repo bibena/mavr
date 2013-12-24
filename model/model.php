@@ -15,20 +15,39 @@ catch (Flag_Error $e)
 class Model
 	{
 	function __construct()
+		{}
+
+
+
+	function __call($mname,$args)
 		{
-/*		if(isset($_GET['controller']) && isset($_GET['method']) && preg_match("/^[a-z]+$/",$_GET['controller']) && preg_match("/^[a-z_]+$/",$_GET['method']))
+		try
 			{
-			$controller=$_GET['controller'];
-			$method=$_GET['method'];
+			if(isset($args[0]))
+				{
+				$cname=$args[0];
+				}
+			else
+				{
+				throw new Error('Class name wasn`t sent');
+				}
+//---create example of the requested class
+			$class=new $cname;
+//---call requested method in class
+			if(isset($args[1]))
+				{
+				Acl::Access($cname,$mname,$args[1]);
+				return $class->$mname($args[1]);
+				}
+			else
+				{
+				Acl::Access($cname,$mname);
+				return $class->$mname();
+				}
 			}
-		else
+		catch(Error $e)
 			{
-			$controller='page';
-			$method='main';
+			$e->Error();
 			}
-		$cname=ucfirst($controller).'_Controller';
-		$mname=implode('_',array_map('ucfirst',explode('_',$method)));
-		$class=new $cname;
-		$class->$mname();*/
-		}	
+		}
 	}

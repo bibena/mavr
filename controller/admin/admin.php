@@ -28,10 +28,6 @@ class Admin_Controller extends Pattern_Controller
 		{
 		parent::__construct();
 		}
-	function Show()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
 
 
 
@@ -45,26 +41,29 @@ class Admin_Controller extends Pattern_Controller
 	function Config()
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Config();
+		$model_answer=$this->model->Config($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
-	function Main()
+/*	function Main()
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Main();
+		$model_answer=$this->model->Main($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
-		}
+		}*/
 	function Menu()
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Menu();
+		$model_answer=$this->model->Menu($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
-	function Update()
+	function Shop()
 		{
-		echo "Запущен метод ".__METHOD__;
+//---call User_Model::Registration();
+		$model_answer=$this->model->Shop($this->mname);
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
 		}
 	}

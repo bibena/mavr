@@ -44,23 +44,9 @@ class Admin_Model extends Pattern_Model
 		try
 			{
 			$content['assets']=implode("\n",$this->assets)."\n";
-//			if(IS_ADMIN)
 				{
 				$content['content']=$this->view->Content_Create(__METHOD__,$include);
 				}
-/*			else
-				{
-				if(IS_LOGIN)
-					{
-					//Access deny
-					$content['error']='<div class="bs-callout bs-callout-danger"><h4>Access deny</h4></div>';
-					}
-				else
-					{
-					//Need to login
-					$content['error']='<div class="bs-callout bs-callout-danger"><h4>Need to login</h4></div>';
-					}
-				}*/
 			}
 		catch (Error $e)
 			{
@@ -140,9 +126,23 @@ class Admin_Model extends Pattern_Model
 		}
 
 
-
-	function Update()
+	function Shop()
 		{
-		echo "Запущен метод ".__METHOD__;
+		try
+			{
+			if(count($this->form)>0)
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Shop($this->form));
+				}
+			else
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Shop());
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($include);
 		}
 	}

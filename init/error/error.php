@@ -51,6 +51,8 @@ class Error extends Exception
 				if($this->config['show_error'])
 					{
 					$page->Error($number,nl2br($error));
+					$session=new Session;
+					$session->Last_Error(nl2br($error));
 					}
 				else
 					{

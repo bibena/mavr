@@ -150,9 +150,44 @@ class Session
 
 
 /*-------------------------------------------------------------------------
+ * Add or return last error
+ *
+ * Session::Last_Error()
+ *
+ * Return: last error message
+--------------------------------------------------------------------------*/
+	public function Last_Error($message='')
+		{
+		try
+			{
+			if($message=='')
+				{
+				if(isset($_SESSION['last_error']))
+					{
+					return $_SESSION['last_error'];
+					}
+				else
+					{
+					throw new Error('Error message doesn`t exist');
+					}
+				}
+			else
+				{
+				$_SESSION['last_error']=$message;
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		}
+
+
+
+/*-------------------------------------------------------------------------
  * Delete session or section
  *
- * Session::Unset()
+ * Session::Erase()
  *
  * Return: nothing
 --------------------------------------------------------------------------*/

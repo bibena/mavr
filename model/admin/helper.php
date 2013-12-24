@@ -251,10 +251,10 @@ class Admin_Helper
 			$edit=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-edit')));
 			$link=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[path]','type'=>'text','value'=>$menu['link'],'disabled'=>'disabled','placeholder'=>'Path')));
 			$title=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[title]','type'=>'text','value'=>$menu['title'],'disabled'=>'disabled','required'=>'required','placeholder'=>'Title')));
-			$hvisible=Html::Tag('input',array('name'=>$menu['sort'].'[visible]','type'=>'hidden','value'=>$menu['visible']));
+			$hvisible=Html::Tag('input',array('name'=>$menu['sort'].'[visible]','type'=>'hidden','value'=>$menu['is_visible']));
 			$id=Html::Tag('input',array('name'=>$menu['sort'].'[id]','type'=>'hidden','value'=>$menu['id']));
 			$delete=Html::Tag('input',array('name'=>$menu['sort'].'[delete]','type'=>'hidden','value'=>0));
-			if($menu['visible'])
+			if($menu['is_visible'])
 				{
 				$visible=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-eye-open')));
 				$content.=Html::Tag('div',array('class'=>'col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item'),$link.$title.$hvisible.$id.$delete.$visible.$edit.$trash);
@@ -269,10 +269,11 @@ class Admin_Helper
 		}
 	function Check_Menu($form)
 		{
-		try {
+		try 
+			{
 			$db=Db::Get_Instance();
-			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`visible`=:visible WHERE `id`=:id;";
-			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`visible`) VALUES (:sort,:link,:title,:visible);";
+			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`is_visible`=:visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`is_visible`) VALUES (:sort,:link,:title,:visible);";
 			$delete_sql="DELETE FROM `menus` WHERE `id`=:id;";
 			$db->beginTransaction();
 			foreach($form as $sort=>$value)
@@ -297,7 +298,7 @@ class Admin_Helper
 						{
 						$request=$db->prepare($insert_sql);
 						}
-					$request->execute($form_data);		
+					$request->execute($form_data);
 					}
 				}
 			$db->commit();
@@ -307,6 +308,138 @@ class Admin_Helper
 			$db->rollBack();
 			$e->Error();
 			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
 		return $this->Display_Menu();
+		}
+	public function Get_Countries()
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			$sql="SELECT * FROM `countries`;";
+			$request=$db->prepare($sql);
+			$request->execute();
+			$countries=$request->fetchAll();
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $countries;
+		}
+	public function Display_Countries()
+		{
+		try
+			{
+			$countries_content='';
+			foreach($this->Get_Countries() as $country)
+				{
+				$countries_content.='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item';
+				if(!$country["is_visible"])
+					{
+					$countries_content.='" style="opacity: 0.5;';
+					}
+				$countries_content.='">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="'.$country["name"].'" name="'.$country["id"].'[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="'.$country["phone_code"].'" name="'.$country["id"].'[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="'.$country["is_visible"].'" name="'.$country["id"].'[visible]">
+				<input type="hidden" value="0" name="'.$country["id"].'[new]">
+				<input type="hidden" value="0" name="'.$country["id"].'[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-';
+				if($country["is_visible"])
+					{
+					$countries_content.='open';
+					}
+				else
+					{
+					$countries_content.='close';
+					}
+				$countries_content.='"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>';
+				}
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $countries_content;
+		}
+	public function Display_Shop()
+		{
+		try
+			{
+			$shop=array('countries'=>$this->Display_Countries(),'cities'=>'','shipment'=>'','payment'=>'');
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $shop;
+		}
+	function Check_Shop($form)
+		{
+		try 
+			{
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `countries` SET `name`=:name,`phone_code`=:phone_code,`is_visible`=:visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `countries` (`name`,`phone_code`,`is_visible`) VALUES (:name,:phone_code,:visible);";
+			$delete_sql="DELETE FROM `countries` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $id=>$value)
+				{
+				if(is_numeric($id))
+					{
+					$form_data=array(':name'=>trim(SUB_DIR.$value['name'],'/'),':phone_code'=>$value['phone_code'],':visible'=>$value['visible']);
+					if($value['new'])
+						{
+						$request=$db->prepare($insert_sql);
+						}
+					else
+						{
+						if($value['delete'])
+							{
+							$request=$db->prepare($delete_sql);
+							$form_data=array(':id'=>$id);
+							}
+						else
+							{
+							$request=$db->prepare($update_sql);
+							$form_data[':id']=$id;
+							}
+						}
+					var_dump($request->execute($form_data));
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $this->Display_Shop();
 		}
 	}
