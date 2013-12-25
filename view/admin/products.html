@@ -1,0 +1,35 @@
+<div class="admin-products">
+	<form class="form-horizontal" role="form" method="post" action="/admin/products">
+		<div id="admin_products_editor">
+			<?=$content;?>
+			<input type="hidden" value="1" name="flag">				
+		</div>
+		<div class="admin-products-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3"><a href="<?= SUB_DIR; ?>admin/product/-1" class="btn btn-info">Добавить</a></div>
+		<div class="admin-products-save col-xs-2 col-sm-2 col-md-2 col-lg-2"><button class="btn btn-success" type="submit">Сохранить</button></div>
+	</form>
+</div>
+
+<script>
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	var $row=$(this).parent().parent();
+	$row.hide();
+	$row.children("input[name*='delete']").val(1);
+	});
+</script>

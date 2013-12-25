@@ -45,13 +45,13 @@ class Admin_Controller extends Pattern_Controller
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
-/*	function Main()
+	function Products($product_id='')
 		{
 //---call User_Model::Registration();
-		$model_answer=$this->model->Main($this->mname);
+		$model_answer=$this->model->Products($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
-		}*/
+		}
 	function Menu()
 		{
 //---call User_Model::Registration();

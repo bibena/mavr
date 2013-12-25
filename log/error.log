@@ -1,0 +1,132 @@
+Wed, 25 Dec 2013 13:36:34 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 2 in file /media/DISK_A1/web/www/mavr/view/admin/products.html on line 11 - Illegal string offset 'countries'
+	Trace:
+	a:12:{i:0;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";s:4:"line";i:11;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:33:"Illegal string offset 'countries'";i:2;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";i:3;i:11;i:4;a:4:{s:6:"method";s:21:"Admin_Model::Products";s:7:"content";s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";s:6:"folder";s:5:"Admin";s:4:"file";s:8:"Products";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:161;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:21:"Admin_Model::Products";i:1;s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";}}i:3;a:6:{s:4:"file";s:43:"/media/DISK_A1/web/www/mavr/model/model.php";s:4:"line";i:45;s:8:"function";s:8:"Products";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:8:"Products";i:1;a:1:{i:0;s:11:"Admin_Model";}}}i:5;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:8:"Products";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"Admin_Model";}}i:6;a:6:{s:4:"file";s:43:"/media/DISK_A1/web/www/mavr/model/model.php";s:4:"line";i:40;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:1:{i:0;s:15:"/admin/products";}}}i:7;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:4:"Link";i:1;a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:15:"/admin/products";}}}}i:8;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:4:"Link";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:15:"/admin/products";}}}i:9;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:10;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:11;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 25 Dec 2013 13:37:45 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 2 in file /media/DISK_A1/web/www/mavr/view/admin/products.html on line 18 - Illegal string offset 'cities'
+	Trace:
+	a:12:{i:0;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";s:4:"line";i:18;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:30:"Illegal string offset 'cities'";i:2;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";i:3;i:18;i:4;a:4:{s:6:"method";s:21:"Admin_Model::Products";s:7:"content";s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";s:6:"folder";s:5:"Admin";s:4:"file";s:8:"Products";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:161;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:21:"Admin_Model::Products";i:1;s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";}}i:3;a:6:{s:4:"file";s:43:"/media/DISK_A1/web/www/mavr/model/model.php";s:4:"line";i:45;s:8:"function";s:8:"Products";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:8:"Products";i:1;a:1:{i:0;s:11:"Admin_Model";}}}i:5;a:6:{s:4:"file";s:47:"/media/DISK_A1/web/www/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:8:"Products";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"Admin_Model";}}i:6;a:6:{s:4:"file";s:43:"/media/DISK_A1/web/www/mavr/model/model.php";s:4:"line";i:40;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:1:{i:0;s:15:"/admin/products";}}}i:7;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:4:"Link";i:1;a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:15:"/admin/products";}}}}i:8;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:4:"Link";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:15:"/admin/products";}}}i:9;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:10;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:11;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Wed, 25 Dec 2013 13:38:41 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/view/admin/products.html on line 18 - syntax error, unexpected '?>'
+Wed, 25 Dec 2013 16:52:36 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/controller/admin/admin.php on line 54 - syntax error, unexpected '*', expecting function (T_FUNCTION)
+Wed, 25 Dec 2013 23:43:24 +0200
+	Fatal Error: 4 in file /media/DISK_A1/web/www/mavr/model/admin/helper.php on line 474 - syntax error, unexpected '}'
+Thu, 26 Dec 2013 00:30:10 +0200
+	Error: 0 in file /media/DISK_A1/web/www/mavr/init/error/php/php.php on line 42 - Error: 8 in file /media/DISK_A1/web/www/mavr/view/admin/products.html on line 4 - Array to string conversion
+	Trace:
+	a:9:{i:0;a:6:{s:4:"file";s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";s:4:"line";i:4;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:26:"Array to string conversion";i:2;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";i:3;i:4;i:4;a:4:{s:6:"method";s:21:"Admin_Model::Products";s:7:"content";a:4:{s:9:"countries";s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";s:6:"cities";s:0:"";s:8:"shipment";s:0:"";s:7:"payment";s:0:"";}s:6:"folder";s:5:"Admin";s:4:"file";s:8:"Products";}}}i:1;a:4:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:52:"/media/DISK_A1/web/www/mavr/view/admin/products.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:49:"/media/DISK_A1/web/www/mavr/model/admin/admin.php";s:4:"line";i:157;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:21:"Admin_Model::Products";i:1;a:4:{s:9:"countries";s:1035:"<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Name" disabled="disabled" value="Украина" name="1[name]" class="form-control">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="+38" name="1[phone_code]" class="form-control">
+				</div>
+				<input type="hidden" value="1" name="1[visible]">
+				<input type="hidden" value="0" name="1[new]">
+				<input type="hidden" value="0" name="1[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-open"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-edit"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>";s:6:"cities";s:0:"";s:8:"shipment";s:0:"";s:7:"payment";s:0:"";}}}i:3;a:6:{s:4:"file";s:43:"/media/DISK_A1/web/www/mavr/model/model.php";s:4:"line";i:45;s:8:"function";s:8:"Products";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:51;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:8:"Products";i:1;a:1:{i:0;s:11:"Admin_Model";}}}i:5;a:6:{s:4:"file";s:54:"/media/DISK_A1/web/www/mavr/controller/admin/admin.php";s:4:"line";i:51;s:8:"function";s:8:"Products";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"Admin_Model";}}i:6;a:6:{s:4:"file";s:53:"/media/DISK_A1/web/www/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:8:"Products";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:7;a:6:{s:4:"file";s:41:"/media/DISK_A1/web/www/mavr/init/init.php";s:4:"line";i:56;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:8;a:4:{s:4:"file";s:37:"/media/DISK_A1/web/www/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:41:"/media/DISK_A1/web/www/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}

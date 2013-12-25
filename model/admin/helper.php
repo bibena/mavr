@@ -426,7 +426,7 @@ class Admin_Helper
 							$form_data[':id']=$id;
 							}
 						}
-					var_dump($request->execute($form_data));
+					$request->execute($form_data);
 					}
 				}
 			$db->commit();
@@ -441,5 +441,120 @@ class Admin_Helper
 			$e->Error();
 			}
 		return $this->Display_Shop();
+		}
+
+
+	public function Get_Products()
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			$sql="SELECT `p`.`id`,`p`.`description`,`p`.`name`,`p`.`is_visible`,`i`.`alias` FROM `products` AS 'p' LEFT JOIN `products_images` as 'pi' ON `p`.`id`=`pi`.`product_id` LEFT JOIN `images` as 'i' ON `pi`.`image_id`=`i`.`id`  GROUP BY `p`.`id` HAVING min('p'.'id');";
+			$request=$db->prepare($sql);
+			$request->execute();
+			$products=$request->fetchAll();
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $products;
+		}
+
+	
+	
+	public function Display_Products()
+		{
+		try
+			{
+			$products_content='';
+			foreach($this->Get_Products() as $product)
+				{
+				$product["alias"].=($product["alias"]=='')?'1.png':'';
+				$products_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_products_item';
+				if(!$product["is_visible"])
+					{
+					$products_content.='" style="opacity: 0.5;';
+					}
+				$products_content.='">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="'.SUB_DIR.'admin/product'.DS.$product["id"].'"><img style="max-width:100%;max-height:140px" src="'.SUB_DIR.'image'.DS.$product["alias"].'"></a>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="'.SUB_DIR.'admin/product'.DS.$product["id"].'">'.$product["name"].'</a>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="line-height:inherit;text-align:left;">
+					<span>'.mb_substr(strip_tags($product["description"]),0,200,'UTF-8').'&hellip;</span>
+				</div>
+				<input type="hidden" value="'.$product["is_visible"].'" name="'.$product["id"].'[visible]">
+				<input type="hidden" value="0" name="'.$product["id"].'[delete]">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-eye-';
+				if($product["is_visible"])
+					{
+					$products_content.='open';
+					}
+				else
+					{
+					$products_content.='close';
+					}
+				$products_content.='"></span>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<span class="glyphicon glyphicon-trash"></span>
+				</div>
+			</div>';
+				}
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $products_content;
+		}
+
+
+
+	function Check_Products($form)
+		{
+		try 
+			{
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `products` SET `is_visible`=:visible WHERE `id`=:id;";
+			$delete_sql="DELETE FROM `products` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $id=>$value)
+				{
+				if(is_numeric($id))
+					{
+					if($value['delete'])
+						{
+						$request=$db->prepare($delete_sql);
+						$form_data=array(':id'=>$id);
+						}
+					else
+						{
+						$request=$db->prepare($update_sql);
+						$form_data=array(':visible'=>$value['visible'],':id'=>$id);
+						}
+					$request->execute($form_data);
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $this->Display_Products();
 		}
 	}

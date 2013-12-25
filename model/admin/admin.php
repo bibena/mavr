@@ -145,4 +145,26 @@ class Admin_Model extends Pattern_Model
 			}
 		return $this->Main($include);
 		}
+
+
+
+	function Products()
+		{
+		try
+			{
+			if(count($this->form)>0)
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Products($this->form));
+				}
+			else
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Products());
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($include);
+		}
 	}

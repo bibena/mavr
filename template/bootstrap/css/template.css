@@ -18,3 +18,6 @@ nav a.link.btn{margin:8px 0;}
 #admin_countries_editor div div{height: 35px;line-height: 35px;text-align: center;}
 .admin_countries_item{margin-bottom:15px;height: 37px;}
 .tab-pane{margin-top:10px;}
+.glyphicon.glyphicon-eye-open,.glyphicon.glyphicon-eye-close,.glyphicon.glyphicon-edit,.glyphicon.glyphicon-trash{cursor:pointer}
+.admin_products_item{margin-bottom:15px;height: 140px;}
+#admin_products_editor div div{height: 140px;line-height: 140px;text-align: center;}
