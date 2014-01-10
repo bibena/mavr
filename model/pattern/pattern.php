@@ -82,6 +82,39 @@ class Pattern_Model
 				if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['flag']) && $_POST['flag'])
 					{
 					$_SESSION['form'][$_SERVER['REQUEST_URI']]=$_POST;
+//---upload files to /temp dir
+					foreach($_FILES as $files)
+						{
+						if($files['tmp_name'])
+							{
+							if(is_array($files["name"]))
+								{
+								foreach ($files["error"] as $key => $error)
+									{
+									if ($error == UPLOAD_ERR_OK) 
+										{
+										move_uploaded_file($files['tmp_name'][$key],ROOT_DIR.DS.'temp'.DS.call_user_func('end',explode('/',$files['tmp_name'][$key])));
+										}
+									else
+										{
+										//throw new Error('Error during uploadding group of files.');
+										}
+									}
+								}
+							else
+								{
+								if ($files["error"] == UPLOAD_ERR_OK) 
+									{
+									move_uploaded_file($files['tmp_name'],ROOT_DIR.DS.'temp'.DS.call_user_func('end',explode('/',$files['tmp_name'])));
+									}
+								else
+									{
+									//throw new Error('Error during uploadding file.');
+									}
+								}
+							}
+						}
+					$_SESSION['form'][$_SERVER['REQUEST_URI']]['postfiles']=$_FILES;
 					Redirect::Page('.');
 					}
 				if($_SERVER['REQUEST_METHOD']==='GET' && isset($_SESSION['form'][$_SERVER['REQUEST_URI']]))

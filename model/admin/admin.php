@@ -167,4 +167,56 @@ class Admin_Model extends Pattern_Model
 			}
 		return $this->Main($include);
 		}
+
+
+
+	function Product($args)
+		{
+		try
+			{
+			list($product_id)=$args;
+			if($product_id>0)
+				{
+				if(count($this->form)>0)
+					{
+					$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Product($this->form));
+					}
+				else
+					{
+					$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Product($product_id));
+					}
+				}
+			else
+				{
+				$model=new Model;
+				return $model->Add_Product(get_class($this));
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($include);
+		}
+
+
+	function Add_Product()
+		{
+		try
+			{
+			if(count($this->form)>0)
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Products($this->form));
+				}
+			else
+				{
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Products());
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($include);
+		}
 	}
