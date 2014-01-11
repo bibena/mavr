@@ -35,41 +35,38 @@ class Product_Model extends Pattern_Model
 
 
 
-	function Show($id)
+	function Show($param)
 		{
 		try
 			{
+			$product_id=$param[0];
 			$content['assets']=implode("\n",$this->assets)."\n";
-			/*if(count($this->form)>0)
+			$db=Db::Get_Instance();
+			$sql="SELECT `id`,`manufacturer_id`,`name`,`description`,`price`,`amount` FROM `products` WHERE `id`=:id AND `is_visible`='1';";
+			$request=$db->prepare($sql);
+			$request->execute(array(':id'=>$product_id));
+			$product=$request->fetchAll(PDO::FETCH_ASSOC);
+			if($product)
 				{
-				$error=$this->helper->Check_For_Errors($this->form);
-				if($error)
+				$product=$product[0];
+				$sql="SELECT `i`.`path` FROM `products_images` as 'pi' LEFT JOIN `images` as 'i' ON `pi`.`image_id`=`i`.`id` WHERE `pi`.`product_id`=:id AND `pi`.`is_visible`='1' ORDER BY `pi`.`sort`;";
+				$request=$db->prepare($sql);
+				$request->execute(array(':id'=>$product_id));
+				$images=$request->fetchAll(PDO::FETCH_ASSOC);
+				if($images)
 					{
-//else print the form with error message
-					$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Config($this->form));
+					$product['image']=DS.'image'.DS.'products'.DS.$product_id.DS.$images[0]['path'];
 					}
 				else
 					{
-					$old_config=explode("\n",file_get_contents(ROOT_DIR.DS.'config'));
-					foreach($old_config as $old_string)
-						{
-						$params=explode(' = ',$old_string);
-						if(isset($this->form[$params[0]]))
-							{
-							$new_string[]=implode(' = ',array($params[0],$this->form[$params[0]]));
-							}
-						else
-							{
-							$new_string[]=$old_string;
-							}
-						}
-					file_put_contents(ROOT_DIR.DS.'config',implode("\n",$new_string));
-					$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Config());
+					$product['image']=DS.'image'.DS.'no_image.png';
 					}
+				$content['content']=$this->view->Content_Create(__METHOD__,$product);
 				}
-			else*/
-				$content['content']=$this->view->Content_Create(__METHOD__,'Description'.$id[0]);
-				
+			else
+				{
+				throw new Error('Undefined product');
+				}
 			}
 		catch (Error $e)
 			{

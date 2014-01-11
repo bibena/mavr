@@ -587,7 +587,7 @@ class Admin_Helper
 			$sql="SELECT `c`.`id` FROM `products_categories` AS 'pc' LEFT JOIN `categories` as 'c' ON `c`.`id`=`pc`.`category_id` WHERE `pc`.`product_id`=:id;";
 			$request=$db->prepare($sql);
 			$request->execute($request_array);
-			$product['categories']=$request->fetchAll(PDO::FETCH_ASSOC);;
+			$product['categories']=$request->fetchAll(PDO::FETCH_ASSOC);
 			
 			$sql="SELECT * FROM `categories`;";
 			$request=$db->prepare($sql);
