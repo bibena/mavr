@@ -49,7 +49,6 @@ class Page_Controller extends Pattern_Controller
 		{
 //---call User_Model::Registration();
 		$model_answer=$this->model->Main($this->mname);
-		//var_dump(new Model($this->mname,'Main'));
 		//$model_answer=$this->model->Main();
 //---call User_View::Registration();
 		$this->view->Display($model_answer);

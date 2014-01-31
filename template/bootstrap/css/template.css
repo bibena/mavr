@@ -32,3 +32,6 @@ nav a.link.btn{margin:8px 0;}
 #admin_countries_editor div div{height: 35px;line-height: 35px;text-align: center;}
 #admin_products_editor div div{height: 140px;line-height: 140px;text-align: center;overflow:hidden;}
 #images div div{height: 140px;line-height: 140px;text-align: center;}
+
+#product_content{margin-top:10px;}
+#products_content{margin-top:10px;}

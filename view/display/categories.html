@@ -1,0 +1,38 @@
+<div class="row" id="categories_content">
+<?php if($content["advertisment"]):?>
+	<div id="advertisment" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+	Тут может быть Ваша реклама.
+	</div>
+	<div id="display-categories" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+<?php else:?>
+	<div id="display-categories" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<?php endif;?>	
+		<?=$content["categories"];?>			
+	</div>
+</div>
+<script>
+/*
+$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(0);
+	$editor.css('opacity',0.5);
+	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+	{
+	var $editor=$(this).parent().parent();
+	$editor.children("input[name*='visible']").val(1);
+	$editor.css('opacity',1);
+	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+	});
+
+$(document).on('click','.glyphicon.glyphicon-trash',function()
+	{
+	var $row=$(this).parent().parent();
+	$row.hide();
+	$row.children("input[name*='delete']").val(1);
+	});
+*/
+</script>

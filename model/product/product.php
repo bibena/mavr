@@ -42,14 +42,14 @@ class Product_Model extends Pattern_Model
 			$product_id=$param[0];
 			$content['assets']=implode("\n",$this->assets)."\n";
 			$db=Db::Get_Instance();
-			$sql="SELECT `id`,`manufacturer_id`,`name`,`description`,`price`,`amount` FROM `products` WHERE `id`=:id AND `is_visible`='1';";
+			$sql="SELECT `id`,`manufacturer_id`,`product_name`,`description`,`price`,`amount` FROM `products` WHERE `id`=:id AND `is_visible`='1';";
 			$request=$db->prepare($sql);
 			$request->execute(array(':id'=>$product_id));
 			$product=$request->fetchAll(PDO::FETCH_ASSOC);
 			if($product)
 				{
 				$product=$product[0];
-				$sql="SELECT `i`.`path` FROM `products_images` as 'pi' LEFT JOIN `images` as 'i' ON `pi`.`image_id`=`i`.`id` WHERE `pi`.`product_id`=:id AND `pi`.`is_visible`='1' ORDER BY `pi`.`sort`;";
+				$sql="SELECT `i`.`path` FROM `products_images` as `pi` LEFT JOIN `images` as `i` ON `pi`.`image_id`=`i`.`id` WHERE `pi`.`product_id`=:id AND `pi`.`is_visible`='1' ORDER BY `pi`.`sort`;";
 				$request=$db->prepare($sql);
 				$request->execute(array(':id'=>$product_id));
 				$images=$request->fetchAll(PDO::FETCH_ASSOC);

@@ -33,7 +33,7 @@ class Controller
 				{
 				$controller=$_GET['controller'];
 				$method=$_GET['method'];
-				if(isset($_GET['argument']) && preg_match("/^[0-9]+$/",$_GET['argument']))
+				if(isset($_GET['argument']) && preg_match("/^-?[0-9]+$/",$_GET['argument']))
 					{
 					$argument=$_GET['argument'];
 					}

@@ -1,5 +1,4 @@
 <?php
-
 /*-------------------------------------------------------------------------
  * Create autoloader. You don`t need include file with class.
  * You just need give correct name to class and put it in correct path.

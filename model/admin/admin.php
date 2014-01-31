@@ -32,10 +32,6 @@ class Admin_Model extends Pattern_Model
 		require_once('helper.php');
 		$this->helper=new Admin_Helper;
 		}
-	function Show()
-		{
-		echo "Method ".__METHOD__."was started";
-		}
 
 
 
@@ -44,9 +40,7 @@ class Admin_Model extends Pattern_Model
 		try
 			{
 			$content['assets']=implode("\n",$this->assets)."\n";
-				{
-				$content['content']=$this->view->Content_Create(__METHOD__,$include);
-				}
+			$content['content']=$this->view->Content_Create(__METHOD__,$include);
 			}
 		catch (Error $e)
 			{
@@ -70,7 +64,6 @@ class Admin_Model extends Pattern_Model
 				$error=$this->helper->Check_For_Errors($this->form);
 				if($error)
 					{
-//else print the form with error message
 					$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Config($this->form));
 					}
 				else
@@ -111,11 +104,11 @@ class Admin_Model extends Pattern_Model
 			{
 			if(count($this->form)>0)
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Menu($this->form));
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Admin_Menu_Save($this->form));
 				}
 			else
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Menu());
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Admin_Menu_Display());
 				}
 			}
 		catch (Error $e)
@@ -132,11 +125,11 @@ class Admin_Model extends Pattern_Model
 			{
 			if(count($this->form)>0)
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Shop($this->form));
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Admin_Shop_Save($this->form));
 				}
 			else
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Shop());
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Admin_Shop_Display());
 				}
 			}
 		catch (Error $e)
@@ -188,8 +181,14 @@ class Admin_Model extends Pattern_Model
 				}
 			else
 				{
-				$model=new Model;
-				return $model->Add_Product(get_class($this));
+				if(count($this->form)>0)
+					{
+					$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_New_Product($this->form));
+					}
+				else
+					{
+					$include=$this->view->Content_Create(__METHOD__,$this->helper->Add_Product());
+					}
 				}
 			}
 		catch (Error $e)
@@ -200,17 +199,17 @@ class Admin_Model extends Pattern_Model
 		}
 
 
-	function Add_Product()
+/*	function Add_Product()
 		{
 		try
 			{
 			if(count($this->form)>0)
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_Products($this->form));
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Check_New_Products($this->form));
 				}
 			else
 				{
-				$include=$this->view->Content_Create(__METHOD__,$this->helper->Display_Products());
+				$include=$this->view->Content_Create(__METHOD__,$this->helper->Add_Product());
 				}
 			}
 		catch (Error $e)
@@ -218,5 +217,5 @@ class Admin_Model extends Pattern_Model
 			$e->Error();
 			}
 		return $this->Main($include);
-		}
+		}*/
 	}

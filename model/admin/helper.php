@@ -144,7 +144,7 @@ class Admin_Helper
 		{
 		$config=Config::Get_Instance();
 		$result=$config->Get_Config(true);
-		$yes_no_radio=array('show_error','full_error_info','log');
+		$yes_no_radio=array('show_error','full_error_info','log','advertisment');
 		$db_type_radio=array('dbtype');
 		$dir_radio=array('lang','template');
 		$non_required_text=array('subdir','dbpath');
@@ -184,6 +184,9 @@ class Admin_Helper
 			}
 		return $result;	
 		}
+
+
+
 	function Check_For_Errors($form)
 		{
 		$error=array();
@@ -237,61 +240,117 @@ class Admin_Helper
 			}
 		return $error;
 		}
-	function Display_Menu()
+
+
+
+/*****************************************************************************************************************
+ * 
+ * Functions to administrate menu
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return string content of admin panel for menu setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Menu_Display()
 		{
-		$db=Db::Get_Instance();
-		$sql="SELECT * FROM `menus` ORDER BY `sort`;";
-		$request=$db->prepare($sql);
-		$request->execute();
-		$menus=$request->fetchAll();
-		$content='';
-		foreach($menus as $menu)
+		try
 			{
-			$trash=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-trash')));
-			$edit=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-edit')));
-			$link=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[path]','type'=>'text','value'=>$menu['link'],'disabled'=>'disabled','placeholder'=>'Path')));
-			$title=Html::Tag('div',array('class'=>'col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group'),Html::Tag('input',array('class'=>'form-control','name'=>$menu['sort'].'[title]','type'=>'text','value'=>$menu['title'],'disabled'=>'disabled','required'=>'required','placeholder'=>'Title')));
-			$hvisible=Html::Tag('input',array('name'=>$menu['sort'].'[visible]','type'=>'hidden','value'=>$menu['is_visible']));
-			$id=Html::Tag('input',array('name'=>$menu['sort'].'[id]','type'=>'hidden','value'=>$menu['id']));
-			$delete=Html::Tag('input',array('name'=>$menu['sort'].'[delete]','type'=>'hidden','value'=>0));
-			if($menu['is_visible'])
+			$db=Db::Get_Instance();
+			$sql="SELECT * FROM `menus` ORDER BY `sort`;";
+			$query=$db->query($sql);
+			$menus=$query->fetchAll(PDO::FETCH_ASSOC);
+			$menu_content='';
+			if($menus && is_array($menus))
 				{
-				$visible=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-eye-open')));
-				$content.=Html::Tag('div',array('class'=>'col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item'),$link.$title.$hvisible.$id.$delete.$visible.$edit.$trash);
-				}
-			else
-				{
-				$visible=Html::Tag('div',array('class'=>'col-xs-1 col-sm-1 col-md-1 col-lg-1'),Html::Tag('span',array('class'=>'glyphicon glyphicon-eye-close')));
-				$content.=Html::Tag('div',array('class'=>'col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default ui-state-disabled admin_menu_item','style'=>'opacity: 0.5;'),$link.$title.$hvisible.$id.$delete.$visible.$edit.$trash);
-				}
+				foreach($menus as $menu)
+					{
+					if($menu["is_visible"])
+						{
+						$eye_status='open';
+						$opacity='1';
+						}
+					else
+						{
+						$eye_status='close';
+						$opacity='0.5';
+						}
+					$menu_content.='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item" style="opacity:'.$opacity.';">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+							<input class="form-control" name="'.$menu["sort"].'[path]" value="'.$menu["link"].'" disabled placeholder="Path">
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+							<input class="form-control" name="'.$menu["sort"].'[title]" value="'.$menu["title"].'" disabled required placeholder="Title">
+						</div>
+						<input name="'.$menu["sort"].'[is_visible]" type="hidden" value="'.$menu["is_visible"].'">
+						<input name="'.$menu["sort"].'[id]" type="hidden" value="'.$menu["id"].'">
+						<input name="'.$menu["sort"].'[delete]" type="hidden" value="0">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-eye-'.$eye_status.'"></span>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-edit"></span>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-trash"></span>
+						</div>
+					</div>';
+					}			
+				}		
 			}
-		return $content;
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $menu_content;
 		}
-	function Check_Menu($form)
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data fron admin panel
+ * @return string content of admin panel for menu setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Menu_Save($form)
 		{
 		try 
 			{
 			$db=Db::Get_Instance();
-			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`is_visible`=:visible WHERE `id`=:id;";
-			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`is_visible`) VALUES (:sort,:link,:title,:visible);";
+			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`is_visible`=:is_visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`is_visible`) VALUES (:sort,:link,:title,:is_visible);";
 			$delete_sql="DELETE FROM `menus` WHERE `id`=:id;";
 			$db->beginTransaction();
 			foreach($form as $sort=>$value)
 				{
 				if(is_numeric($sort))
 					{
-					$form_data=array(':sort'=>$sort,':link'=>trim(SUB_DIR.$value['path'],'/'),':title'=>$value['title'],':visible'=>$value['visible']);
-					if($value['id']>0 && $value['id']!=-1)
+					$form_data=array(":sort"=>$sort,
+									":link"=>trim(SUB_DIR.$value["path"],'/'),
+									":title"=>$value["title"],
+									":is_visible"=>$value["is_visible"]);
+					if($value["id"]>0 && $value["id"]!=-1)
 						{
-						if($value['delete'])
+						if($value["delete"])
 							{
 							$request=$db->prepare($delete_sql);
-							$form_data=array(':id'=>$value['id']);
+							$form_data=array(":id"=>$value["id"]);
 							}
 						else
 							{
 							$request=$db->prepare($update_sql);
-							$form_data[':id']=$value['id'];
+							$form_data[":id"]=$value["id"];
 							}
 						}
 					else
@@ -312,70 +371,86 @@ class Admin_Helper
 			{
 			$e->Error();
 			}
-		return $this->Display_Menu();
+		return $this->Admin_Menu_Display();
 		}
-	public function Get_Countries()
+
+
+
+/*****************************************************************************************************************
+ * 
+ * Functions to administrate shop setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return string content of admin panel for shop countries setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Countries_Display()
 		{
 		try
 			{
 			$db=Db::Get_Instance();
-			$sql="SELECT * FROM `countries`;";
-			$request=$db->prepare($sql);
-			$request->execute();
-			$countries=$request->fetchAll();
+			$sql="SELECT * FROM `countries` ORDER BY `id`;";
+			$query=$db->query($sql);
+			$countries=$query->fetchAll(PDO::FETCH_ASSOC);
+			$countries_content='';
+			if($countries && is_array($countries))
+				{
+				$countries_content.='<form class="form-horizontal" role="form" method="post" action="'.SUB_DIR.'admin/shop">
+				<div id="admin_shop_countries_list">';
+				foreach($countries as $country)
+					{
+					if($country["is_visible"])
+						{
+						$eye_status='open';
+						$opacity='1';
+						}
+					else
+						{
+						$eye_status='close';
+						$opacity='0.5';
+						}
+					$countries_content.='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_shop_countries_item style="opacity:'.$opacity.';">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+						<input type="text" placeholder="Name" disabled="disabled" value="'.$country["country_name"].'" name="'.$country["id"].'[country_name]" class="form-control">
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+						<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="'.$country["phone_code"].'" name="'.$country["id"].'[phone_code]" class="form-control">
+					</div>
+					<input type="hidden" value="'.$country["is_visible"].'" name="'.$country["id"].'[is_visible]">
+					<input type="hidden" value="'.$country["id"].'" name="'.$country["id"].'[id]">
+					<input type="hidden" value="0" name="'.$country["id"].'[delete]">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-'.$eye_status.'"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-edit"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>';
+					}
+				$countries_content.='<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="countries" name="tab">				
+				</div>
+				<div class="admin_shop_country_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+					<button class="btn btn-info">Добавить</button>
+				</div>
+				<div class="admin_shop_country_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+					<button class="btn btn-success" type="submit">Сохранить</button>
+				</div>
+			</form>';
+				}
 			}
 		catch (Db_Error $e) 
 			{
 			$e->Error();
-			}
-		catch (Error $e) 
-			{
-			$e->Error();
-			}
-		return $countries;
-		}
-	public function Display_Countries()
-		{
-		try
-			{
-			$countries_content='';
-			foreach($this->Get_Countries() as $country)
-				{
-				$countries_content.='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_countries_item';
-				if(!$country["is_visible"])
-					{
-					$countries_content.='" style="opacity: 0.5;';
-					}
-				$countries_content.='">
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
-					<input type="text" placeholder="Name" disabled="disabled" value="'.$country["name"].'" name="'.$country["id"].'[name]" class="form-control">
-				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
-					<input type="text" placeholder="Phone code" required="required" disabled="disabled" value="'.$country["phone_code"].'" name="'.$country["id"].'[phone_code]" class="form-control">
-				</div>
-				<input type="hidden" value="'.$country["is_visible"].'" name="'.$country["id"].'[visible]">
-				<input type="hidden" value="0" name="'.$country["id"].'[new]">
-				<input type="hidden" value="0" name="'.$country["id"].'[delete]">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-					<span class="glyphicon glyphicon-eye-';
-				if($country["is_visible"])
-					{
-					$countries_content.='open';
-					}
-				else
-					{
-					$countries_content.='close';
-					}
-				$countries_content.='"></span>
-				</div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-					<span class="glyphicon glyphicon-edit"></span>
-				</div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-					<span class="glyphicon glyphicon-trash"></span>
-				</div>
-			</div>';
-				}
 			}
 		catch (Error $e) 
 			{
@@ -383,11 +458,249 @@ class Admin_Helper
 			}
 		return $countries_content;
 		}
-	public function Display_Shop()
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return string content of admin panel for shop categories setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Categories_Display()
 		{
 		try
 			{
-			$shop=array('countries'=>$this->Display_Countries(),'cities'=>'','shipment'=>'','payment'=>'');
+			$db=Db::Get_Instance();
+			$sql="SELECT * FROM `categories` ORDER BY `sort`;";
+			$query=$db->query($sql);
+			$categories=$query->fetchAll(PDO::FETCH_ASSOC);
+			$categories_content='';
+			if($categories && is_array($categories))
+				{
+				$categories_content.='<form class="form-horizontal" role="form" method="post" action="'.SUB_DIR.'admin/shop" enctype="multipart/form-data">
+				<div id="admin_shop_categories_list">';
+				foreach($categories as $category)
+					{
+					if($category["is_visible"])
+						{
+						$eye_status='open';
+						$opacity='1';
+						}
+					else
+						{
+						$eye_status='close';
+						$opacity='0.5';
+						}
+					$categories_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_categories_item" style="height:200px; opacity:'.$opacity.';">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 input-group">
+						<input type="text" placeholder="Name" required value="'.$category["category_name"].'" name="'.$category["sort"].'[category_name]" class="form-control">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+						<textarea required class="form-control" required name="'.$category["sort"].'[description]" rows="8">'.$category["description"].'</textarea>
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+						<input type="file" name="'.$category["sort"].'[image]">
+					</div>
+					<input type="hidden" value="'.$category["is_visible"].'" name="'.$category["sort"].'[is_visible]">
+					<input type="hidden" value="'.$category["id"].'" name="'.$category["sort"].'[id]">
+					<input type="hidden" value="0" name="'.$category["sort"].'[delete]">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-'.$eye_status.'"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>';
+					}
+				$categories_content.='<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="categories" name="tab">				
+				</div>
+				<div class="admin_shop_category_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+					<button class="btn btn-info">Добавить</button>
+				</div>
+				<div class="admin_shop_category_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+					<button class="btn btn-success" type="submit">Сохранить</button>
+				</div>
+			</form>';
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $categories_content;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return string content of admin panel for shop manufacturers setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Manufacturers_Display()
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			$sql="SELECT * FROM `manufacturers` ORDER BY `manufacturer_name`;";
+			$query=$db->query($sql);
+			$manufacturers=$query->fetchAll(PDO::FETCH_ASSOC);
+			$manufacturers_content='';
+			if($manufacturers && is_array($manufacturers))
+				{
+				$manufacturers_content.='<form class="form-horizontal" role="form" method="post" action="'.SUB_DIR.'admin/shop" enctype="multipart/form-data">
+				<div id="admin_shop_manufacturers_list">';
+				foreach($manufacturers as $manufacturer)
+					{
+					if($manufacturer["is_visible"])
+						{
+						$eye_status='open';
+						$opacity='1';
+						}
+					else
+						{
+						$eye_status='close';
+						$opacity='0.5';
+						}
+					$manufacturers_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_manufacturers_item" style="height:40px; opacity:'.$opacity.';">
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+						<input type="text" placeholder="Name" required value="'.$manufacturer["manufacturer_name"].'" name="'.$manufacturer["id"].'[manufacturer_name]" class="form-control">
+					</div>
+					<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+						<textarea required class="form-control" required name="'.$manufacturer["id"].'[description]" rows="8">'.$manufacturer["id"].'</textarea>
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+						<input type="file" name="'.$manufacturer["id"].'[image]">
+					</div>-->
+					<input type="hidden" value="'.$manufacturer["is_visible"].'" name="'.$manufacturer["id"].'[is_visible]">
+					<input type="hidden" value="'.$manufacturer["id"].'" name="'.$manufacturer["id"].'[id]">
+					<input type="hidden" value="0" name="'.$manufacturer["id"].'[delete]">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-'.$eye_status.'"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>';
+					}
+				$manufacturers_content.='<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="manufacturers" name="tab">				
+				</div>
+				<div class="admin_shop_manufacturer_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+					<button class="btn btn-info">Добавить</button>
+				</div>
+				<div class="admin_shop_manufacturer_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+					<button class="btn btn-success" type="submit">Сохранить</button>
+				</div>
+			</form>';
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $manufacturers_content;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return string content of admin panel for shop params setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Params_Display()
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			$sql="SELECT * FROM `params` ORDER BY `param_name`;";
+			$query=$db->query($sql);
+			$params=$query->fetchAll(PDO::FETCH_ASSOC);
+			$params_content='';
+			if($params && is_array($params))
+				{
+				$params_content.='<form class="form-horizontal" role="form" method="post" action="'.SUB_DIR.'admin/shop" enctype="multipart/form-data">
+				<div id="admin_shop_params_list">';
+				foreach($params as $param)
+					{
+					if($param["is_visible"])
+						{
+						$eye_status='open';
+						$opacity='1';
+						}
+					else
+						{
+						$eye_status='close';
+						$opacity='0.5';
+						}
+					$params_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_params_item" style="height:40px; opacity:'.$opacity.';">
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+						<input type="text" placeholder="Name" required value="'.$param["param_name"].'" name="'.$param["id"].'[param_name]" class="form-control">
+					</div>
+					<input type="hidden" value="'.$param["is_visible"].'" name="'.$param["id"].'[is_visible]">
+					<input type="hidden" value="'.$param["id"].'" name="'.$param["id"].'[id]">
+					<input type="hidden" value="0" name="'.$param["id"].'[delete]">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-'.$eye_status.'"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>';
+					}
+				$params_content.='<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="params" name="tab">				
+				</div>
+				<div class="admin_shop_param_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+					<button class="btn btn-info">Добавить</button>
+				</div>
+				<div class="admin_shop_param_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+					<button class="btn btn-success" type="submit">Сохранить</button>
+				</div>
+			</form>';
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $params_content;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @return convert string content of admin panel for all shop setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Display()
+		{
+		try
+			{
+			$shop=array("categories"=>$this->Admin_Shop_Categories_Display(),
+						"manufacturers"=>$this->Admin_Shop_Manufacturers_Display(),
+						"params"=>$this->Admin_Shop_Params_Display(),
+						"countries"=>$this->Admin_Shop_Countries_Display()
+						);
 			}
 		catch (Error $e) 
 			{
@@ -395,36 +708,48 @@ class Admin_Helper
 			}
 		return $shop;
 		}
-	function Check_Shop($form)
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Countries_Save($form)
 		{
 		try 
 			{
 			$db=Db::Get_Instance();
-			$update_sql="UPDATE `countries` SET `name`=:name,`phone_code`=:phone_code,`is_visible`=:visible WHERE `id`=:id;";
-			$insert_sql="INSERT INTO `countries` (`name`,`phone_code`,`is_visible`) VALUES (:name,:phone_code,:visible);";
+			$update_sql="UPDATE `countries` SET `country_name`=:country_name,`phone_code`=:phone_code,`is_visible`=:is_visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `countries` (`country_name`,`phone_code`,`is_visible`) VALUES (:country_name,:phone_code,:is_visible);";
 			$delete_sql="DELETE FROM `countries` WHERE `id`=:id;";
 			$db->beginTransaction();
-			foreach($form as $id=>$value)
+			foreach($form as $sort=>$value)
 				{
-				if(is_numeric($id))
+				if(is_numeric($sort))
 					{
-					$form_data=array(':name'=>trim(SUB_DIR.$value['name'],'/'),':phone_code'=>$value['phone_code'],':visible'=>$value['visible']);
-					if($value['new'])
+					$form_data=array(":country_name"=>$value["country_name"],
+									":phone_code"=>$value["phone_code"],
+									":is_visible"=>$value["is_visible"]);
+					if($value["id"]>0 && $value["id"]!=-1)
 						{
-						$request=$db->prepare($insert_sql);
-						}
-					else
-						{
-						if($value['delete'])
+						if($value["delete"])
 							{
 							$request=$db->prepare($delete_sql);
-							$form_data=array(':id'=>$id);
+							$form_data=array(":id"=>$value["id"]);
 							}
 						else
 							{
 							$request=$db->prepare($update_sql);
-							$form_data[':id']=$id;
+							$form_data[":id"]=$value["id"];
 							}
+						}
+					else
+						{
+						$request=$db->prepare($insert_sql);
 						}
 					$request->execute($form_data);
 					}
@@ -440,8 +765,253 @@ class Admin_Helper
 			{
 			$e->Error();
 			}
-		return $this->Display_Shop();
+		return true;
 		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Categories_Save($form)
+		{
+		try 
+			{
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `categories` SET `category_name`=:category_name,`sort`=:sort,`is_visible`=:is_visible,`description`=:description WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `categories` (`category_name`,`sort`,`is_visible`,`description`) VALUES (:category_name,:sort,:is_visible,:description);";
+			$delete_sql="DELETE FROM `categories` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					$form_data=array(":category_name"=>$value["category_name"],
+									":sort"=>$sort,
+									":is_visible"=>$value["is_visible"],
+									":description"=>$value["description"]);
+					if($value["id"]>0 && $value["id"]!=-1)
+						{
+						if($value["delete"])
+							{
+							$request=$db->prepare($delete_sql);
+							$form_data=array(":id"=>$value["id"]);
+							}
+						else
+							{
+							$request=$db->prepare($update_sql);
+							$form_data[":id"]=$value["id"];
+							$category_id=$value["id"];
+							}
+						}
+					else
+						{
+						$request=$db->prepare($insert_sql);
+						}
+					$request->execute($form_data);
+					if($value["id"]==-1)
+						{
+						$category_id=$db->lastInsertId();
+						}
+					if($form["postfiles"][$sort]["name"]["image"])
+						{
+						$path=call_user_func('end',explode('/',$form["postfiles"][$sort]["tmp_name"]["image"]));
+						$image_insert_sql="INSERT INTO `images` (`image_name`,`path`,`is_visible`) VALUES (:name,:path,:is_visible);";
+						$request=$db->prepare($image_insert_sql);
+						$request->execute(array(
+									":name"=>$form["postfiles"][$sort]["name"]["image"],
+									":path"=>$path,
+									":is_visible"=>1));
+						$new_image_id=$db->lastInsertId();
+						$category_update_sql="UPDATE `categories` SET `image_id`=:image_id WHERE `id`=:id;";
+						$request=$db->prepare($category_update_sql);
+						$request->execute(array(
+									":image_id"=>$new_image_id,
+									":id"=>$category_id));
+						if(!file_exists(ROOT_DIR.DS.'image'.DS.'categories'.DS.$category_id))
+							{
+							mkdir(ROOT_DIR.DS.'image'.DS.'categories'.DS.$category_id);
+							}
+						rename(ROOT_DIR.DS.'temp'.DS.$path,ROOT_DIR.DS.'image'.DS.'categories'.DS.$category_id.DS.$path);
+						}					
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return true;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Manufacturers_Save($form)
+		{
+		try 
+			{
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `manufacturers` SET `manufacturer_name`=:manufacturer_name,`is_visible`=:is_visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `manufacturers` (`manufacturer_name`,`is_visible`) VALUES (:manufacturer_name,:is_visible);";
+			$delete_sql="DELETE FROM `manufacturers` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					$form_data=array(":manufacturer_name"=>$value["manufacturer_name"],
+									":is_visible"=>$value["is_visible"]);
+					if($value["id"]>0 && $value["id"]!=-1)
+						{
+						if($value["delete"])
+							{
+							$request=$db->prepare($delete_sql);
+							$form_data=array(":id"=>$value["id"]);
+							}
+						else
+							{
+							$request=$db->prepare($update_sql);
+							$form_data[":id"]=$value["id"];
+							}
+						}
+					else
+						{
+						$request=$db->prepare($insert_sql);
+						}
+					$request->execute($form_data);
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return true;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Params_Save($form)
+		{
+		try 
+			{
+			$db=Db::Get_Instance();
+			$update_sql="UPDATE `params` SET `param_name`=:param_name,`is_visible`=:is_visible WHERE `id`=:id;";
+			$insert_sql="INSERT INTO `params` (`param_name`,`is_visible`) VALUES (:param_name,:is_visible);";
+			$delete_sql="DELETE FROM `params` WHERE `id`=:id;";
+			$db->beginTransaction();
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					$form_data=array(":param_name"=>$value["param_name"],
+									":is_visible"=>$value["is_visible"]);
+					if($value["id"]>0 && $value["id"]!=-1)
+						{
+						if($value["delete"])
+							{
+							$request=$db->prepare($delete_sql);
+							$form_data=array(":id"=>$value["id"]);
+							}
+						else
+							{
+							$request=$db->prepare($update_sql);
+							$form_data[":id"]=$value["id"];
+							}
+						}
+					else
+						{
+						$request=$db->prepare($insert_sql);
+						}
+					$request->execute($form_data);
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return true;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return convert string content of admin panel for all shop setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	function Admin_Shop_Save($form)
+		{
+		try 
+			{
+			switch($form["tab"])
+				{
+				case 'categories':
+					$this->Admin_Shop_Categories_Save($form);
+					break;
+				case 'manufacturers':
+					$this->Admin_Shop_Manufacturers_Save($form);
+					break;
+				case 'params':
+					$this->Admin_Shop_Params_Save($form);
+					break;
+				case 'countries':
+					$this->Admin_Shop_Countries_Save($form);
+					break;
+				default:
+					break;
+				}
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $this->Admin_Shop_Display();
+		}
+
+
+
+
+
 
 
 	public function Get_Products()
@@ -449,7 +1019,7 @@ class Admin_Helper
 		try
 			{
 			$db=Db::Get_Instance();
-			$sql="SELECT `p`.`id`,`p`.`description`,`p`.`name`,`p`.`is_visible`,`i`.`path` AS `image_path` FROM `products` AS 'p' LEFT JOIN `products_images` as 'pi' ON `p`.`id`=`pi`.`product_id` LEFT JOIN `images` as 'i' ON `pi`.`image_id`=`i`.`id` GROUP BY `p`.`id` HAVING min('p'.'id');";
+			$sql="SELECT `p`.`id`,`p`.`description`,`p`.`product_name`,`p`.`is_visible`,`pi`.`path` FROM `products` AS `p` LEFT JOIN (SELECT * FROM `products_images` JOIN `images` ON `products_images`.`image_id`=`images`.`id` WHERE `images`.`is_visible`='1' ORDER BY `products_images`.`sort`) as `pi` ON `p`.`id`=`pi`.`product_id` GROUP BY `p`.`id` HAVING min(`p`.`id`);";
 			$request=$db->prepare($sql);
 			$request->execute();
 			$products=$request->fetchAll();
@@ -474,13 +1044,13 @@ class Admin_Helper
 			$products_content='';
 			foreach($this->Get_Products() as $product)
 				{
-				if($product["image_path"]=='')
+				if($product["path"]=='')
 					{
 					$image_name='no_image.png';
 					}
 				else
 					{
-					$image_name='products'.DS.$product["id"].DS.$product["image_path"];
+					$image_name='products'.DS.$product["id"].DS.$product["path"];
 					}
 				$products_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_products_item';
 				if(!$product["is_visible"])
@@ -492,10 +1062,10 @@ class Admin_Helper
 					<a class="link" href="'.SUB_DIR.'admin/product'.DS.$product["id"].'"><img style="max-width:100%;max-height:140px" src="'.SUB_DIR.'image'.DS.$image_name.'"></a>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<a class="link" href="'.SUB_DIR.'admin/product'.DS.$product["id"].'">'.$product["name"].'</a>
+					<a class="link" href="'.SUB_DIR.'admin/product'.DS.$product["id"].'">'.$product["product_name"].'</a>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="line-height:inherit;text-align:left;">
-					<span>'.mb_substr(strip_tags($product["description"]),0,200,'UTF-8').'&hellip;</span>
+					<span>'.mb_substr(/*strip_tags(*/$product["description"]/*)*/,0,200,'UTF-8').'&hellip;</span>
 				</div>
 				<input type="hidden" value="'.$product["is_visible"].'" name="'.$product["id"].'[visible]">
 				<input type="hidden" value="0" name="'.$product["id"].'[delete]">
@@ -540,8 +1110,19 @@ class Admin_Helper
 					{
 					if($value['delete'])
 						{
-						$request=$db->prepare($delete_sql);
+						$sql="DELETE FROM `categories_products` WHERE `product_id`=:id;";
 						$form_data=array(':id'=>$id);
+						$request=$db->prepare($sql);
+						$request->execute($form_data);
+						$sql="DELETE FROM `products_images` WHERE `product_id`=:id;";
+						$form_data=array(':id'=>$id);
+						$request=$db->prepare($sql);
+						$request->execute($form_data);
+						$sql="DELETE FROM `products_params` WHERE `product_id`=:id;";
+						$form_data=array(':id'=>$id);
+						$request=$db->prepare($sql);
+						$request->execute($form_data);
+						$request=$db->prepare($delete_sql);
 						}
 					else
 						{
@@ -573,41 +1154,26 @@ class Admin_Helper
 			{
 			$db=Db::Get_Instance();
 			$request_array=array(':id'=>$id);
-			$sql="SELECT `p`.`manufacturer_id`,`p`.`name`,`p`.`description`,`p`.`price`,`p`.`amount`,`p`.`is_visible` FROM `products` AS 'p' WHERE `p`.`id`=:id;";
+			$sql="SELECT `p`.`manufacturer_id` , `p`.`product_name` , `p`.`description` , `p`.`price` , `p`.`amount` , `p`.`is_visible` FROM `products` AS `p` WHERE `p`.`id`=:id;";
 			$request=$db->prepare($sql);
 			$request->execute($request_array);
 			$product=$request->fetchAll(PDO::FETCH_ASSOC);
 			$product=$product[0];
 			
-			$sql="SELECT `i`.`id`,`i`.`name`,`i`.`path`,`pi`.`sort`,`pi`.`is_visible` FROM `products_images` as 'pi' LEFT JOIN `images` as 'i' ON `pi`.`image_id`=`i`.`id`  WHERE `pi`.`product_id`=:id ORDER BY `pi`.`sort` ASC;";
+			$sql="SELECT `i`.`id`,`i`.`image_name`,`i`.`path`,`pi`.`sort`,`i`.`is_visible` FROM `products_images` as `pi` LEFT JOIN `images` as `i` ON `pi`.`image_id`=`i`.`id`  WHERE `pi`.`product_id`=:id ORDER BY `pi`.`sort` ASC;";
 			$request=$db->prepare($sql);
 			$request->execute($request_array);
 			$product['images']=$request->fetchAll(PDO::FETCH_ASSOC);
 			
-			$sql="SELECT `c`.`id` FROM `products_categories` AS 'pc' LEFT JOIN `categories` as 'c' ON `c`.`id`=`pc`.`category_id` WHERE `pc`.`product_id`=:id;";
+			$sql="SELECT `c`.`id` FROM `categories_products` AS `pc` LEFT JOIN `categories` as `c` ON `c`.`id`=`pc`.`category_id` WHERE `pc`.`product_id`=:id;";
 			$request=$db->prepare($sql);
 			$request->execute($request_array);
 			$product['categories']=$request->fetchAll(PDO::FETCH_ASSOC);
-			
-			$sql="SELECT * FROM `categories`;";
-			$request=$db->prepare($sql);
-			$request->execute();
-			$product['all_categories']=$request->fetchAll(PDO::FETCH_ASSOC);
-			
-			$sql="SELECT * FROM `manufacturers`;";
-			$request=$db->prepare($sql);
-			$request->execute();
-			$product['manufacturers']=$request->fetchAll(PDO::FETCH_ASSOC);
-			
-			$sql="SELECT `p`.`id`,`p`.`name`,`pp`.`value` FROM `products_params` AS 'pp' LEFT JOIN `params` as 'p' ON `p`.`id`=`pp`.`param_id` WHERE `pp`.`product_id`=:id;";
+
+			$sql="SELECT `p`.`id`,`p`.`param_name`,`pp`.`value` FROM `products_params` AS `pp` LEFT JOIN `params` as `p` ON `p`.`id`=`pp`.`param_id` WHERE `pp`.`product_id`=:id;";
 			$request=$db->prepare($sql);
 			$request->execute($request_array);
 			$product['params']=$request->fetchAll(PDO::FETCH_ASSOC);
-			
-			$sql="SELECT * FROM `params`;";
-			$request=$db->prepare($sql);
-			$request->execute();
-			$product['all_params']=$request->fetchAll(PDO::FETCH_ASSOC);
 			}
 		catch (Db_Error $e) 
 			{
@@ -622,10 +1188,54 @@ class Admin_Helper
 
 
 
+	public function Get_Product_General()
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			
+			$sql="SELECT * FROM `categories`;";
+			$request=$db->prepare($sql);
+			$request->execute();
+			$general['all_categories']=$request->fetchAll(PDO::FETCH_ASSOC);
+			
+			$sql="SELECT * FROM `manufacturers`;";
+			$request=$db->prepare($sql);
+			$request->execute();
+			$general['manufacturers']=$request->fetchAll(PDO::FETCH_ASSOC);
+			
+			$sql="SELECT * FROM `params`;";
+			$request=$db->prepare($sql);
+			$request->execute();
+			$general['all_params']=$request->fetchAll(PDO::FETCH_ASSOC);
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $general;
+		}
+
+
+
 	private function Display_Product_General(array $product_source,$id)
 		{
 		try
 			{
+			if($id==-1)
+				{
+				$product_source["is_visible"]=1;
+				$product_source["product_name"]='';
+				$product_source["manufacturer_id"]=0;
+				$product_source["categories"]=array();
+				$product_source["price"]='';
+				$product_source["amount"]='';
+				$product_source["description"]='';
+				}
 			$general_content='<input type="hidden" name="id" value="'.$id.'">
 <div class="form-group">
 	<label for="product_visible" class="col-sm-2 control-label">Visible</label>
@@ -640,7 +1250,7 @@ class Admin_Helper
 <div class="form-group">
 	<label class="col-sm-2 control-label">Name</label>
 	<div class="col-sm-10">
-		<input required class="form-control" name="name" value="'.$product_source["name"].'" placeholder="Name">
+		<input required class="form-control" name="name" value="'.$product_source["product_name"].'" placeholder="Name">
 	</div>
 </div>
 <div class="form-group">
@@ -651,7 +1261,7 @@ class Admin_Helper
 				{
 				$general_content.='<option value="'.$manufacturer["id"].'"';
 				$general_content.=($product_source["manufacturer_id"]==$manufacturer["id"])?' selected':'';
-				$general_content.='>'.$manufacturer["name"].'</option>';
+				$general_content.='>'.$manufacturer["manufacturer_name"].'</option>';
 				}
 			$general_content.='</select>
 	</div>
@@ -667,7 +1277,7 @@ class Admin_Helper
 					{
 					$general_content.=($all_categories["id"]==$categories["id"])?' selected':'';					
 					}
-				$general_content.='>'.$all_categories["name"].'</option>';
+				$general_content.='>'.$all_categories["category_name"].'</option>';
 				}
 			$general_content.='</select>
 	</div>
@@ -675,7 +1285,7 @@ class Admin_Helper
 <div class="form-group">
 	<label class="col-sm-2 control-label">Price</label>
 	<div class="col-sm-10">
-		<input required type="number" value="'.$product_source["price"].'" name="price" class="form-control" placeholder="Price">
+		<input type="number" value="'.$product_source["price"].'" name="price" class="form-control" placeholder="Price">
 	</div>
 </div>
 <div class="form-group">
@@ -700,14 +1310,32 @@ class Admin_Helper
 
 
 
+	public function Display_All_Params(array $product_source)
+		{
+		try
+			{
+			$option_html='';
+			foreach($product_source["all_params"] as $all_param)
+				{
+				$option_html.='<option value="'.$all_param["id"].'">'.$all_param["param_name"].'</option>';
+				}
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $option_html;
+		}
+
+
+
 	public function Display_Product_Params(array $product_source,$id)
 		{
 		try
 			{
-			$params_content=$option_html='';
+			$params_content='';
 			foreach($product_source["params"] as $i=>$param)
 				{
-				$option_html='';
 				$params_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product_params_item">
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
 					<select required name="params['.$i.'][params]" class="form-control">';
@@ -715,8 +1343,7 @@ class Admin_Helper
 							{
 							$params_content.='<option value="'.$all_param["id"].'"';
 							$params_content.=($all_param["id"]==$param["id"])?' selected':'';
-							$params_content.='>'.$all_param["name"].'</option>';
-							$option_html.='<option value="'.$all_param["id"].'">'.$all_param["name"].'</option>';
+							$params_content.='>'.$all_param["param_name"].'</option>';
 							}
 						$params_content.='</select>
 				</div>
@@ -735,7 +1362,7 @@ class Admin_Helper
 			{
 			$e->Error();
 			}
-		return array('content'=>$params_content,'options'=>$option_html);
+		return array('content'=>$params_content,'options'=>$this->Display_All_Params($product_source));
 		}
 
 
@@ -758,8 +1385,8 @@ class Admin_Helper
 					$eye='close';
 					}
 				$image_content.='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default product_images_item" '.$visible.'>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
-					<img alt="'.$image["name"].'" style="max-width:100%;max-height:140px" src="'.SUB_DIR.'image'.DS.'products'.DS.$id.DS.$image["path"].'">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<img alt="'.$image["image_name"].'" style="max-width:100%;max-height:140px" src="'.SUB_DIR.'image'.DS.'products'.DS.$id.DS.$image["path"].'">
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group">
 					<input type="file" name="images['.$image["sort"].']" class="form-control">
@@ -789,7 +1416,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$product_source=$this->Get_Product($id);
+			$product_source=array_merge($this->Get_Product($id),$this->Get_Product_General());
 			$product_params=$this->Display_Product_Params($product_source,$id);
 			$products_content=array('id'=>$id,
 									'options'=>$product_params['options'],
@@ -816,9 +1443,9 @@ class Admin_Helper
 //---update name,description,price,amount,visibility,modification_time
 			$form_data=array();
 			$sql="UPDATE `products` SET";
-			if($source['name']!=$form['name'])
+			if($source['product_name']!=$form['name'])
 				{
-				$sql.=" `name`=:name,";
+				$sql.=" `product_name`=:name,";
 				$form_data[':name']=$form['name'];
 				}
 			if($source['description']!=$form['description'])
@@ -836,20 +1463,23 @@ class Admin_Helper
 				$sql.=" `amount`=:amount,";
 				$form_data[':amount']=$form['amount'];
 				}
+			if($source['manufacturer_id']!=$form['manufacturer'])
+				{
+				$sql=" `manufacturer_id`=:manufacturer,";
+				$form_data[':manufacturer']=$form['manufacturer'];
+				}
 			if($source['is_visible']!=$form['visible'])
 				{
 				$sql.=" `is_visible`=:visible,";
 				$form_data[':visible']=$form['visible'];
 				}
-			$sql.=" `time_of_modifying`='".time()."' WHERE `id`=:id;";
-			$form_data[':id']=$form['id'];
-			$request=$db->prepare($sql);
-			$request->execute($form_data);
-//---update manufacturer_id
-			if($source['manufacturer_id']!=$form['manufacturer'])
+			if(strlen($sql)>21)
 				{
-				$sql="UPDATE `products` SET `manufacturer_id`='".$form['manufacturer']."';";
-				$db->exec($sql);
+				$sql=substr($sql,0,-1);
+				$sql.=" WHERE `id`=:id;";
+				$form_data[':id']=$form['id'];
+				$request=$db->prepare($sql);
+				$request->execute($form_data);
 				}
 //---update categories
 			$categories=array();
@@ -862,14 +1492,14 @@ class Admin_Helper
 			foreach($deleted_categories as $dc)
 				{
 				$form_data=array(':id'=>$form['id'],':category'=>$dc);
-				$sql="DELETE FROM `products_categories` WHERE `product_id`=:id AND `category_id`=:category;";
+				$sql="DELETE FROM `categories_products` WHERE `product_id`=:id AND `category_id`=:category;";
 				$request=$db->prepare($sql);
 				$request->execute($form_data);				
 				}
 			foreach($added_categories as $dc)
 				{
 				$form_data=array(':id'=>$form['id'],':category'=>$dc);
-				$sql="INSERT INTO `products_categories` (`product_id`,`category_id`) VALUES (:id,:category);";
+				$sql="INSERT INTO `categories_products` (`product_id`,`category_id`) VALUES (:id,:category);";
 				$request=$db->prepare($sql);
 				$request->execute($form_data);
 				}
@@ -900,232 +1530,50 @@ class Admin_Helper
 				$request->execute($form_data);
 				}
 //---update images
-				if(isset($form['postfiles']) && isset($form['imagesdata']))
+			if(isset($form['postfiles']) && isset($form['imagesdata']))
+				{
+				foreach($form['imagesdata'] as $sortid=>$imagedata)
 					{
-					$update_sql="UPDATE `products_images` SET `value`=:value WHERE `product_id`=:id AND `param_id`=:param;";
-					foreach($form['imagesdata'] as $sortid=>$imagedata)
+					if($imagedata['id']=='-1')
 						{
-						if($imagedata['id']=='-1')
+						if(strpos($form['postfiles']['images']['type'][$sortid],'image')!==false)
 							{
-							if(strpos($form['postfiles']['images']['type'][$sortid],'image')!==false)
+							$path=call_user_func('end',explode('/',$form['postfiles']['images']['tmp_name'][$sortid]));
+							$sql="INSERT INTO `images` (`image_name`,`path`,`is_visible`) VALUES (:name,:path,:visible);";
+							$request=$db->prepare($sql);
+							$request->execute(array(':name'=>$form['postfiles']['images']['name'][$sortid],':path'=>$path,':visible'=>$imagedata['visible']));
+							$lastid=$db->lastInsertId();
+							if(!file_exists(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']))
 								{
-								$path=call_user_func('end',explode('/',$form['postfiles']['images']['tmp_name'][$sortid]));
-								$sql="INSERT INTO `images` (`name`,`path`) VALUES (:name,:path);";
-								$request=$db->prepare($sql);
-								$request->execute(array(':name'=>$form['postfiles']['images']['name'][$sortid],':path'=>$path));
-								$lastid=$db->lastInsertId();
-								if(!file_exists(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']))
-									{
-									mkdir(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']);
-									}
-								rename(ROOT_DIR.DS.'temp'.DS.$path,ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id'].DS.$path);
-								$sql="INSERT INTO `products_images` (`image_id`,`product_id`,`sort`,`is_visible`) VALUES ('".$lastid."','".$form['id']."','".$sortid."','".$imagedata['visible']."');";
-								$db->exec($sql);
+								mkdir(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']);
 								}
+							rename(ROOT_DIR.DS.'temp'.DS.$path,ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id'].DS.$path);
+							$sql="INSERT INTO `products_images` (`image_id`,`product_id`,`sort`) VALUES ('".$lastid."','".$form['id']."','".$sortid."');";
+							$db->exec($sql);
+							}
+						}
+					else
+						{
+						$form_data=array(':id'=>$imagedata['id']);
+						if($imagedata['delete'])
+							{
+							$sql="DELETE FROM `images` WHERE `id`='".$imagedata['id']."';";
+							$db->exec($sql);
+							$sql="DELETE FROM `products_images` WHERE `image_id`='".$imagedata['id']."';";
+							$db->exec($sql);
+							
+							$request=$db->prepare($delete_sql);
 							}
 						else
 							{
-							$form_data=array(':id'=>$imagedata['id']);
-							if($imagedata['delete'])
-								{
-								$sql="DELETE FROM `images` WHERE `id`='".$imagedata['id']."';";
-								$db->exec($sql);
-								$sql="DELETE FROM `products_images` WHERE `image_id`='".$imagedata['id']."';";
-								$db->exec($sql);
-								
-								$request=$db->prepare($delete_sql);
-								}
-							else
-								{
-								$sql="UPDATE;";
-								}
-							$request->execute($form_data);
+							$sql="UPDATE `products_images` SET `sort`='".$sortid."' WHERE `image_id`='".$imagedata['id']."';";
+							$db->exec($sql);
+							$sql="UPDATE `images` SET `is_visible`='".$imagedata['visible']."' WHERE `id`='".$imagedata['id']."';";
+							$db->exec($sql);
 							}
 						}
 					}
-//var_dump($form_data);
-//+visible
-
-
-
-
-/*
-$form['postfiles']
-array(1) {
- ["images"]=> array(5) 
-{
- ["name"]=> array(2) { [0]=> string(6) "3.jpeg" [2]=> string(6) "9.jpeg" } 
- ["type"]=> array(2) { [0]=> string(10) "image/jpeg" [2]=> string(10) "image/jpeg" } 
- ["tmp_name"]=> array(2) { [0]=> string(45) "/media/DISK_A1/web/temporary/upload/phphpot2v" [2]=> string(45) "/media/DISK_A1/web/temporary/upload/php2PUeXR" } 
- ["error"]=> array(2) { [0]=> int(0) [2]=> int(0) } 
- ["size"]=> array(2) { [0]=> int(256174) [2]=> int(246156) } 
- } 
- }
-
-$form['imagesdata']
- array(2) 
- {
-  [0]=> array(2) { ["id"]=> string(1) "-1" ["delete"]=> string(1) "0" } 
-  [2]=> array(2) { ["id"]=> string(1) "-1" ["delete"]=> string(1) "0" } 
- } 
-
-
-
-/*
-array(10) { 
-["id"]=> string(1) "3" 
-["visible"]=> string(1) "1" 
-["name"]=> string(1) "2" 
-["manufacturer"]=> string(1) "1" 
-["categories"]=> array(1) { [0]=> string(1) "1" } 
-["price"]=> string(1) "4" 
-["amount"]=> string(1) "5" 
-["description"]=> string(1) "3" 
-["params"]=> array(1) {
- [0]=> array(4) {
-  ["params"]=> string(1) "3"
-  ["value"]=> string(4) "2 GB" 
-  ["new"]=> string(1) "0" 
-  ["delete"]=> string(1) "0" } 
- } 
-["flag"]=> string(1) "1" } 
-
-/*
- * source
-array(12) {
-
-  ["images"]=>
-  array(1) {
-    [0]=>
-    array(2) {
-      ["id"]=>
-      string(1) "2"
-      ["name"]=>
-      string(15) "cool_photo.jpeg"
-    }
-  }
-  ["categories"]=>
-  array(1) {
-    [0]=>
-    array(1) {
-      ["id"]=>
-      string(1) "1"
-    }
-  }
-  ["all_categories"]=>
-  array(1) {
-    [0]=>
-    array(2) {
-      ["id"]=>
-      string(1) "1"
-      ["name"]=>
-      string(9) "Notebooks"
-    }
-  }
-
-  ["params"]=>
-  array(2) {
-    [0]=>
-    array(3) {
-      ["id"]=>
-      string(1) "1"
-      ["name"]=>
-      string(10) "Экран"
-      ["value"]=>
-      string(36) "15.6" WXGA (1366x768) LED Anti-glare"
-    }
-    [1]=>
-    array(3) {
-      ["id"]=>
-      string(1) "2"
-      ["name"]=>
-      string(18) "Процессор"
-      ["value"]=>
-      string(41) "Intel® Pentium® Dual-Core B960 (2.2GHz)"
-    }
-  }
-  ["all_params"]=>
-  array(3) {
-    [0]=>
-    array(2) {
-      ["id"]=>
-      string(1) "1"
-      ["name"]=>
-      string(10) "Экран"
-    }
-    [1]=>
-    array(2) {
-      ["id"]=>
-      string(1) "2"
-      ["name"]=>
-      string(18) "Процессор"
-    }
-    [2]=>
-    array(2) {
-      ["id"]=>
-      string(1) "3"
-      ["name"]=>
-      string(35) "Оперативная память"
-    }
-  }
-}*/
-
-
-
-
-/*
- * form
-array(11) {
-  
-  ["id"]=>
-  string(1) "1"
-  
-  
-  ["params"]=>
-  array(2) {
-    [0]=>
-    array(4) {
-      ["params"]=>
-      string(1) "1"
-      ["value"]=>
-      string(36) "15.6" WXGA (1366x768) LED Anti-glare"
-      ["new"]=>
-      string(1) "0"
-      ["delete"]=>
-      string(1) "0"
-    }
-    [1]=>
-    array(4) {
-      ["params"]=>
-      string(1) "2"
-      ["value"]=>
-      string(41) "Intel® Pentium® Dual-Core B960 (2.2GHz)"
-      ["new"]=>
-      string(1) "0"
-      ["delete"]=>
-      string(1) "0"
-    }
-  }
-  
-  ["images"]=>
-  array(1) {
-    [0]=>
-    array(3) {
-      ["path"]=>
-      string(0) ""
-      ["new"]=>
-      string(1) "0"
-      ["delete"]=>
-      string(1) "0"
-    }
-  }
-  
-  ["flag"]=>
-  string(1) "1"
-}
-*/
-
-
+				}
 			$db->commit();
 			}
 		catch (Db_Error $e) 
@@ -1141,4 +1589,97 @@ array(11) {
 		return $this->Display_Product($form['id']);
 		}
 
+
+	public function Add_Product()
+		{
+		try
+			{
+			$id=-1;			
+			$product_source=$this->Get_Product_General();
+			$products_content=array('id'=>$id,
+									'options'=>$this->Display_All_Params($product_source),
+									'general'=>$this->Display_Product_General($product_source,$id),
+									'params'=>'',
+									'images'=>'');
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $products_content;
+		}
+
+
+
+	public function Check_New_Product($form)
+		{
+		try
+			{
+			$db=Db::Get_Instance();
+			$db->beginTransaction();
+//---prod
+			$sql="INSERT INTO `products` (`manufacturer_id`,`product_name`,`description`,`price`,`amount`,`is_visible`) VALUES (:manufacturer,:product_name,:description,:price,:amount,:visible);";
+			$request_array=array(':manufacturer'=>$form['manufacturer'],':product_name'=>$form['name'],':description'=>$form['description'],':price'=>$form['price'],':amount'=>$form['amount'],':visible'=>$form['visible']);
+			$request=$db->prepare($sql);
+			$request->execute($request_array);
+			$product['params']=$request->fetchAll(PDO::FETCH_ASSOC);
+			$lastid=$db->lastInsertId();
+//---cat
+			$sql="INSERT INTO `categories_products` (`product_id`,`category_id`) VALUES (:id,:category);";
+			foreach($form['categories'] as $cat)
+				{
+				$form_data=array(':id'=>$lastid,':category'=>$cat);
+				$request=$db->prepare($sql);
+				$request->execute($form_data);
+				}
+//---param
+			if(isset($form['params']) && is_array($form['params']))
+				{
+				$sql="INSERT INTO `products_params` (`product_id`,`param_id`,`value`) VALUES (:id,:param,:value);";
+				foreach($form['params'] as $param)
+					{
+					$form_data=array(':id'=>$lastid,':param'=>$param['params'],':value'=>$param['value']);
+					$request=$db->prepare($sql);
+					$request->execute($form_data);
+					}
+				}
+//---img
+			if(isset($form['postfiles']) && isset($form['imagesdata']))
+				{
+				foreach($form['imagesdata'] as $sortid=>$imagedata)
+					{
+					if($imagedata['id']=='-1')
+						{
+						if(strpos($form['postfiles']['images']['type'][$sortid],'image')!==false)
+							{
+							$path=call_user_func('end',explode('/',$form['postfiles']['images']['tmp_name'][$sortid]));
+							$sql="INSERT INTO `images` (`image_name`,`path`,`is_visible`) VALUES (:name,:path,:visible);";
+							$request=$db->prepare($sql);
+							$request->execute(array(':name'=>$form['postfiles']['images']['name'][$sortid],':path'=>$path,':visible'=>$imagedata['visible']));
+							$lastim=$db->lastInsertId();
+							if(!file_exists(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']))
+								{
+								mkdir(ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id']);
+								}
+							rename(ROOT_DIR.DS.'temp'.DS.$path,ROOT_DIR.DS.'image'.DS.'products'.DS.$form['id'].DS.$path);
+							$sql="INSERT INTO `products_images` (`image_id`,`product_id`,`sort`) VALUES ('".$lastim."','".$lastid."','".$sortid."');";
+							$db->exec($sql);
+							}
+						}
+					}
+				}
+			$db->commit();
+			}
+		catch (Db_Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$db->rollBack();
+			$e->Error();
+			}
+		return $this->Display_Product($lastid);
+		}
 	}

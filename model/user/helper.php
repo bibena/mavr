@@ -138,7 +138,7 @@ class User_Helper
 		{
 		try
 			{
-			$prepare=Db::Get_Instance()->prepare("INSERT INTO `users` (`email`,`password`,`lastname`,`firstname`,`phone`,`timeofregistration`) VALUES (:email,:password,:lastname,:firstname,:phone,:timeofregistration);");
+			$prepare=Db::Get_Instance()->prepare("INSERT INTO `users` (`email`,`password`,`lastname`,`firstname`,`phone`) VALUES (:email,:password,:lastname,:firstname,:phone);");
 			$prepare->execute($params);
 			}
 		catch (PDOException $e)

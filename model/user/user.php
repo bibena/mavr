@@ -87,8 +87,7 @@ class User_Model extends Pattern_Model
 											':password'=>password_hash($this->form['password'],PASSWORD_BCRYPT,array('cost'=>9)),
 											':lastname'=>NULL,
 											':firstname'=>$this->form['name'],
-											':phone'=>NULL,
-											':timeofregistration'=>time()
+											':phone'=>NULL
 											));
 					$id_user=Db::Get_Instance()->lastInsertId();
 					$content['content']='All right! User was added with id = '.$id_user;

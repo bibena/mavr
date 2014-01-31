@@ -1,3 +1,5 @@
 /config
-error.log
-info.log
+/.htaccess
+/robots.txt
+/log/error.log
+/log/info.log
