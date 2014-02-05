@@ -79,7 +79,7 @@ class Session
 		{
 		try
 			{
-			$user_data=array('id','isadmin','email','firstname','lastname','phone','country','region','city','adress','timeoflogin','timeofregistration');
+			$user_data=array('id','email','first_name','middle_name','last_name','country_id','region_id','city_id','address','phone','is_visible','is_activated','is_admin','time_of_creation','time_of_modifying');
 			foreach($user as $key=>$item)
 				{
 				if(in_array($key,$user_data))

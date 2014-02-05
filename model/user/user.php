@@ -55,61 +55,30 @@ class User_Model extends Pattern_Model
 		try
 			{
 //include css and js
-			$content['assets']=implode("\n",$this->assets)."\n";
+			$content["assets"]=implode("\n",$this->assets)."\n";
 //if was sent form
 			if(count($this->form)>0)
 				{
-				if(!(isset($this->form['email']) && $this->form['email'] && $this->helper->Email_Check($this->form['email'])))
+				$is_user_added=$this->helper->User_Registration_Save($this->form);
+				if(is_array($is_user_added))
 					{
-					$error['error']['email']=1;
-					}
-				if(!(isset($this->form['password']) && $this->helper->Password_Check($this->form['password'])))
-					{
-					$error['error']['password']=1;
-					}
-				if(!(isset($this->form['agreement']) && $this->form['agreement']))
-					{
-					$error['error']['agreement']=1;
-					}
-				if(!(isset($this->form['name']) && $this->form['name']))
-					{
-					$error['error']['name']=1;
-					}
-				if($this->helper->Login_Exists($this->form['email']))
-					{
-					$error['error']['email']=1;
-					}
-				if(!isset($error))
-					{
-//check data from this form
-					$this->helper->Create_User(array(
-											':email'=>$this->form['email'],
-											':password'=>password_hash($this->form['password'],PASSWORD_BCRYPT,array('cost'=>9)),
-											':lastname'=>NULL,
-											':firstname'=>$this->form['name'],
-											':phone'=>NULL
-											));
-					$id_user=Db::Get_Instance()->lastInsertId();
-					$content['content']='All right! User was added with id = '.$id_user;
+					$content["content"]=$this->view->Content_Create(__METHOD__,$is_user_added);
 					}
 				else
 					{
-//else print the form with error message
-					$error['data']=$this->form;
-					$content['content']=$this->view->Content_Create(__METHOD__,$error);
+					$content["content"]='User was added with id = '.$is_user_added;
 					}
 				}
 			else
 				{
 //else print the form
-				$content['content']=$this->view->Content_Create(__METHOD__,array());
+				$content["content"]=$this->view->Content_Create(__METHOD__,array());
 				}
 			}
 		catch (Error $e)
 			{
 			$e->Error();
 			}
-		//$content['content']=$this->view->Registration($error);
 		return $content;
 		}
 
@@ -127,56 +96,20 @@ class User_Model extends Pattern_Model
 		try
 			{
 //include css and js
-			$content['assets']=implode("\n",$this->assets)."\n";
+			$content["assets"]=implode("\n",$this->assets)."\n";
 //if was sent form
 			if(count($this->form)>0)
 				{
-//take data from form. If form was sentbtn-success
-				if(!(isset($this->form['password']) && $this->helper->Password_Check($this->form['password'])))
+				$is_user_login=$this->helper->User_Login_Check($this->form);
+				if(is_array($is_user_login))
 					{
-					$error['error']=1;
-					}
-				if(!(isset($this->form['email']) && $this->form['email'] && $this->helper->Email_Check($this->form['email'])))
-					{
-					$error['error']=1;
-					}
-				else
-					{
-					$user_data=$this->helper->Login_Exists($this->form['email']);
-					if($user_data)
-						{
-						if(password_verify($this->form['password'],$user_data['password']))
-							{
-							unset($user_data['password']);
-							$this->session->Set_User($user_data);
-							}
-						else
-							{
-							$error['error']=1;
-							}
-						}
-					else
-						{
-						$error['error']=1;
-						}
-					}
-
-				if(!isset($error))
-					{
-					//$content['content']='All right! User was loged in';
-					Redirect::Page();
-					}
-				else
-					{
-	//else print the form with error message
-					$error= array_merge($error,$this->form);
-					$content['content']=$this->view->Content_Create(__METHOD__,$error);
-					}
+					$content["content"]=$this->view->Content_Create(__METHOD__,$is_user_login);
+					}				
 				}
 			else
 				{
 //else print the form
-				$content['content']=$this->view->Content_Create(__METHOD__,array());
+				$content["content"]=$this->view->Content_Create(__METHOD__,array());
 				}
 			}
 		catch (Error $e)
@@ -185,11 +118,20 @@ class User_Model extends Pattern_Model
 			}
 		return $content;
 		}
+
+
+
 	function Logout()
 		{
-		$this->session->Erase('user');
-		Redirect::Page();
+		if(isset($_SESSION["user"]))
+			{
+			$this->session->Erase('user');
+			}
+		Redirect::Page('/');
 		}
+
+
+
 	function Update()
 		{
 		echo "Запущен метод ".__METHOD__;
