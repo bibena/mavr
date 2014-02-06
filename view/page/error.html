@@ -1,8 +1,9 @@
 <?php
-if(isset($_SESSION['last_error']))
+$session=new Session;
+if($session->Check('last_error'))
 	{
-	echo $_SESSION['last_error'];
-	unset($_SESSION['last_error']);
+	echo $session->Get('last_error');
+	$session->Erase('last_error');
 	}
 ?>
 <p>Вы будете переадресованы на главную страницу через 

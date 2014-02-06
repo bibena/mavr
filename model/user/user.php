@@ -123,11 +123,20 @@ class User_Model extends Pattern_Model
 
 	function Logout()
 		{
-		if(isset($_SESSION["user"]))
+		try
+		{
+		global $session;
+		if($session->Check("user"))
 			{
-			$this->session->Erase('user');
+			$session->Erase();
 			}
-		Redirect::Page('/');
+		Redirect::Page('^');		
+		}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return true;
 		}
 
 

@@ -80,7 +80,7 @@ class View
 --------------------------------------------------------------------------*/
 	function Menu()
 		{
-		$db=Db::Get_Instance();
+		global $session,$db;
 		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `is_visible`='1' ORDER BY `sort`;";
 		$request=$db->prepare($sql);
 		$request->execute();
@@ -88,7 +88,21 @@ class View
 		$content='';
 		foreach($menus as $menu)
 			{
-			$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+			if($menu['title']=='Admin')
+				{
+				if($session->Check('user','is_visible') && $session->Check('user','is_activated') && $session->Check('user','is_admin'))
+					{
+					if($session->Get('user','is_visible') && $session->Get('user','is_activated') && $session->Get('user','is_admin'))
+						{
+						$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+						}
+					}
+				}
+			else
+				{
+				$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+				}
+
 			}
 		return $content;
 		}

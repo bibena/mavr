@@ -41,8 +41,20 @@ class Acl
 		{
 		try
 			{
+			global $session;
 			if($cname=='Admin_Model')
 				{
+				if($session->Check('user','is_visible') && $session->Check('user','is_activated') && $session->Check('user','is_admin'))
+					{
+					if(!($session->Get('user','is_visible') && $session->Get('user','is_activated') && $session->Get('user','is_admin')))
+						{
+						throw new Error('Access deny');
+						}
+					}
+				else
+					{
+					throw new Error('Access deny');
+					}
 				if($mname=='Menu')
 					{
 					//throw new Error('Access deny');

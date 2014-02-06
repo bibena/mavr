@@ -28,7 +28,6 @@ class Pattern_Model
 		{
 		try
 			{
-			$this->session=new Session;
 	//read the name of template from config
 			$config=Config::Get_Instance()->Get_Config();
 			$this->dir=ROOT_DIR.DS.'template'.DS.$config['template'].DS;
@@ -72,6 +71,7 @@ class Pattern_Model
 		{
 		try
 			{
+			global $session;
 			if(isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])===false)
 				{
 				throw new Error('Wrong URL. Form wasn`t sent from this site.');
@@ -81,7 +81,6 @@ class Pattern_Model
 				$form=array();
 				if($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['flag']) && $_POST['flag'])
 					{
-					$_SESSION['form'][$_SERVER['REQUEST_URI']]=$_POST;
 //---upload files to /temp dir
 					foreach($_FILES as $files)
 						{
@@ -114,13 +113,14 @@ class Pattern_Model
 								}
 							}
 						}
-					$_SESSION['form'][$_SERVER['REQUEST_URI']]['postfiles']=$_FILES;
+					$_POST['postfiles']=$_FILES;
+					$session->Set($_POST,'form',$_SERVER["REQUEST_URI"]);
 					Redirect::Page('.');
 					}
-				if($_SERVER['REQUEST_METHOD']==='GET' && isset($_SESSION['form'][$_SERVER['REQUEST_URI']]))
+				if($_SERVER['REQUEST_METHOD']==='GET' && $session->Check('form',$_SERVER['REQUEST_URI']))
 					{
-					$form=$_SESSION['form'][$_SERVER['REQUEST_URI']];
-					unset($_SESSION['form'][$_SERVER['REQUEST_URI']]);
+					$form=$session->Get('form',$_SERVER['REQUEST_URI']);
+					$session->Erase('form',$_SERVER['REQUEST_URI']);
 					}
 				}
 			}

@@ -39,24 +39,38 @@ class Session
  *
  * Return: array
 --------------------------------------------------------------------------*/
-	public function Get($section='')
+	public function Get($section='',$subsection='')
 		{
 		try
 			{
-			if($section=='')
+			if($section)
 				{
-				$return=$_SESSION;
-				}
-			else
-				{
-				if(isset($_SESSION[$section]))
+				if($subsection)
 					{
-					$return=$_SESSION[$section];
+					if(isset($_SESSION[$section][$subsection]))
+						{
+						$return=$_SESSION[$section][$subsection];
+						}
+					else
+						{
+						throw new Error('Wrong session subsection request');
+						}
 					}
 				else
 					{
-					throw new Error('Wrong session section requested');
+					if(isset($_SESSION[$section]))
+						{
+						$return=$_SESSION[$section];
+						}
+					else
+						{
+						throw new Error('Wrong session section request');
+						}
 					}
+				}
+			else
+				{
+				$return=$_SESSION;
 				}
 			}
 		catch (Error $e)
@@ -64,6 +78,100 @@ class Session
 			$e->Error();
 			}
 		return $return;
+		}
+
+
+
+/*-------------------------------------------------------------------------
+ * Check session array
+ *
+ * Session::Check()
+ *
+ * Return: bool
+--------------------------------------------------------------------------*/
+	public function Check($section='',$subsection='')
+		{
+		try
+			{
+			if($section)
+				{
+				if($subsection)
+					{
+					if(isset($_SESSION[$section][$subsection]))
+						{
+						$return=true;
+						}
+					else
+						{
+						$return=false;
+						}
+					}
+				else
+					{
+					if(isset($_SESSION[$section]))
+						{
+						$return=true;
+						}
+					else
+						{
+						$return=false;
+						}
+					}
+				}
+			else
+				{
+				$return=false;
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $return;
+		}
+
+
+
+/*-------------------------------------------------------------------------
+ * Set session array
+ *
+ * Session::Set()
+ *
+ * Return: bool
+--------------------------------------------------------------------------*/
+	public function Set($value,$section,$subsection='')
+		{
+		try
+			{
+			if($value)
+				{
+				if($section)
+					{
+					if($subsection)
+						{
+						$_SESSION[$section][$subsection]=$value;
+						}
+					else
+						{
+						$_SESSION[$section]=$value;
+						}
+					}
+				else
+					{
+					throw new Error('Wrong session section request');
+					}
+				}
+			else
+				{
+				throw new Error('Wrong session value request');
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			return false;
+			}
+		return true;
 		}
 
 
@@ -84,7 +192,7 @@ class Session
 				{
 				if(in_array($key,$user_data))
 					{
-					$_SESSION['user'][$key]=$item;
+					$_SESSION["user"][$key]=$item;
 					}
 				else
 					{
@@ -111,8 +219,8 @@ class Session
 		{
 		try
 			{
-			$_SESSION['agent']['ip']=$_SERVER['REMOTE_ADDR'];
-			$_SESSION['agent']['useragent']=$_SERVER['HTTP_USER_AGENT'];
+			$_SESSION["agent"]["ip"]=$_SERVER["REMOTE_ADDR"];
+			$_SESSION["agent"]["useragent"]=$_SERVER["HTTP_USER_AGENT"];
 			}
 		catch (Error $e)
 			{
@@ -133,13 +241,14 @@ class Session
 		{
 		try
 			{
-			$_SESSION['request']['host']=$_SERVER['HTTP_HOST'];
-			$_SESSION['request']['uri']=$_SERVER['REQUEST_URI'];
-			$_SESSION['request']['serverport']=$_SERVER['SERVER_PORT'];
-			$_SESSION['request']['protocol']=$_SERVER['SERVER_PROTOCOL'];
-			$_SESSION['request']['method']=$_SERVER['REQUEST_METHOD'];
-			$_SESSION['request']['query']=$_SERVER['QUERY_STRING'];
-			$_SESSION['request']['userport']=$_SERVER['REMOTE_PORT'];
+			$_SESSION["request"]["host"]=$_SERVER["HTTP_HOST"];
+			$_SESSION["request"]["uri"]=$_SERVER["REQUEST_URI"];
+			$_SESSION["request"]["serverport"]=$_SERVER["SERVER_PORT"];
+			$_SESSION["request"]["protocol"]=$_SERVER["SERVER_PROTOCOL"];
+			$_SESSION["request"]["method"]=$_SERVER["REQUEST_METHOD"];
+			$_SESSION["request"]["query"]=$_SERVER["QUERY_STRING"];
+			$_SESSION["request"]["userport"]=$_SERVER["REMOTE_PORT"];
+			$_SESSION["request"]["referrer"]=isset($_SERVER["HTTP_REFERER"])?$_SERVER["HTTP_REFERER"]:'';
 			}
 		catch (Error $e)
 			{
@@ -162,9 +271,11 @@ class Session
 			{
 			if($message=='')
 				{
-				if(isset($_SESSION['last_error']))
+				if(isset($_SESSION["last_error"]))
 					{
-					return $_SESSION['last_error'];
+					$last_error=$_SESSION["last_error"];
+					$this->Erase("last_error");
+					return $last_error;
 					}
 				else
 					{
@@ -173,7 +284,7 @@ class Session
 				}
 			else
 				{
-				$_SESSION['last_error']=$message;
+				$_SESSION["last_error"]=$message;
 				}
 			}
 		catch (Error $e)
@@ -191,29 +302,45 @@ class Session
  *
  * Return: nothing
 --------------------------------------------------------------------------*/
-	public function Erase($section='')
+	public function Erase($section='',$subsection='')
 		{
 		try
 			{
-			if($section=='')
-				{				
-				session_unset();
-				}
-			else
+			if($section)
 				{
-				if(isset($_SESSION[$section]))
+				if($subsection)
 					{
-					unset($_SESSION[$section]);
+					if(isset($_SESSION[$section][$subsection]))
+						{
+						unset($_SESSION[$section][$subsection]);
+						}
+					else
+						{
+						throw new Error('Wrong session subsection requested');
+						}
 					}
 				else
 					{
-					throw new Error('Wrong session section requested');
+					if(isset($_SESSION[$section]))
+						{
+						unset($_SESSION[$section]);
+						}
+					else
+						{
+						throw new Error('Wrong session section requested');
+						}
 					}
+				}
+			else
+				{
+				session_unset();
 				}
 			}
 		catch (Error $e)
 			{
 			$e->Error();
+			return false;
 			}
+		return true;
 		}
 	}

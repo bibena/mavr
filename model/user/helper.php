@@ -35,8 +35,8 @@ class User_Helper
 		{
 		try
 			{
+			global $db,$session;
 //take data from form. If form was sentbtn-success
-			$db=Db::Get_Instance();
 			if(!(isset($form["email"]) && filter_var($form["email"],FILTER_VALIDATE_EMAIL)))
 				{
 				$error["error"]=1;
@@ -57,7 +57,6 @@ class User_Helper
 					if(isset($form["password"]) && password_verify($form["password"],$email_exists["password"]))
 						{
 						unset($email_exists["password"]);
-						$session=new Session;
 						$session->Set_User($email_exists);
 						}
 					else
@@ -68,7 +67,7 @@ class User_Helper
 				}
 			if(!isset($error))
 				{
-				Redirect::Page();
+				Redirect::Page('^');
 				}
 			else
 				{

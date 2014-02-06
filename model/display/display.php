@@ -39,9 +39,10 @@ class Display_Model extends Pattern_Model
 		{
 		try
 			{
+			global $db;
 			$product_id=$param[0];
 			$content['assets']=implode("\n",$this->assets)."\n";
-			$db=Db::Get_Instance();
+			//$db=Db::Get_Instance();
 			$sql="SELECT `id`,`manufacturer_id`,`product_name`,`description`,`price`,`amount` FROM `products` WHERE `id`=:id AND `is_visible`='1';";
 			$request=$db->prepare($sql);
 			$request->execute(array(':id'=>$product_id));

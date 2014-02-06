@@ -40,6 +40,7 @@ class Error extends Exception
 		{
 		try
 			{
+			global $session;
 			if(is_numeric($number))
 				{
 				$error=$this->Create_String();
@@ -51,7 +52,6 @@ class Error extends Exception
 				if($this->config['show_error'])
 					{
 					$page->Error($number,nl2br($error));
-					$session=new Session;
 					$session->Last_Error(nl2br($error));
 					}
 				else

@@ -3,7 +3,7 @@
 .registration_form{margin-top:200px;}
 .remember label{float:right;}
 body {padding-bottom:20px;padding-top:50px;}
-nav a.link.btn{margin:8px 0;}
+nav a.btn{margin:8px 0;}
 
 
 .bs-callout-danger {background-color:#FDF7F7;border-color: #EED3D7 !important;}

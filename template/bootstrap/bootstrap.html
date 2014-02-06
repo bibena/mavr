@@ -32,7 +32,7 @@
 						<?php endif; ?>
 						</ul>
 						<?php if(IS_LOGIN): ?>
-							<a href="/user/logout" class="link btn btn-warning navbar-right"><?=LOGOUT_BUTTON_TITLE?></a>
+							<a href="/user/logout" class="btn btn-warning navbar-right"><?=LOGOUT_BUTTON_TITLE?></a>
 						<?php else: ?>
 							<a href="/user/registration" class="link btn btn-info navbar-right"><?=REGISTRATION_BUTTON_TITLE?></a>
 							<form method="post" action="<?= SUB_DIR; ?>user/login" class="navbar-form navbar-right">

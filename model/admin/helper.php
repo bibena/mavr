@@ -261,7 +261,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT * FROM `menus` ORDER BY `sort`;";
 			$query=$db->query($sql);
 			$menus=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -327,7 +327,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `menus` SET `sort`=:sort,`link`=:link,`title`=:title,`is_visible`=:is_visible WHERE `id`=:id;";
 			$insert_sql="INSERT INTO `menus` (`sort`,`link`,`title`,`is_visible`) VALUES (:sort,:link,:title,:is_visible);";
 			$delete_sql="DELETE FROM `menus` WHERE `id`=:id;";
@@ -394,7 +394,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT * FROM `countries` ORDER BY `id`;";
 			$query=$db->query($sql);
 			$countries=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -471,7 +471,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT * FROM `categories` ORDER BY `sort`;";
 			$query=$db->query($sql);
 			$categories=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -548,7 +548,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT * FROM `manufacturers` ORDER BY `manufacturer_name`;";
 			$query=$db->query($sql);
 			$manufacturers=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -625,7 +625,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT * FROM `params` ORDER BY `param_name`;";
 			$query=$db->query($sql);
 			$params=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -722,7 +722,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `countries` SET `country_name`=:country_name,`phone_code`=:phone_code,`is_visible`=:is_visible WHERE `id`=:id;";
 			$insert_sql="INSERT INTO `countries` (`country_name`,`phone_code`,`is_visible`) VALUES (:country_name,:phone_code,:is_visible);";
 			$delete_sql="DELETE FROM `countries` WHERE `id`=:id;";
@@ -781,7 +781,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `categories` SET `category_name`=:category_name,`sort`=:sort,`is_visible`=:is_visible,`description`=:description WHERE `id`=:id;";
 			$insert_sql="INSERT INTO `categories` (`category_name`,`sort`,`is_visible`,`description`) VALUES (:category_name,:sort,:is_visible,:description);";
 			$delete_sql="DELETE FROM `categories` WHERE `id`=:id;";
@@ -867,7 +867,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `manufacturers` SET `manufacturer_name`=:manufacturer_name,`is_visible`=:is_visible WHERE `id`=:id;";
 			$insert_sql="INSERT INTO `manufacturers` (`manufacturer_name`,`is_visible`) VALUES (:manufacturer_name,:is_visible);";
 			$delete_sql="DELETE FROM `manufacturers` WHERE `id`=:id;";
@@ -925,7 +925,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `params` SET `param_name`=:param_name,`is_visible`=:is_visible WHERE `id`=:id;";
 			$insert_sql="INSERT INTO `params` (`param_name`,`is_visible`) VALUES (:param_name,:is_visible);";
 			$delete_sql="DELETE FROM `params` WHERE `id`=:id;";
@@ -1018,7 +1018,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$sql="SELECT `p`.`id`,`p`.`description`,`p`.`product_name`,`p`.`is_visible`,`pi`.`path` FROM `products` AS `p` LEFT JOIN (SELECT * FROM `products_images` JOIN `images` ON `products_images`.`image_id`=`images`.`id` WHERE `images`.`is_visible`='1' ORDER BY `products_images`.`sort`) as `pi` ON `p`.`id`=`pi`.`product_id` GROUP BY `p`.`id` HAVING min(`p`.`id`);";
 			$request=$db->prepare($sql);
 			$request->execute();
@@ -1100,7 +1100,7 @@ class Admin_Helper
 		{
 		try 
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$update_sql="UPDATE `products` SET `is_visible`=:visible WHERE `id`=:id;";
 			$delete_sql="DELETE FROM `products` WHERE `id`=:id;";
 			$db->beginTransaction();
@@ -1152,7 +1152,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$request_array=array(':id'=>$id);
 			$sql="SELECT `p`.`manufacturer_id` , `p`.`product_name` , `p`.`description` , `p`.`price` , `p`.`amount` , `p`.`is_visible` FROM `products` AS `p` WHERE `p`.`id`=:id;";
 			$request=$db->prepare($sql);
@@ -1192,7 +1192,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			
 			$sql="SELECT * FROM `categories`;";
 			$request=$db->prepare($sql);
@@ -1437,8 +1437,8 @@ class Admin_Helper
 		{
 		try
 			{
+			global $db;
 			$source=$this->Get_Product($form['id']);
-			$db=Db::Get_Instance();
 			$db->beginTransaction();
 //---update name,description,price,amount,visibility,modification_time
 			$form_data=array();
@@ -1615,7 +1615,7 @@ class Admin_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db;
 			$db->beginTransaction();
 //---prod
 			$sql="INSERT INTO `products` (`manufacturer_id`,`product_name`,`description`,`price`,`amount`,`is_visible`) VALUES (:manufacturer,:product_name,:description,:price,:amount,:visible);";

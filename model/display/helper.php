@@ -359,9 +359,9 @@ class Display_Helper
 		{
 		try
 			{
+			global $db;
 			if(is_numeric($category_id))
 				{
-				$db=Db::Get_Instance();
 				if($category_id>0)
 					{
 					$request_array=array(':id'=>$category_id);

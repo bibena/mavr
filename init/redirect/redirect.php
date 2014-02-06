@@ -74,11 +74,30 @@ class Redirect
 			$path=trim($path," \n\r\t\0\x0B/");
 			if($path==='')
 				{
-				$redirect=$_SERVER['HTTP_HOST'].$config['subdir'];
+				$redirect=$_SERVER["HTTP_HOST"].$config["subdir"];
 				}
-			elseif($path==='.')
+			elseif($path==="^")
 				{
-				$redirect=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+				if(isset($_SERVER["HTTP_REFERER"]))
+					{
+					$referrer=preg_replace('@http[s]?\:\/\/@','',$_SERVER["HTTP_REFERER"],1);
+					if($referrer)
+						{
+						$redirect=$referrer;
+						}
+					else
+						{
+						$redirect=$_SERVER["HTTP_HOST"].$config["subdir"];
+						}
+					}
+				else
+					{
+					$redirect=$_SERVER["HTTP_HOST"].$config["subdir"];
+					}
+				}
+			elseif($path===".")
+				{
+				$redirect=$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
 				}
 			else
 				{
@@ -87,7 +106,7 @@ class Redirect
 					{
 					if(file_exists(ROOT_DIR.DS.'controller'.DS.$patharray[0].DS.$patharray[0].'.php'))
 						{
-						$redirect=$_SERVER['HTTP_HOST'].$config['subdir'].DS.implode(DS,$patharray);
+						$redirect=$_SERVER["HTTP_HOST"].$config["subdir"].DS.implode(DS,$patharray);
 						}
 					else
 						{
