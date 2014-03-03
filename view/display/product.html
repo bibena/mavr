@@ -1,34 +1,75 @@
 <div class="row" id="product_content">
-<?php if($content["advertisment"]):?>
+<?php if($content["display_advertisment"]): ?>
 	<div id="advertisment" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 	Тут может быть Ваша реклама.
 	</div>
 	<div id="display-product" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-<?php else:?>
+<?php else: ?>
 	<div id="display-product" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<?php endif;?>	
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="product_head" style="margin-top:20px;clear:both;">
+<?php endif; ?>	
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="product_head">
 			<div id="product_image" style="float:left; margin: 0 15px 15px 0; width:400px;">
-				<?=$content["images"]?>
+			<?php if(isset($content["images"]) && is_array($content["images"])): ?>
+				<?php if(count($content["images"])>1): ?>
+					<script src="<?php echo SUB_DIR; ?>view/display/jquery.galleryview-3.0-dev.js"></script>
+					<script>
+						$(function(){
+						$("#product_images_gallery").galleryView({
+						show_panel_nav: false,
+						panel_width: 400,
+						panel_height: 300,
+						panel_animation: "none",
+						panel_scale: "fit",
+						overlay_position: "bottom",
+						pan_style: "drag",
+						show_filmstrip_nav: false,
+						enable_slideshow: false,
+						filmstrip_style: "scroll",
+						filmstrip_position: "bottom",
+						frame_width: 90,
+						frame_height: 95,
+						frame_scale: "fit",
+						show_infobar: false
+						});
+						});
+					</script>
+					<ul id="product_images_gallery">';
+					<?php foreach($content["images"] as $image): ?>
+						<li><img src="<?php echo SUB_DIR; ?>image/products/<?php echo $content["id"].'/'.$image["path"]; ?>"></li>
+					<?php endforeach; ?>
+					</ul>
+				<?php else: ?>
+					<?php if(isset($content["images"][0])): ?>
+						<img src="<?php echo SUB_DIR; ?>image/products/<?php echo $content["id"].'/'.$content["images"][0]["path"]; ?>" width="400">
+					<?php endif; ?>
+				<?php endif; ?>
+			<?php else: ?>
+				<img src="<?php echo SUB_DIR; ?>image/no_image.png" width="400">
+			<?php endif; ?>
 			</div>
 			<div>
-				<h1><?=$content["product_name"];?></h1>
+				<h1><?php echo $content["product_name"]; ?></h1>
 			</div>
-			<?php if(isset($content["price"]) && $content["price"]):?>
+			<?php if(isset($content["price"]) && $content["price"]): ?>
 			<div>
-				<h2><?=$content["price"];?> грн.</h2>
+				<h2><?php echo $content["price"]; ?> грн.</h2>
 			</div>	
-			<?php endif;?>
+			<?php endif; ?>
 			<div>
-				<h2><?=$content["manufacturer"];?></h2>
+				<h2><?php echo $content["manufacturer"]; ?></h2>
 			</div>	
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="product_params">
-		<!--<div style="clear:both;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="product_params">-->
-			<p><?=$content["params"]; ?></p>
+			<p>
+				<table border="0" cellpadding="10">
+				<?php foreach($content["params"] as $param): ?>
+					<tr><td><b><?php echo $param["param_name"]; ?></b><td><?php echo $param["value"]; ?></tr>
+				<?php endforeach; ?>
+				</table>
+			</p>
 		</div>
 		<div style="clear:both;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="product_description">
-			<p><?=$content["description"];?></p>
+			<p><?php echo $content["description"]; ?></p>
 		</div>
 	</div>
 </div>

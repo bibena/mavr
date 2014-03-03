@@ -1,15 +1,51 @@
-<div class="admin-products">
-	<form class="form-horizontal" role="form" method="post" action="/admin/products">
-		<div id="admin_products_editor">
-			<?=$content;?>
-			<input type="hidden" value="1" name="flag">				
-		</div>
-		<div class="admin-products-add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3"><a href="<?= SUB_DIR; ?>admin/product/-1" class="link btn btn-info">Добавить</a></div>
-		<div class="admin-products-save col-xs-2 col-sm-2 col-md-2 col-lg-2"><button class="btn btn-success" type="submit">Сохранить</button></div>
-	</form>
-</div>
+<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/products">
+	<div class="admin_product_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info">Добавить</a>
+	</div>
+	<div class="admin_products_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button class="btn btn-success" type="submit">Сохранить</button>
+	</div>
+	<div id="admin_products_list">
+		<?php if(isset($content) && is_array($content)): ?>
+			<?php foreach($content as $product): ?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_products_item" style="opacity:<?php echo (($product["is_visible"])?'1':'0.5'); ?>;">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<a class="link" href="<?php echo SUB_DIR; ?>admin/product/<?php echo $product["id"]; ?>"><img style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/<?php echo (($product["path"])?'products/'.$product["id"].'/'.$product["path"]:'no_image.png'); ?>"></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<a class="link" href="<?php echo SUB_DIR; ?>admin/product/<?php echo $product["id"]; ?>"><?php echo $product["product_name"]; ?></a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="line-height:inherit;text-align:left;">
+						<span><?php echo (mb_substr($product["short_description"],0,200,'UTF-8')?mb_substr($product["short_description"],0,200,'UTF-8'):'Отсутствует описание для товара'); ?>&hellip;</span>
+					</div>
+					<input type="hidden" value="<?php echo $product["is_visible"]; ?>" name="<?php echo $product["sort"]; ?>[is_visible]">
+					<input type="hidden" value="<?php echo $product["id"]; ?>" name="<?php echo $product["sort"]; ?>[id]">
+					<input type="hidden" value="0" name="<?php echo $product["sort"]; ?>[delete]">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-<?php echo (($product["is_visible"])?'open':'close'); ?>"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>			
+			<?php endforeach; ?>
+		<?php endif; ?>
+		<input type="hidden" value="1" name="flag">				
+	</div>
+	<div class="admin_product_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info">Добавить</a>
+	</div>
+	<div class="admin_products_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		<button class="btn btn-success" type="submit">Сохранить</button>
+	</div>
+</form>
 
 <script>
+$(function()
+	{
+	$('#admin_products_list').sortable({distance: 100,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	});
+
 $(document).on('click','.glyphicon.glyphicon-eye-open',function()
 	{
 	var $editor=$(this).parent().parent();
@@ -31,5 +67,17 @@ $(document).on('click','.glyphicon.glyphicon-trash',function()
 	var $row=$(this).parent().parent();
 	$row.hide();
 	$row.children("input[name*='delete']").val(1);
+	});
+
+$(document).on('click','div.admin_products_save>button',function()
+	{
+	$(this).parent().parent().children('#admin_products_list').children('.admin_products_item').each(function(position)
+		{
+		$(this).children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		});
 	});
 </script>

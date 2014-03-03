@@ -52,6 +52,8 @@ new Php_Error();
 
 $db=Db::Get_Instance();
 
+$sql=Sql::Get_Instance();
+
 $session=new Session();
 
 new Controller();

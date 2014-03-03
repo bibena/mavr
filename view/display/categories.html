@@ -1,38 +1,22 @@
 <div class="row" id="categories_content">
-<?php if($content["advertisment"]):?>
+<?php if($content["display_advertisment"]): ?>
 	<div id="advertisment" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 	Тут может быть Ваша реклама.
 	</div>
 	<div id="display-categories" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-<?php else:?>
+<?php else: ?>
 	<div id="display-categories" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<?php endif;?>	
-		<?=$content["categories"];?>			
+<?php endif; ?>
+<?php foreach($content["categories"] as $category): ?>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default display_categories_item">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a class="link" href="<?php echo SUB_DIR; ?>display/category/<?php echo $category["id"]; ?>"><img style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/<?php echo (($category["path"])?'categories/'.$category["id"].'/'.$category["path"]:'no_image.png'); ?>"></a>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="line-height:inherit;text-align:left;">
+				<div><a class="link" href="<?php echo SUB_DIR; ?>display/category/<?php echo $category["id"]; ?>"><?php echo $category["category_name"]; ?></a></div>
+				<div><span><?php echo mb_substr($category["description"],0,200,'UTF-8'); ?>&hellip;</span></div>
+			</div>
+		</div>
+<?php endforeach; ?>
 	</div>
 </div>
-<script>
-/*
-$(document).on('click','.glyphicon.glyphicon-eye-open',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(0);
-	$editor.css('opacity',0.5);
-	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-eye-close',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(1);
-	$editor.css('opacity',1);
-	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-trash',function()
-	{
-	var $row=$(this).parent().parent();
-	$row.hide();
-	$row.children("input[name*='delete']").val(1);
-	});
-*/
-</script>

@@ -1,38 +1,26 @@
-<form class="form-horizontal" role="form" method="post" action="<?=SUB_DIR?>admin/config">
+<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/config">
 	<ul class="nav nav-tabs">
-	<?php $i=0;?>
 	<?php foreach($content as $tab=>$group): ?>
 	<?php if($tab!='error'): ?>
-	<?php ++$i;?>
-	<li <?php if($i==1):?>class="active"<?php endif;?>><a href="#<?=$tab?>" data-toggle="tab"><?=ucfirst($tab); ?></a></li>	
-	<?php endif;?>
-	<?php endforeach;?>
+	<li<?php echo (($tab=='database')?' class="active"':''); ?>><a href="#<?php echo $tab; ?>" data-toggle="tab"><?php echo ucfirst($tab); ?></a></li>	
+	<?php endif; ?>
+	<?php endforeach; ?>
 	</ul>
 	<div class="tab-content admin-config-tab">
-	<?php $i=0;?>
 	<?php foreach($content as $tab=>$group): ?>
 	<?php if($tab!='error'): ?>
-	<?php ++$i;?>
-	<div class="tab-pane<?php if($i==1):?> active<?php endif;?>" id="<?=$tab?>">
+	<div class="tab-pane<?php echo (($tab=='database')?' active':''); ?>" id="<?php echo $tab; ?>">
 		<?php foreach($group as $param=>$value): ?>
-		<div class="form-group<?php if(isset($content['error'][$param])): ?> has-error<?php endif; ?>">
-			<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="input<?=strtolower($param)?>"><?=ucfirst($param)?></label>
-			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<?=$value?>
-			</div>
-			<div>
-				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php if(isset($content['error'][$param])): echo LOGIN_ERROR; endif; ?></span>
-			</div>
-		</div>
-		<?php endforeach;?>
+			<?php echo $value; ?>
+		<?php endforeach; ?>
 	</div>
-	<?php endif;?>
-	<?php endforeach;?>
+	<?php endif; ?>
+	<?php endforeach; ?>
 	</div>
 	<input type="hidden" name="flag" value="1">
 	<div class="form-group remember">
 		<div class="admin-config-safe col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
-			<button tabindex="4" type="submit" class="btn btn-success"><?=ADMIN_SAVE_BUTTON_TITLE?></button>
+			<button tabindex="4" type="submit" class="btn btn-success"><?php echo ADMIN_SAVE_BUTTON_TITLE; ?></button>
 		</div>
 	</div>
 </form>

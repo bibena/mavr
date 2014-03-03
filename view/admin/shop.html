@@ -5,29 +5,167 @@
 		<li><a href="#params" data-toggle="tab">Params</a></li>
 		<li><a href="#countries" data-toggle="tab">Countries</a></li>
 	</ul>
-	<div class="tab-pane active" id="categories"><?=$content['categories'];?></div>
-	<div class="tab-pane" id="manufacturers"><?=$content['manufacturers'];?></div>
-	<div class="tab-pane" id="params"><?=$content['params'];?></div>
-	<div class="tab-pane" id="countries"><?=$content['countries'];?></div>
+				
+	<div class="tab-pane active" id="categories">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop" enctype="multipart/form-data">
+			<div id="admin_shop_categories_list">
+				<?php if(isset($content['categories']) && is_array($content['categories'])): ?>
+					<?php foreach($content['categories'] as $category): ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_categories_item" style="height:200px; opacity:<?php echo (($category["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 input-group">
+								<input type="text" placeholder="Name" required value="<?php echo $category["category_name"]; ?>" name="<?php echo $category["sort"]; ?>[category_name]" class="form-control">
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+								<textarea required class="form-control" required name="<?php echo $category["sort"]; ?>[description]" rows="8"><?php echo $category["description"]; ?></textarea>
+							</div>
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="file" name="<?php echo $category["sort"]; ?>[image]">
+							</div>
+							<input type="hidden" value="<?php echo $category["is_visible"]; ?>" name="<?php echo $category["sort"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $category["id"]; ?>" name="<?php echo $category["sort"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $category["sort"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($category["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>	
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="categories" name="tab">				
+			</div>
+			<div class="admin_shop_category_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info">Добавить</button>
+			</div>
+			<div class="admin_shop_category_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit">Сохранить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="tab-pane" id="manufacturers">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop" enctype="multipart/form-data">
+			<div id="admin_shop_manufacturers_list">
+				<?php if(isset($content['manufacturers']) && is_array($content['manufacturers'])): ?>
+					<?php foreach($content['manufacturers'] as $manufacturer): ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_manufacturers_item" style="height:40px; opacity:<?php echo (($manufacturer["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="text" placeholder="Name" required value="<?php echo $manufacturer["manufacturer_name"]; ?>" name="<?php echo $manufacturer["sort"]; ?>[manufacturer_name]" class="form-control">
+							</div>
+							<!--<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+								<textarea required class="form-control" required name="<?php echo $manufacturer["id"]; ?>[description]" rows="8"><?php echo $manufacturer["sort"]; ?></textarea>
+							</div>
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="file" name="<?php echo $manufacturer["sort"]; ?>[image]">
+							</div>-->
+							<input type="hidden" value="<?php echo $manufacturer["is_visible"]; ?>" name="<?php echo $manufacturer["sort"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $manufacturer["id"]; ?>" name="<?php echo $manufacturer["sort"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $manufacturer["sort"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($manufacturer["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>	
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="manufacturers" name="tab">				
+			</div>
+			<div class="admin_shop_manufacturer_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info">Добавить</button>
+			</div>
+			<div class="admin_shop_manufacturer_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit">Сохранить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="tab-pane" id="params">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop" enctype="multipart/form-data">
+			<div id="admin_shop_params_list">
+				<?php if(isset($content['params']) && is_array($content['params'])): ?>
+					<?php foreach($content['params'] as $param): ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_params_item" style="height:40px; opacity:<?php echo (($param["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="text" placeholder="Name" required value="<?php echo $param["param_name"]; ?>" name="<?php echo $param["id"]; ?>[param_name]" class="form-control">
+							</div>
+							<input type="hidden" value="<?php echo $param["is_visible"]; ?>" name="<?php echo $param["id"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $param["id"]; ?>" name="<?php echo $param["id"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $param["id"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($param["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>	
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="params" name="tab">				
+			</div>
+			<div class="admin_shop_param_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info">Добавить</button>
+			</div>
+			<div class="admin_shop_param_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit">Сохранить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="tab-pane" id="countries">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop">
+			<div id="admin_shop_countries_list">
+				<?php if(isset($content['countries']) && is_array($content['countries'])): ?>
+					<?php foreach($content['countries'] as $country): ?>
+						<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_shop_countries_item" style="opacity:<?php echo (($country["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="text" placeholder="Name" value="<?php echo $country["country_name"]; ?>" name="<?php echo $country["sort"]; ?>[country_name]" class="form-control">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+								<input type="text" placeholder="Phone code" required="required" value="<?php echo $country["phone_code"]; ?>" name="<?php echo $country["sort"]; ?>[phone_code]" class="form-control">
+							</div>
+							<input type="hidden" value="<?php echo $country["is_visible"]; ?>" name="<?php echo $country["sort"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $country["id"]; ?>" name="<?php echo $country["sort"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $country["sort"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($country["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>			
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="countries" name="tab">				
+			</div>
+			<div class="admin_shop_country_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info">Добавить</button>
+			</div>
+			<div class="admin_shop_country_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit">Сохранить</button>
+			</div>
+		</form>
+	</div>
 </div>
 
 <script>
 $(function()
 	{
-	$('#admin_shop_countries_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 	$('#admin_shop_categories_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	$('#admin_shop_manufacturers_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+	$('#admin_shop_countries_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 	});
 
 $('#nav-tabs a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
-
-$(document).on('click','.glyphicon.glyphicon-edit',function()
-	{
-	var $input=$(this).parent().parent().children().children('input.form-control');
-	$input.prop('disabled',!$input.prop('disabled'));
-	});
 
 $(document).on('click','.glyphicon.glyphicon-eye-open',function()
 	{
@@ -57,27 +195,6 @@ $(document).on('click','.glyphicon.glyphicon-trash',function()
 		{
 		$row.remove();
 		}
-	});
-
-$(document).on('click','div.admin_shop_country_add>button',function()
-	{
-	var new_position=0;
-	$(this).parent().parent().children('#admin_shop_countries_list').children('.admin_shop_countries_item').each(function()
-		{
-		var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
-		new_position=(position>=new_position)?(position+1):new_position;
-		});	
-	var content='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_shop_countries_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[country_name]" value="Country" placeholder="Country"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[phone_code]" value="+##" required="required" placeholder="Phone code"></div><input type="hidden" name="'+new_position+'[is_visible]" value="1"><input type="hidden" name="'+new_position+'[id]" value="-1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
-	$(this).parent().parent().children('#admin_shop_countries_list').append(content);
-	return false;
-	});
-
-$(document).on('click','div.admin_shop_country_save>button',function()
-	{
-	$(this).parent().parent().children('#admin_shop_countries_list').children('.admin_shop_countries_item').each(function(position)
-		{
-		$(this).children().children('.form-control').prop('disabled',false);
-		});
 	});
 
 $(document).on('click','div.admin_shop_category_add>button',function()
@@ -112,7 +229,6 @@ $(document).on('click','div.admin_shop_category_save>button',function()
 			var old_position=parseInt($(this).attr('name')).toString().length;
 			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
 			});
-		$(this).children().children('.form-control').prop('disabled',false);
 		});
 	});
 
@@ -129,6 +245,23 @@ $(document).on('click','div.admin_shop_manufacturer_add>button',function()
 	return false;
 	});
 
+$(document).on('click','div.admin_shop_manufacturer_save>button',function()
+	{
+	$(this).parent().parent().children('#admin_shop_manufacturers_list').children('.admin_shop_manufacturers_item').each(function(position)
+		{
+		$(this).children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		$(this).children().children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		});
+	});
+
 $(document).on('click','div.admin_shop_param_add>button',function()
 	{
 	var new_position=0;
@@ -140,5 +273,35 @@ $(document).on('click','div.admin_shop_param_add>button',function()
 	var content='<div style="height: 40px; opacity: 1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_params_item"><div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group"><input type="text" class="form-control" name="'+new_position+'[param_name]" value="" required placeholder="Name"></div><input type="hidden" name="'+new_position+'[is_visible]" value="1"><input type="hidden" name="'+new_position+'[id]" value="-1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
 	$(this).parent().parent().children('#admin_shop_params_list').append(content);
 	return false;
+	});
+
+$(document).on('click','div.admin_shop_country_add>button',function()
+	{
+	var new_position=0;
+	$(this).parent().parent().children('#admin_shop_countries_list').children('.admin_shop_countries_item').each(function()
+		{
+		var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
+		new_position=(position>=new_position)?(position+1):new_position;
+		});	
+	var content='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_shop_countries_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[country_name]" value="Country" placeholder="Country"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[phone_code]" value="+##" required="required" placeholder="Phone code"></div><input type="hidden" name="'+new_position+'[is_visible]" value="1"><input type="hidden" name="'+new_position+'[id]" value="-1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-edit"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	$(this).parent().parent().children('#admin_shop_countries_list').append(content);
+	return false;
+	});
+
+$(document).on('click','div.admin_shop_country_save>button',function()
+	{
+	$(this).parent().parent().children('#admin_shop_countries_list').children('.admin_shop_countries_item').each(function(position)
+		{
+		$(this).children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		$(this).children().children('input').each(function()
+			{
+			var old_position=parseInt($(this).attr('name')).toString().length;
+			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			});
+		});
 	});
 </script>

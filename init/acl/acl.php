@@ -44,15 +44,16 @@ class Acl
 			global $session;
 			if($cname=='Admin_Model')
 				{
-				if($session->Check('user','is_visible') && $session->Check('user','is_activated') && $session->Check('user','is_admin'))
+				if($session->Check('user','is_visible') && $session->Check('user','is_deleted') && $session->Check('user','is_admin'))
 					{
-					if(!($session->Get('user','is_visible') && $session->Get('user','is_activated') && $session->Get('user','is_admin')))
+					if(!($session->Get('user','is_visible') && !$session->Get('user','is_deleted') && $session->Get('user','is_admin')))
 						{
 						throw new Error('Access deny');
 						}
 					}
 				else
 					{
+					//var_dump(array($session->Check('user','is_visible'),$session->Check('user','is_deleted'),$session->Check('user','is_admin')));
 					throw new Error('Access deny');
 					}
 				if($mname=='Menu')

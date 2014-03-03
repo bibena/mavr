@@ -18,9 +18,17 @@ function menuSwitcher()
 			{
 			if($(this).children('a').attr('href').split('/')[1]==document.location.pathname.split('/')[1])
 				{
-				$(this).addClass('active');
+				if($(this).children('a').attr('href').split('/')[2]==document.location.pathname.split('/')[2])
+					{
+					$(this).addClass('active');
+					}
+				if(($(this).children('a').attr('href').split('/')[2]=='categories' && document.location.pathname.split('/')[2]=='category') || ($(this).children('a').attr('href').split('/')[2]=='categories' && document.location.pathname.split('/')[2]=='product'))
+					{
+					$(this).addClass('active');
+					}
 				if(document.location.pathname.split('/')[1]=='admin')
 					{
+					$(this).addClass('active');
 					$('.nav.nav-pills.nav-stacked').children('li').each(function()
 						{
 						$(this).removeClass('active');

@@ -16,22 +16,38 @@ nav a.btn{margin:8px 0;}
 .ui-state-highlight{height:50px;line-height:35px;}
 
 .admin-config-safe{text-align:center;}
-.admin-menu-safe{text-align:center;}
-.admin-menu-add{text-align:center;}
+.admin_menu_save{text-align:center;}
+.admin_menu_add{text-align:center;}
 
 .admin-config-tab{margin-top:10px;}
 
-.admin_products_item{margin-bottom:15px;height: 140px;}
-.product_images_item{margin-bottom:15px;height: 140px;}
-.product_params_item{margin-bottom:15px;height: 37px;}
+.admin_products_item{margin-bottom:15px;height: 150px;overflow:hidden;}
+.display_categories_item{margin-bottom:15px;height: 150px;overflow:hidden;}
+.admin_product_images_item{margin-bottom:15px;height: 140px;}
+.admin_product_params_item{margin-bottom:15px;height: 37px;}
 .admin_countries_item{margin-bottom:15px;height: 37px;}
 .admin_menu_item{margin-bottom:15px;height: 37px;}
 
-#admin_menu_editor div div{height: 35px;line-height: 35px;text-align: center;}
+#admin_menu_list div div{height: 35px;line-height: 35px;text-align: center;}
 #params div div{height: 35px;line-height: 35px;text-align: center;}
-#admin_countries_editor div div{height: 35px;line-height: 35px;text-align: center;}
-#admin_products_editor div div{height: 140px;line-height: 140px;text-align: center;overflow:hidden;}
+#admin_countries_list div div{height: 35px;line-height: 35px;text-align: center;}
+#admin_products_list{clear:both;padding-top:20px;}
+#admin_products_list div div{height: 140px;line-height: 140px;text-align: center;overflow:hidden;}
 #images div div{height: 140px;line-height: 140px;text-align: center;}
 
 #product_content{margin-top:10px;}
 #products_content{margin-top:10px;}
+
+#product_head div h1{margin-top:0;}
+#categories_content {margin-top: 10px;}
+
+.gv_galleryWrap {/*background: none repeat scroll 0 0 #222222;*/ padding:5px 0 !important;}
+.gv_gallery {position: relative;}
+.gv_panel {filter: inherit;left: 0;overflow: hidden;position: absolute;top: 0;z-index: 100;}
+.gv_panel img {position: absolute;}
+.gv_filmstripWrap {overflow: hidden;position: absolute;}
+.gv_filmstrip {left: 0;margin: 0;padding: 0;position: absolute;top: 0;}
+.gv_frame {cursor: pointer;float: left;margin: 0;padding: 0;position: relative;}
+.gv_frame .gv_thumbnail {overflow: hidden !important;position: relative;}
+.gv_frame.current .gv_thumbnail {}
+.gv_frame img {border: medium none;position: absolute;}

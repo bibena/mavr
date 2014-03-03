@@ -81,7 +81,7 @@ class View
 	function Menu()
 		{
 		global $session,$db;
-		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `is_visible`='1' ORDER BY `sort`;";
+		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `is_visible`='1' AND `is_deleted`='0' ORDER BY `sort`;";
 		$request=$db->prepare($sql);
 		$request->execute();
 		$menus=$request->fetchAll();
@@ -90,17 +90,17 @@ class View
 			{
 			if($menu['title']=='Admin')
 				{
-				if($session->Check('user','is_visible') && $session->Check('user','is_activated') && $session->Check('user','is_admin'))
+				if($session->Check('user','is_visible') && $session->Check('user','is_deleted') && $session->Check('user','is_admin'))
 					{
-					if($session->Get('user','is_visible') && $session->Get('user','is_activated') && $session->Get('user','is_admin'))
+					if($session->Get('user','is_visible') && !$session->Get('user','is_deleted') && $session->Get('user','is_admin'))
 						{
-						$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+						$content.='<li><a href="'.SUB_DIR.$menu['link'].'" class="link">'.$menu['title'].'</a></li>';
 						}
 					}
 				}
 			else
 				{
-				$content.=Html::Tag('li',array(),Html::Tag('a',array('href'=>SUB_DIR.$menu['link'],'class'=>'link'),$menu['title']));
+				$content.='<li><a href="'.SUB_DIR.$menu['link'].'" class="link">'.$menu['title'].'</a></li>';
 				}
 
 			}
