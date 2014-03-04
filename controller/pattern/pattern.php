@@ -31,7 +31,6 @@ class Pattern_Controller
 //---and call they
 		$this->model=new Model;
 		$this->view=new View;
-		//$this->modelinstance=new Model;
 		}
 
 

@@ -29,13 +29,13 @@ class Controller
 		try
 			{
 	//---check URL and if some controller and method were requerted keep they in memory
-			if(isset($_GET['controller']) && isset($_GET['method']) && preg_match("/^[a-z]+$/",$_GET['controller']) && preg_match("/^[a-z_]+$/",$_GET['method']))
+			if(isset($_GET["controller"]) && isset($_GET["method"]) && preg_match("/^[a-z]+$/",$_GET["controller"]) && preg_match("/^[a-z_]+$/",$_GET["method"]))
 				{
-				$controller=$_GET['controller'];
-				$method=$_GET['method'];
-				if(isset($_GET['argument']) && preg_match("/^-?[0-9]+$/",$_GET['argument']))
+				$controller=$_GET["controller"];
+				$method=$_GET["method"];
+				if(isset($_GET["argument"]) && preg_match("/^-?[0-9]+$/",$_GET["argument"]))
 					{
-					$argument=$_GET['argument'];
+					$argument=$_GET["argument"];
 					}
 				}
 	//---else show main page

@@ -1,17 +1,17 @@
-<form class="form-horizontal login_form" role="form" method="post" action="<?=SUB_DIR?>user/login">
+<form class="form-horizontal login_form" role="form" method="post" action="<?php echo SUB_DIR; ?>user/login">
 	<div class="form-group<?php if(isset($content['error'])): ?> has-error<?php endif; ?>">
-		<label class="control-label  col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputEmail"><?=LOGIN_EMAIL_TITLE?></label>
+		<label class="control-label  col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputEmail"><?php echo LOGIN_EMAIL_TITLE; ?></label>
 		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<input autofocus="autofocus" tabindex="1" type="email"<?php if(isset($content['email'])): echo'value="'.$content['email'].'"'; endif; ?> required="required" name="email" class="form-control" id="inputEmail" placeholder="<?=LOGIN_EMAIL_TITLE?>">
+			<input autofocus="autofocus" tabindex="1" type="email"<?php if(isset($content['email'])): echo'value="'.$content['email'].'"'; endif; ?> required="required" name="email" class="form-control" id="inputEmail" placeholder="<?php echo LOGIN_EMAIL_TITLE; ?>">
 		</div>
 		<div>
 			<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php if(isset($content['error'])): echo LOGIN_ERROR; endif; ?></span>
 		</div>
 	</div>
 	<div class="form-group<?php if(isset($content['error'])): ?> has-error<?php endif; ?>">
-		<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputPassword"><a href="<?=SUB_DIR?>user/forgotpassword"><?=FOGOTTEN_PASSWORD?></a></label>
+		<label class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4" for="inputPassword"><a href="<?php echo SUB_DIR; ?>user/forgotpassword"><?php echo FOGOTTEN_PASSWORD; ?></a></label>
 		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<input tabindex="2" type="password" required="required" name="password" class="form-control" id="inputPassword" placeholder="<?=LOGIN_PASSWORD_TITLE?>">
+			<input tabindex="2" type="password" required="required" name="password" class="form-control" id="inputPassword" placeholder="<?php echo LOGIN_PASSWORD_TITLE; ?>">
 			<span class="help-inline"><?php if(isset($content['error']['password'])): echo LOGIN_ERROR; endif; ?></span>
 		</div>
 	</div>
@@ -19,11 +19,11 @@
 	<div class="form-group remember">
 		<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
 			<label class="checkbox inline">
-				<input tabindex="3" name="remember"<?php if(isset($content['remember'])): echo'checked="checked"'; endif; ?> type="checkbox"><?=LOGIN_REMEMBER_TITLE?>
+				<input tabindex="3" name="remember"<?php if(isset($content['remember'])): echo'checked="checked"'; endif; ?> type="checkbox"><?php echo LOGIN_REMEMBER_TITLE; ?>
 			</label>
 		</div>
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<button tabindex="4" type="submit" class="btn btn-success"><?=LOGIN_BUTTON_TITLE?></button>
+			<button tabindex="4" type="submit" class="btn btn-success"><?php echo LOGIN_BUTTON_TITLE; ?></button>
 		</div>
 	</div>
 </form>

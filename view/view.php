@@ -80,11 +80,16 @@ class View
 --------------------------------------------------------------------------*/
 	function Menu()
 		{
-		global $session,$db;
-		$sql="SELECT `sort`,`link`,`title` FROM `menus` WHERE `is_visible`='1' AND `is_deleted`='0' ORDER BY `sort`;";
-		$request=$db->prepare($sql);
-		$request->execute();
-		$menus=$request->fetchAll();
+		global $session,$db,$sql;
+		$menus=$sql->Select(array("tablename"=>'menus',
+									"fields"=>array('sort','link','title'),
+									"where"=>array(array("field"=>'is_deleted',
+														"symbol"=>'=',
+														"value"=>0),
+													array("field"=>'is_visible',
+														"symbol"=>'=',
+														"value"=>1)),
+									"order_by"=>'sort'));
 		$content='';
 		foreach($menus as $menu)
 			{
@@ -121,7 +126,7 @@ class View
 //---if were calling unknown method throw an exception
 		try
 			{
-			throw new Error('Wrong URL. Error calling unknow method '.$name);
+			throw new Error(ERROR_VIEW_URL.$name);
 			}
 		catch (Error $e)
 			{

@@ -21,7 +21,7 @@ class Error extends Exception
 /*-------------------------------------------------------------------------
 * Constructor of Error class
 --------------------------------------------------------------------------*/
-	public function __construct($message = 'Oups! we have some problem.', $code = 0, Exception $previous = null) 
+	public function __construct($message=ERROR_STANDART_MESSAGE, $code=0, Exception $previous=null) 
 		{
 		$this->config=Config::Get_Instance()->Get_Config();
 		parent::__construct($message, $code, $previous);
@@ -62,7 +62,7 @@ class Error extends Exception
 				}
 			else
 				{
-				throw new Error('Wrong parameter number in '.__METHOD__.'. It should be numeric.');
+				throw new Error(ERROR_IN_ERROR_CATCHER);
 				}
 			}
 		catch (Error $e)

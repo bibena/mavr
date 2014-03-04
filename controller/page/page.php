@@ -49,16 +49,7 @@ class Page_Controller extends Pattern_Controller
 		{
 //---call User_Model::Registration();
 		$model_answer=$this->model->Main($this->mname);
-		//$model_answer=$this->model->Main();
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
-		}
-	function Logout()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
-	function Update()
-		{
-		echo "Запущен метод ".__METHOD__;
 		}
 	}

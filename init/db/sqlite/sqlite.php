@@ -40,7 +40,7 @@ class Sqlite_Db
 			{
 			try
 				{
-				throw new Db_Error('Error connecting to database');
+				throw new Db_Error(ERROR_CONECTING_TO_DB);
 				}
 			catch (Db_Error $e)
 				{

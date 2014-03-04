@@ -1,2 +1,891 @@
 Tue, 04 Mar 2014 01:27:08 +0200
 	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/model/display/display.php on line 81 - syntax error, unexpected ')'
+Tue, 04 Mar 2014 01:52:38 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:38 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:38 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:38 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:52:39 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/controller/page/page.php on line 51 - syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Tue, 04 Mar 2014 01:55:36 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/acl/acl.php on line 56 - Доступ запрещен
+	Trace:
+	a:6:{i:0;a:6:{s:4:"file";s:51:"/home/cubie/web/www/bibena.com/mavr/model/model.php";s:4:"line";i:44;s:8:"function";s:6:"Access";s:5:"class";s:3:"Acl";s:4:"type";s:2:"::";s:4:"args";a:2:{i:0;s:11:"Admin_Model";i:1;s:6:"Config";}}i:1;a:6:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/controller/admin/admin.php";s:4:"line";i:44;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:6:"Config";i:1;a:1:{i:0;s:11:"Admin_Model";}}}i:2;a:6:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/controller/admin/admin.php";s:4:"line";i:44;s:8:"function";s:6:"Config";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"Admin_Model";}}i:3;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:6:"Config";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";s:4:"line";i:59;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:5;a:4:{s:4:"file";s:45:"/home/cubie/web/www/bibena.com/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 04 Mar 2014 02:49:49 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:49:49 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:49:49 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:49:49 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:49:49 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:49:56 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:49:56 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:49:56 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:02 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:02 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:02 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:09 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:09 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:09 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:15 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:15 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:15 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:22 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:22 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:22 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:28 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:28 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:28 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:35 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:35 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:35 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:41 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:41 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:41 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:48 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:48 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:48 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:50:54 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:55 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:50:55 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:01 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:01 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:01 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:07 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:07 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:07 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:14 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:14 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:14 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:20 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:20 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:20 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:27 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:27 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:27 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:34 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:34 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:34 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:40 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:40 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:40 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:47 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:47 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:47 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:51:53 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:53 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Trying to get property of non-object
+Tue, 04 Mar 2014 02:51:53 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:00 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:00 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:00 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:06 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:06 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:06 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:13 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:13 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:13 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:19 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:19 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:19 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:26 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:26 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:26 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:32 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:32 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:32 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:39 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:39 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:39 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:45 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:45 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:45 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:52 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:52 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:52 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:52:58 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:58 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:52:58 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:05 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:05 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:05 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:11 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:11 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:11 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:18 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:18 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:18 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:24 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:24 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:24 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:31 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:31 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:31 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:37 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:37 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:37 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:44 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:44 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:44 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:50 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:50 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:50 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:53:57 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:57 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:53:57 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:54:03 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:03 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:03 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:54:10 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:10 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:10 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:54:16 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:16 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:16 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:54:23 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:23 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 46 - Undefined variable: data
+Tue, 04 Mar 2014 02:54:23 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 02:56:41 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/controller/pattern/pattern.php on line 50 - Ой! У нас проблема...
+	Trace:
+	a:4:{i:0;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:6:"__call";s:5:"class";s:18:"Pattern_Controller";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:4:"Main";i:1;a:0:{}}}i:1;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:4:"Main";s:5:"class";s:16:"Admin_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";s:4:"line";i:59;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:4:{s:4:"file";s:45:"/home/cubie/web/www/bibena.com/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 04 Mar 2014 02:58:12 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 8 in file /home/cubie/web/www/bibena.com/mavr/view/admin/config.html on line 23 - Use of undefined constant ADMIN_SAVE_BUTTON_TITLE - assumed 'ADMIN_SAVE_BUTTON_TITLE'
+	Trace:
+	a:12:{i:0;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/view/admin/config.html";s:4:"line";i:23;s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:8;i:1;s:85:"Use of undefined constant ADMIN_SAVE_BUTTON_TITLE - assumed 'ADMIN_SAVE_BUTTON_TITLE'";i:2;s:58:"/home/cubie/web/www/bibena.com/mavr/view/admin/config.html";i:3;i:23;i:4;a:8:{s:6:"method";s:19:"Admin_Model::Config";s:7:"content";a:2:{s:8:"database";a:6:{s:6:"dbtype";s:637:"
+		<div class="form-group">
+			<label for="inputdbtype" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbtype</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="mysql" id="inputdbtype" class="form-control" required="required" name="dbtype">mysql
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="sqlite" id="inputdbtype" class="form-control" required="required" name="dbtype">sqlite
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbhost";s:405:"
+		<div class="form-group">
+			<label for="inputdbhost" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbhost</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="localhost" id="inputdbhost" class="form-control" required name="dbhost">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbname";s:400:"
+		<div class="form-group">
+			<label for="inputdbname" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbname</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="test" id="inputdbname" class="form-control" required name="dbname">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbuser";s:400:"
+		<div class="form-group">
+			<label for="inputdbuser" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbuser</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="test" id="inputdbuser" class="form-control" required name="dbuser">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:10:"dbpassword";s:430:"
+		<div class="form-group">
+			<label for="inputdbpassword" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbpassword</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="SuperPupperA$sWord" id="inputdbpassword" class="form-control" required name="dbpassword">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbpath";s:387:"
+		<div class="form-group">
+			<label for="inputdbpath" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbpath</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="" id="inputdbpath" class="form-control" name="dbpath">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";}s:6:"global";a:8:{s:5:"title";s:398:"
+		<div class="form-group">
+			<label for="inputtitle" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Title</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="Маг" id="inputtitle" class="form-control" required name="title">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:8:"template";s:488:"
+		<div class="form-group">
+			<label for="inputtemplate" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Template</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="bootstrap" id="inputtemplate" class="form-control" required="required" name="template">bootstrap
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:10:"show_error";s:651:"
+		<div class="form-group">
+			<label for="inputshow_error" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Show_error</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputshow_error" class="form-control" required="required" name="show_error">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputshow_error" class="form-control" required="required" name="show_error">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:15:"full_error_info";s:681:"
+		<div class="form-group">
+			<label for="inputfull_error_info" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Full_error_info</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:3:"log";s:609:"
+		<div class="form-group">
+			<label for="inputlog" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Log</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputlog" class="form-control" required="required" name="log">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputlog" class="form-control" required="required" name="log">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:12:"advertisment";s:663:"
+		<div class="form-group">
+			<label for="inputadvertisment" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Advertisment</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputadvertisment" class="form-control" required="required" name="advertisment">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputadvertisment" class="form-control" required="required" name="advertisment">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"subdir";s:387:"
+		<div class="form-group">
+			<label for="inputsubdir" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Subdir</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="" id="inputsubdir" class="form-control" name="subdir">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:4:"lang";s:458:"
+		<div class="form-group">
+			<label for="inputlang" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Lang</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="ru" id="inputlang" class="form-control" required="required" name="lang">ru
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";}}s:6:"folder";s:5:"Admin";s:4:"file";s:6:"Config";s:5:"group";a:8:{s:5:"title";s:398:"
+		<div class="form-group">
+			<label for="inputtitle" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Title</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="Маг" id="inputtitle" class="form-control" required name="title">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:8:"template";s:488:"
+		<div class="form-group">
+			<label for="inputtemplate" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Template</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="bootstrap" id="inputtemplate" class="form-control" required="required" name="template">bootstrap
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:10:"show_error";s:651:"
+		<div class="form-group">
+			<label for="inputshow_error" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Show_error</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputshow_error" class="form-control" required="required" name="show_error">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputshow_error" class="form-control" required="required" name="show_error">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:15:"full_error_info";s:681:"
+		<div class="form-group">
+			<label for="inputfull_error_info" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Full_error_info</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:3:"log";s:609:"
+		<div class="form-group">
+			<label for="inputlog" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Log</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputlog" class="form-control" required="required" name="log">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputlog" class="form-control" required="required" name="log">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:12:"advertisment";s:663:"
+		<div class="form-group">
+			<label for="inputadvertisment" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Advertisment</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputadvertisment" class="form-control" required="required" name="advertisment">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputadvertisment" class="form-control" required="required" name="advertisment">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"subdir";s:387:"
+		<div class="form-group">
+			<label for="inputsubdir" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Subdir</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="" id="inputsubdir" class="form-control" name="subdir">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:4:"lang";s:458:"
+		<div class="form-group">
+			<label for="inputlang" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Lang</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="ru" id="inputlang" class="form-control" required="required" name="lang">ru
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";}s:3:"tab";s:6:"global";s:5:"value";s:458:"
+		<div class="form-group">
+			<label for="inputlang" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Lang</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="ru" id="inputlang" class="form-control" required="required" name="lang">ru
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:5:"param";s:4:"lang";}}}i:1;a:4:{s:4:"file";s:49:"/home/cubie/web/www/bibena.com/mavr/view/view.php";s:4:"line";i:48;s:4:"args";a:1:{i:0;s:58:"/home/cubie/web/www/bibena.com/mavr/view/admin/config.html";}s:8:"function";s:12:"include_once";}i:2;a:6:{s:4:"file";s:57:"/home/cubie/web/www/bibena.com/mavr/model/admin/admin.php";s:4:"line";i:90;s:8:"function";s:14:"Content_Create";s:5:"class";s:4:"View";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:19:"Admin_Model::Config";i:1;a:2:{s:8:"database";a:6:{s:6:"dbtype";s:637:"
+		<div class="form-group">
+			<label for="inputdbtype" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbtype</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="mysql" id="inputdbtype" class="form-control" required="required" name="dbtype">mysql
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="sqlite" id="inputdbtype" class="form-control" required="required" name="dbtype">sqlite
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbhost";s:405:"
+		<div class="form-group">
+			<label for="inputdbhost" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbhost</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="localhost" id="inputdbhost" class="form-control" required name="dbhost">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbname";s:400:"
+		<div class="form-group">
+			<label for="inputdbname" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbname</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="test" id="inputdbname" class="form-control" required name="dbname">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbuser";s:400:"
+		<div class="form-group">
+			<label for="inputdbuser" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbuser</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="test" id="inputdbuser" class="form-control" required name="dbuser">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:10:"dbpassword";s:430:"
+		<div class="form-group">
+			<label for="inputdbpassword" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbpassword</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="SuperPupperA$sWord" id="inputdbpassword" class="form-control" required name="dbpassword">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"dbpath";s:387:"
+		<div class="form-group">
+			<label for="inputdbpath" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Dbpath</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="" id="inputdbpath" class="form-control" name="dbpath">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";}s:6:"global";a:8:{s:5:"title";s:398:"
+		<div class="form-group">
+			<label for="inputtitle" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Title</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="Маг" id="inputtitle" class="form-control" required name="title">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:8:"template";s:488:"
+		<div class="form-group">
+			<label for="inputtemplate" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Template</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="bootstrap" id="inputtemplate" class="form-control" required="required" name="template">bootstrap
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:10:"show_error";s:651:"
+		<div class="form-group">
+			<label for="inputshow_error" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Show_error</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputshow_error" class="form-control" required="required" name="show_error">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputshow_error" class="form-control" required="required" name="show_error">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:15:"full_error_info";s:681:"
+		<div class="form-group">
+			<label for="inputfull_error_info" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Full_error_info</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputfull_error_info" class="form-control" required="required" name="full_error_info">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:3:"log";s:609:"
+		<div class="form-group">
+			<label for="inputlog" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Log</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputlog" class="form-control" required="required" name="log">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputlog" class="form-control" required="required" name="log">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:12:"advertisment";s:663:"
+		<div class="form-group">
+			<label for="inputadvertisment" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Advertisment</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="1" id="inputadvertisment" class="form-control" required="required" name="advertisment">Да
+				</label>
+				<label class="radio-inline">
+					<input type="radio" value="0" id="inputadvertisment" class="form-control" required="required" name="advertisment">Нет
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:6:"subdir";s:387:"
+		<div class="form-group">
+			<label for="inputsubdir" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Subdir</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<input type="input" value="" id="inputsubdir" class="form-control" name="subdir">
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";s:4:"lang";s:458:"
+		<div class="form-group">
+			<label for="inputlang" class="control-label col-xs-4 col-sm-4 col-md-4 col-lg-4">Lang</label>
+			<div class="controls col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<label class="radio-inline">
+					<input type="radio" checked value="ru" id="inputlang" class="form-control" required="required" name="lang">ru
+				</label>
+			</div>
+			<div>
+				<span class="help-block col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
+			</div>
+		</div>";}}}}i:3;a:6:{s:4:"file";s:51:"/home/cubie/web/www/bibena.com/mavr/model/model.php";s:4:"line";i:45;s:8:"function";s:6:"Config";s:5:"class";s:11:"Admin_Model";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:4;a:6:{s:4:"file";s:55:"/home/cubie/web/www/bibena.com/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:6:"Config";i:1;a:1:{i:0;s:11:"Admin_Model";}}}i:5;a:6:{s:4:"file";s:55:"/home/cubie/web/www/bibena.com/mavr/model/ajax/ajax.php";s:4:"line";i:64;s:8:"function";s:6:"Config";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;s:11:"Admin_Model";}}i:6;a:6:{s:4:"file";s:51:"/home/cubie/web/www/bibena.com/mavr/model/model.php";s:4:"line";i:40;s:8:"function";s:4:"Link";s:5:"class";s:10:"Ajax_Model";s:4:"type";s:2:"->";s:4:"args";a:1:{i:0;a:1:{i:0;s:13:"/admin/config";}}}i:7;a:6:{s:4:"file";s:60:"/home/cubie/web/www/bibena.com/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:6:"__call";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:4:"Link";i:1;a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:13:"/admin/config";}}}}i:8;a:6:{s:4:"file";s:60:"/home/cubie/web/www/bibena.com/mavr/controller/ajax/ajax.php";s:4:"line";i:26;s:8:"function";s:4:"Link";s:5:"class";s:5:"Model";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:10:"Ajax_Model";i:1;a:1:{i:0;s:13:"/admin/config";}}}i:9;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:4:"Link";s:5:"class";s:15:"Ajax_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:10;a:6:{s:4:"file";s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";s:4:"line";i:59;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:11;a:4:{s:4:"file";s:45:"/home/cubie/web/www/bibena.com/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}
+Tue, 04 Mar 2014 03:06:08 +0200
+	Fatal Error: 4 in file /home/cubie/web/www/bibena.com/mavr/view/admin/products.html on line 19 - syntax error, unexpected '<'
+Tue, 04 Mar 2014 03:19:34 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:34 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/controller/ajax/ajax.php:26)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:142:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/controller/ajax/ajax.php:26)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:19:40 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:40 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:40 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:19:47 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:47 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:47 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:19:53 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:53 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:19:53 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:20:00 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:00 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:00 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:20:07 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:07 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:07 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:20:13 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:13 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:13 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:20:20 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:20 +0200
+	Fatal Error: 8 in file /home/cubie/web/www/bibena.com/mavr/lang/ru/core.php on line 66 - Constant ADMIN_PRODUCT_TITLE_PARAMS already defined
+Tue, 04 Mar 2014 03:20:20 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/init/error/php/php.php on line 42 - Error: 2 in file /home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php on line 121 - Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)
+	Trace:
+	a:4:{i:0;a:4:{s:8:"function";s:19:"Other_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:5:{i:0;i:2;i:1;s:131:"Cannot modify header information - headers already sent by (output started at /home/cubie/web/www/bibena.com/mavr/view/view.php:69)";i:2;s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";i:3;i:121;i:4;a:4:{s:4:"path";s:14:"page/error/500";s:6:"config";a:14:{s:6:"dbtype";s:5:"mysql";s:6:"dbhost";s:9:"localhost";s:6:"dbname";s:4:"test";s:6:"dbuser";s:4:"test";s:10:"dbpassword";s:18:"SuperPupperA$sWord";s:6:"dbpath";s:0:"";s:5:"title";s:6:"Маг";s:8:"template";s:9:"bootstrap";s:10:"show_error";s:1:"1";s:15:"full_error_info";s:1:"1";s:3:"log";s:1:"1";s:12:"advertisment";s:1:"1";s:6:"subdir";s:0:"";s:4:"lang";s:2:"ru";}s:8:"redirect";s:30:"mavr.bibena.com/page/error/500";s:9:"patharray";a:3:{i:0;s:4:"page";i:1;s:5:"error";i:2;s:3:"500";}}}}i:1;a:4:{s:4:"file";s:62:"/home/cubie/web/www/bibena.com/mavr/init/redirect/redirect.php";s:4:"line";i:121;s:8:"function";s:6:"header";s:4:"args";a:1:{i:0;s:47:"Location: http://mavr.bibena.com/page/error/500";}}i:2;a:6:{s:4:"file";s:58:"/home/cubie/web/www/bibena.com/mavr/init/error/php/php.php";s:4:"line";i:61;s:8:"function";s:4:"Page";s:5:"class";s:8:"Redirect";s:4:"type";s:2:"::";s:4:"args";a:1:{i:0;s:14:"page/error/500";}}i:3;a:4:{s:8:"function";s:19:"Fatal_Error_Catcher";s:5:"class";s:9:"Php_Error";s:4:"type";s:2:"->";s:4:"args";a:0:{}}}
+Tue, 04 Mar 2014 03:29:11 +0200
+	Error: 0 in file /home/cubie/web/www/bibena.com/mavr/controller/pattern/pattern.php on line 50 - Ой! У нас проблема...
+	Trace:
+	a:4:{i:0;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:6:"__call";s:5:"class";s:18:"Pattern_Controller";s:4:"type";s:2:"->";s:4:"args";a:2:{i:0;s:9:"Categorie";i:1;a:0:{}}}i:1;a:6:{s:4:"file";s:61:"/home/cubie/web/www/bibena.com/mavr/controller/controller.php";s:4:"line";i:59;s:8:"function";s:9:"Categorie";s:5:"class";s:18:"Display_Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:2;a:6:{s:4:"file";s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";s:4:"line";i:59;s:8:"function";s:11:"__construct";s:5:"class";s:10:"Controller";s:4:"type";s:2:"->";s:4:"args";a:0:{}}i:3;a:4:{s:4:"file";s:45:"/home/cubie/web/www/bibena.com/mavr/index.php";s:4:"line";i:8;s:4:"args";a:1:{i:0;s:49:"/home/cubie/web/www/bibena.com/mavr/init/init.php";}s:8:"function";s:12:"include_once";}}

@@ -29,10 +29,6 @@ class Page_Model extends Pattern_Model
 		parent::__construct();
 		$this->view=new View;
 		}
-	function Show()
-		{
-		echo "Method ".__METHOD__."was started";
-		}
 
 
 
@@ -71,7 +67,7 @@ class Page_Model extends Pattern_Model
 				}
 			else
 				{
-				throw new Error('Wrong parameter number in '.__METHOD__.'. It should be numeric.');
+				throw new Error(ERROR_IN_ERROR_CATCHER);
 				}
 			}
 		catch (Error $e)
@@ -86,13 +82,5 @@ class Page_Model extends Pattern_Model
 //create content
 		$content['content']=$this->view->Content_Create(__METHOD__,array());
 		return $content;
-		}
-	function Logout()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
-	function Update()
-		{
-		echo "Запущен метод ".__METHOD__;
 		}
 	}

@@ -6,10 +6,7 @@ if($session->Check('last_error'))
 	$session->Erase('last_error');
 	}
 ?>
-<p>Вы будете переадресованы на главную страницу через 
-	<span class="time">5</span> секунд. 
-	<a href="<?=SUB_DIR?>">Перейти сразу</a>
-</p>
+<?php echo REDIRECT_MESSAGE; ?>
 <script>
 	$(document).ready(function()
 		{

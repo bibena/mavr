@@ -74,7 +74,7 @@ class Pattern_Model
 			global $session;
 			if(isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST'])===false)
 				{
-				throw new Error('Wrong URL. Form wasn`t sent from this site.');
+				throw new Error(ERROR_FORM_SENDED);
 				}
 			else
 				{
@@ -145,7 +145,7 @@ class Pattern_Model
 //---if were calling unknown method throw an exception
 		try
 			{
-			throw new Error('Wrong URL. Error calling unknow method '.$name);
+			throw new Error(ERROR_VIEW_URL.$name);
 			}
 		catch (Error $e)
 			{

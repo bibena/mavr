@@ -53,7 +53,7 @@ class Session
 						}
 					else
 						{
-						throw new Error('Wrong session subsection request');
+						throw new Error(ERROR_SESSION_SUBSECTION);
 						}
 					}
 				else
@@ -64,7 +64,7 @@ class Session
 						}
 					else
 						{
-						throw new Error('Wrong session section request');
+						throw new Error(ERROR_SESSION_SECTION);
 						}
 					}
 				}
@@ -158,12 +158,12 @@ class Session
 					}
 				else
 					{
-					throw new Error('Wrong session section request');
+					throw new Error(ERROR_SESSION_SECTION);
 					}
 				}
 			else
 				{
-				throw new Error('Wrong session value request');
+				throw new Error(ERROR_SESSION_VALUE);
 				}
 			}
 		catch (Error $e)
@@ -196,7 +196,7 @@ class Session
 					}
 				else
 					{
-					throw new Error('trying to set wrong user section to session');
+					throw new Error(ERROR_SESSION_USER);
 					}
 				}
 			}
@@ -279,7 +279,7 @@ class Session
 					}
 				else
 					{
-					throw new Error('Error message doesn`t exist');
+					throw new Error(ERROR_SESSION_MESSAGE);
 					}
 				}
 			else
@@ -316,7 +316,7 @@ class Session
 						}
 					else
 						{
-						throw new Error('Wrong session subsection requested');
+						throw new Error(ERROR_SESSION_SUBSECTION);
 						}
 					}
 				else
@@ -327,7 +327,7 @@ class Session
 						}
 					else
 						{
-						throw new Error('Wrong session section requested');
+						throw new Error(ERROR_SESSION_SECTION);
 						}
 					}
 				}

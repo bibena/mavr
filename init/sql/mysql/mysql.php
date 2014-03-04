@@ -80,7 +80,7 @@ class Mysql_Sql
 					}
 				else
 					{
-					throw new Db_Error('Error inserting data in the table '.$data['tablename'].' in the '.__METHOD__,$db->error);
+					throw new Db_Error(ERROR_SQL_INSERT.$data["tablename"].'('.__METHOD__.')');
 					}					
 				}
 			}
@@ -195,7 +195,7 @@ class Mysql_Sql
 					}
 				else
 					{
-					throw new Db_Error('Error updating data in the table '.$data['tablename'].' in the '.__METHOD__,$db->error);
+					throw new Db_Error(ERROR_SQL_UPDATE.$data["tablename"].'('.__METHOD__.')');
 					}					
 				}
 			}
@@ -586,7 +586,7 @@ class Mysql_Sql
 					}
 				else
 					{
-					throw new Db_Error('Error selecting data in the table '.$data["tablename"].' in the '.__METHOD__,$db->error);
+					throw new Db_Error(ERROR_SQL_SELECT.$data["tablename"].'('.__METHOD__.')');
 					}					
 				}
 			}

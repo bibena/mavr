@@ -34,7 +34,7 @@ class Ajax_Model
 			switch(count($link_array))
 				{
 				case 0:
-					throw new Error('Wrong URI');
+					throw new Error(ERROR_WRONG_URI);
 					break;
 				case 1: 
 					$model='page';
@@ -68,7 +68,7 @@ class Ajax_Model
 			{
 			$e->Error();
 			}
-		return $content['content'];
+		return $content["content"];
 		}	
 	}
 ?>

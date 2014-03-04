@@ -29,7 +29,7 @@ class Model
 				}
 			else
 				{
-				throw new Error('Class name wasn`t sent');
+				throw new Error(ERROR_MODEL_UNNOWN_CLASS);
 				}
 //---create example of the requested class
 			$class=new $cname;

@@ -1,15 +1,15 @@
 <form class="form-horizontal" role="form" method="post" enctype="multipart/form-data" action="<?php echo SUB_DIR; ?>admin/product/<?php echo $content["id"]; ?>">
 	<div class="tab-content admin-product-tab">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="#general" data-toggle="tab">General</a></li>
-			<li><a href="#params" data-toggle="tab">Params</a></li>
-			<li><a href="#images" data-toggle="tab">Images</a></li>
+			<li class="active"><a href="#general" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_GENERAL; ?></a></li>
+			<li><a href="#params" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_PARAMS; ?></a></li>
+			<li><a href="#images" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_IMAGES; ?></a></li>
 		</ul>
 
 		<div class="tab-pane active" id="general">
 			<input type="hidden" name="id" value="<?php echo $content["id"]; ?>">
 			<div class="form-group">
-				<label for="product_visible" class="col-sm-2 control-label">Visible</label>
+				<label for="product_visible" class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_VISIBLE; ?></label>
 				<div class="col-sm-10">
 					<label class="checkbox-inline">
 						<input type="checkbox" name="is_visible" value="1"<?php echo (($content["is_visible"])?' checked':''); ?> class="form-control" id="product_visible">
@@ -17,13 +17,13 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Name</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_NAME; ?></label>
 				<div class="col-sm-10">
 					<input required class="form-control" name="product_name" value="<?php echo $content["product_name"]; ?>" placeholder="Name">
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Manufacturer</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_MANUFACTURER; ?></label>
 				<div class="col-sm-10">
 					<select required name="manufacturer_id" class="form-control">';
 						<?php foreach($content["manufacturers"] as $manufacturer): ?>
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Categories</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_CATEGORIES; ?></label>
 				<div class="col-sm-10">
 					<select required size="3" name="categories[]" multiple class="form-control">';
 						<?php foreach($content["all_categories"] as $all_categories): ?>
@@ -47,25 +47,25 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Price</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_PRICE; ?></label>
 				<div class="col-sm-10">
 					<input type="number" value="<?php echo $content["price"]; ?>" name="price" class="form-control" placeholder="Price">
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Amount</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_AMOUNT; ?></label>
 				<div class="col-sm-10">
 					<input type="number" value="<?php echo $content["amount"]; ?>" name="amount" class="form-control" placeholder="Amount">
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Short Description</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_SHORT_DESCRIPTION; ?></label>
 				<div class="col-sm-10">
 					<textarea required class="form-control" name="short_description" rows="10"><?php echo $content["short_description"]; ?></textarea>
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="col-sm-2 control-label">Description</label>
+				<label class="col-sm-2 control-label"><?php echo ADMIN_PRODUCT_TITLE_DESCRIPTION; ?></label>
 				<div class="col-sm-10">
 					<textarea required class="form-control" name="description" rows="10"><?php echo $content["description"]; ?></textarea>
 				</div>
@@ -126,16 +126,16 @@
 
 		<input type="hidden" name="flag" value="1">
 		<div class="admin_product_param_add col-xs-2 col-sm-2 col-md-2 col-lg-2" style="display:none;">
-			<button class="btn btn-success" type="submit">Добавить</button>
+			<button class="btn btn-success" type="submit"><?php echo ADD_BUTTON_TITLE; ?></button>
 		</div>		
 		<div class="admin_product_image_add col-xs-2 col-sm-2 col-md-2 col-lg-2" style="display:none;">
-			<button class="btn btn-success" type="submit">Добавить</button>
+			<button class="btn btn-success" type="submit"><?php echo ADD_BUTTON_TITLE; ?></button>
 		</div>		
 		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-			<a href="<?php echo SUB_DIR; ?>admin/products" class="link btn btn-info">Назад</a>
+			<a href="<?php echo SUB_DIR; ?>admin/products" class="link btn btn-info"><?php echo BACK_BUTTON_TITLE; ?></a>
 		</div>
 		<div class="admin_product_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
-			<button class="btn btn-success" type="submit">Сохранить</button>
+			<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
 		</div>
 	</div>
 </form>

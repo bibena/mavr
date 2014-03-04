@@ -47,7 +47,7 @@ class Redirect
 				}
 			else
 				{
-				throw new Error('Wrong parameter path');
+				throw new Error(ERROR_IN_PATH);
 				}
 			header('Location: '.$redirect);
 			}
@@ -110,12 +110,12 @@ class Redirect
 						}
 					else
 						{
-						throw new Error('Wrong parameter path');
+						throw new Error(ERROR_IN_PATH);
 						}
 					}
 				else
 					{
-					throw new Error('Wrong parameter path');
+					throw new Error(ERROR_IN_PATH);
 					}
 				}
 			header('Location: http://'.$redirect);

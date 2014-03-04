@@ -38,27 +38,6 @@ class Display_Controller extends Pattern_Controller
 *
 * Call functions User_Model::Registration() and User_View::Registration().
 --------------------------------------------------------------------------*/
-/*	function Categories()
-		{
-//---call User_Model::Registration();
-		$model_answer=$this->model->Categories($this->mname);
-//---call User_View::Registration();
-		$this->view->Display($model_answer);
-		}
-	function Category()
-		{
-//---call User_Model::Registration();
-		$model_answer=$this->model->Category($this->mname);
-//---call User_View::Registration();
-		$this->view->Display($model_answer);
-		}
-	function Show($id)
-		{
-//---call User_Model::Registration();
-		$model_answer=$this->model->Show($this->mname,array($id));
-//---call User_View::Registration();
-		$this->view->Display($model_answer);
-		}*/
 	function Product($id)
 		{
 //---call User_Model::Registration();

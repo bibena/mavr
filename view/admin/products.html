@@ -1,9 +1,9 @@
 <form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/products">
 	<div class="admin_product_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info">Добавить</a>
+		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></a>
 	</div>
 	<div class="admin_products_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
-		<button class="btn btn-success" type="submit">Сохранить</button>
+		<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
 	</div>
 	<div id="admin_products_list">
 		<?php if(isset($content) && is_array($content)): ?>
@@ -16,7 +16,7 @@
 						<a class="link" href="<?php echo SUB_DIR; ?>admin/product/<?php echo $product["id"]; ?>"><?php echo $product["product_name"]; ?></a>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="line-height:inherit;text-align:left;">
-						<span><?php echo (mb_substr($product["short_description"],0,200,'UTF-8')?mb_substr($product["short_description"],0,200,'UTF-8'):'Отсутствует описание для товара'); ?>&hellip;</span>
+						<span><?php echo (mb_substr($product["short_description"],0,200,'UTF-8')?mb_substr($product["short_description"],0,200,'UTF-8'):MISSING_PRODUCT_DESCRIPTION); ?>&hellip;</span>
 					</div>
 					<input type="hidden" value="<?php echo $product["is_visible"]; ?>" name="<?php echo $product["sort"]; ?>[is_visible]">
 					<input type="hidden" value="<?php echo $product["id"]; ?>" name="<?php echo $product["sort"]; ?>[id]">
@@ -33,10 +33,10 @@
 		<input type="hidden" value="1" name="flag">				
 	</div>
 	<div class="admin_product_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info">Добавить</a>
+		<a href="<?php echo SUB_DIR; ?>admin/product/-1" class="link btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></a>
 	</div>
 	<div class="admin_products_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
-		<button class="btn btn-success" type="submit">Сохранить</button>
+		<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
 	</div>
 </form>
 

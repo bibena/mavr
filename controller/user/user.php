@@ -61,8 +61,4 @@ class User_Controller extends Pattern_Controller
 //---call User_Model::Logout();
 		$model_answer=$this->model->Logout($this->mname);
 		}
-	function Update()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
 	}

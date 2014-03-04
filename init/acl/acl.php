@@ -48,17 +48,12 @@ class Acl
 					{
 					if(!($session->Get('user','is_visible') && !$session->Get('user','is_deleted') && $session->Get('user','is_admin')))
 						{
-						throw new Error('Access deny');
+						throw new Error(ERROR_ACCESS_DENY);
 						}
 					}
 				else
 					{
-					//var_dump(array($session->Check('user','is_visible'),$session->Check('user','is_deleted'),$session->Check('user','is_admin')));
-					throw new Error('Access deny');
-					}
-				if($mname=='Menu')
-					{
-					//throw new Error('Access deny');
+					throw new Error(ERROR_ACCESS_DENY);
 					}
 				}
 			}
