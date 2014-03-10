@@ -1,11 +1,3 @@
-<?php
-$session=new Session;
-if($session->Check('last_error'))
-	{
-	echo $session->Get('last_error');
-	$session->Erase('last_error');
-	}
-?>
 <?php echo REDIRECT_MESSAGE; ?>
 <script>
 	$(document).ready(function()

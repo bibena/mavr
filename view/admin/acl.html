@@ -1,0 +1,35 @@
+<form action="<?php echo SUB_DIR; ?>admin/acl" method="post" role="form" class="form-horizontal">
+	<div class="row" id="admin_acl_list">
+		<?php if(isset($content) && is_array($content)): ?>
+			<?php $i=1; ?>
+			<?php foreach($content as $class_name=>$methods): ?>
+				<?php foreach($methods as $method_name=>$method_access): ?>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 admin_acl_item">				
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+							<span><?php echo $class_name; ?></span>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+							<span><?php echo $method_name; ?></span>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group">
+							<input class="form-control" type="checkbox" name="<?php echo $i; ?>[login_only]" value="1" <?php echo (($method_access["login_only"])?'checked':''); ?>>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group">
+							<input class="form-control" type="checkbox" name="<?php echo $i; ?>[admin_only]" value="1" <?php echo (($method_access["admin_only"])?'checked':''); ?>>
+						</div>
+						<input type="hidden" name="<?php echo $i; ?>[id]" value="<?php echo $method_access["id"]; ?>">
+						<input type="hidden" name="<?php echo $i; ?>[class_name]" value="<?php echo $class_name; ?>">
+						<input type="hidden" name="<?php echo $i; ?>[method_name]" value="<?php echo $method_name; ?>">
+					</div>
+					<?php $i++; ?>
+				<?php endforeach; ?>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div>
+		<div class="admin_menu_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<button type="submit" class="btn btn-success"><?php echo SAVE_BUTTON_TITLE; ?></button>
+		</div>
+	</div>
+</form>

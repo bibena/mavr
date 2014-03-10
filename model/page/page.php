@@ -43,6 +43,7 @@ class Page_Model extends Pattern_Model
 		{
 		try
 			{
+			global $session;
 			list($number,$error_message)=$args;
 			if(is_numeric($number))
 				{
@@ -56,7 +57,11 @@ class Page_Model extends Pattern_Model
 						header('HTTP/1.0 404');
 						break;
 					case 500:
-						$content['error_message']=$error_message;
+						$content['error_message']=$session->Get('last_error');
+						if(isset($error_message) && $error_message)
+							{
+							$content['error_message']=$error_message;
+							}
 						$content['error']=ERROR_500_MESSAGE;
 						header('HTTP/1.0 500');
 						break;
@@ -75,6 +80,9 @@ class Page_Model extends Pattern_Model
 			$e->Error();
 			}
 		}
+
+
+
 	function Main()
 		{
 //include css and js

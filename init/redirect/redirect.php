@@ -70,7 +70,7 @@ class Redirect
 		{
 		try
 			{
-			$config=Config::Get_Instance()->Get_Config();
+			global $config;
 			$path=trim($path," \n\r\t\0\x0B/");
 			if($path==='')
 				{

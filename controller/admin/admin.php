@@ -38,6 +38,13 @@ class Admin_Controller extends Pattern_Controller
 *
 * Call functions User_Model::Registration() and User_View::Registration().
 --------------------------------------------------------------------------*/
+	function Main()
+		{
+//---call User_Model::Registration();
+		$model_answer=$this->model->Main($this->mname);
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
+		}
 	function Config()
 		{
 //---call User_Model::Registration();
@@ -49,6 +56,13 @@ class Admin_Controller extends Pattern_Controller
 		{
 //---call User_Model::Registration();
 		$model_answer=$this->model->Menu($this->mname);
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
+		}
+	function Acl()
+		{
+//---call User_Model::Registration();
+		$model_answer=$this->model->Acl($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}

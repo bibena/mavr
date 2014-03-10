@@ -10,7 +10,6 @@ catch (Flag_Error $e)
 	{
 	$e->Error();
 	}
-$config=Config::Get_Instance()->Get_Config();
 if($config['subdir']!=='')
 	{
 	define('SUB_DIR',DS.$config['subdir'].DS);

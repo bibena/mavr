@@ -37,22 +37,22 @@ class Display_Model extends Pattern_Model
 		{
 		try
 			{
-			global $db,$config,$sql;
+			global $config,$sql;
 			$product_id=$param[0];
 			$data=$sql->Select(array("tablename"=>'products',
-												"fields"=>array('id','manufacturer_id','product_name','description','price','amount'),
-												"where"=>array(array("field"=>'id',
-																	"symbol"=>'=',
-																	"value"=>$product_id),
-																array("tablename"=>'products',
-																	"field"=>'is_deleted',
-																	"symbol"=>'=',
-																	"value"=>0),
-																array("tablename"=>'products',
-																	"field"=>'is_visible',
-																	"symbol"=>'=',
-																	"value"=>1)),
-												"single"=>'single'));
+									"fields"=>array('id','manufacturer_id','product_name','description','price','amount'),
+									"where"=>array(array("field"=>'id',
+														"symbol"=>'=',
+														"value"=>$product_id),
+													array("tablename"=>'products',
+														"field"=>'is_deleted',
+														"symbol"=>'=',
+														"value"=>0),
+													array("tablename"=>'products',
+														"field"=>'is_visible',
+														"symbol"=>'=',
+														"value"=>1)),
+									"single"=>'single'));
 
 			if($data)
 				{
@@ -150,7 +150,7 @@ class Display_Model extends Pattern_Model
 		{
 		try
 			{
-			global $db,$config,$sql;
+			global $config,$sql;
 			$sub_select=$sql->Select(array("tablename"=>'products_images',
 											"fields"=>array(array("tablename"=>'products_images',
 																	"fields"=>array('product_id','image_id')),
@@ -235,7 +235,7 @@ class Display_Model extends Pattern_Model
 		{
 		try
 			{
-			global $db,$config,$sql;
+			global $config,$sql;
 			$sub_select=$sql->Select(array("tablename"=>'images',
 											"fields"=>array('id','path'),
 											"where"=>array(array("field"=>'is_deleted',
@@ -285,7 +285,7 @@ class Display_Model extends Pattern_Model
 		{
 		try
 			{
-			global $db,$config,$sql;
+			global $config,$sql;
 			$category_id=$param[0];
 			$sub_select=$sql->Select(array("tablename"=>'products_images',
 											"fields"=>array(array("tablename"=>'products_images',

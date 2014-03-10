@@ -82,7 +82,7 @@ class View
 		{
 		global $session,$db,$sql;
 		$menus=$sql->Select(array("tablename"=>'menus',
-									"fields"=>array('sort','link','title'),
+									"fields"=>array('sort','link','title','login_only','admin_only'),
 									"where"=>array(array("field"=>'is_deleted',
 														"symbol"=>'=',
 														"value"=>0),
@@ -93,11 +93,26 @@ class View
 		$content='';
 		foreach($menus as $menu)
 			{
-			if($menu['title']=='Admin')
+			if($menu['login_only'])
 				{
-				if($session->Check('user','is_visible') && $session->Check('user','is_deleted') && $session->Check('user','is_admin'))
+				if($menu['admin_only'])
 					{
-					if($session->Get('user','is_visible') && !$session->Get('user','is_deleted') && $session->Get('user','is_admin'))
+					if($session->Check('user','is_visible') &&
+						$session->Check('user','is_deleted') &&
+						$session->Check('user','is_admin') &&
+						$session->Get('user','is_visible') &&
+						!$session->Get('user','is_deleted') &&
+						$session->Get('user','is_admin'))
+						{
+						$content.='<li><a href="'.SUB_DIR.$menu['link'].'" class="link">'.$menu['title'].'</a></li>';
+						}
+					}
+				else
+					{
+					if($session->Check('user','is_visible') && 
+						$session->Check('user','is_deleted') && 
+						$session->Get('user','is_visible') && 
+						!$session->Get('user','is_deleted'))
 						{
 						$content.='<li><a href="'.SUB_DIR.$menu['link'].'" class="link">'.$menu['title'].'</a></li>';
 						}
@@ -107,7 +122,6 @@ class View
 				{
 				$content.='<li><a href="'.SUB_DIR.$menu['link'].'" class="link">'.$menu['title'].'</a></li>';
 				}
-
 			}
 		return $content;
 		}

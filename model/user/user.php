@@ -35,14 +35,6 @@ class User_Model extends Pattern_Model
 		}
 
 
-
-	function Show()
-		{
-		echo "Запущен метод ".__METHOD__;
-		}
-
-
-
 /*-------------------------------------------------------------------------
 * Example of Registration function
 *
@@ -137,12 +129,5 @@ class User_Model extends Pattern_Model
 			$e->Error();
 			}
 		return true;
-		}
-
-
-
-	function Update()
-		{
-		echo "Запущен метод ".__METHOD__;
 		}
 	}

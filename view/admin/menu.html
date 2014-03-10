@@ -2,12 +2,18 @@
 	<div class="row" id="admin_menu_list">
 		<?php if(isset($content) && is_array($content)): ?>
 			<?php foreach($content as $menu): ?>
-				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item" style="opacity:<?php echo (($menu["is_visible"])?'1':'0.5'); ?>;">				
-					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_menu_item" style="opacity:<?php echo (($menu["is_visible"])?'1':'0.5'); ?>;">				
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
 						<input class="form-control" name="<?php echo $menu["sort"]; ?>[path]" value="<?php echo $menu["link"]; ?>" placeholder="Path">
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
 						<input class="form-control" name="<?php echo $menu["sort"]; ?>[title]" value="<?php echo $menu["title"]; ?>" required placeholder="Title">
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group">
+						<input type="checkbox" class="form-control" name="<?php echo $menu["sort"]; ?>[login_only]" value="1" <?php echo (($menu["login_only"])?'checked':''); ?>>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group">
+						<input type="checkbox" class="form-control" name="<?php echo $menu["sort"]; ?>[admin_only]" value="1" <?php echo (($menu["admin_only"])?'checked':''); ?>>
 					</div>
 					<input name="<?php echo $menu["sort"]; ?>[is_visible]" type="hidden" value="<?php echo $menu["is_visible"]; ?>">
 					<input name="<?php echo $menu["sort"]; ?>[id]" type="hidden" value="<?php echo $menu["id"]; ?>">
@@ -77,7 +83,7 @@ $(document).on('click','div.admin_menu_add>button',function()
 		var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
 		new_position=(position>=new_position)?(position+1):new_position;
 		});
-	var content='<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 ui-state-default admin_menu_item"><div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group"><input placeholder="Path" value="" name="'+new_position+'[path]" class="form-control"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Title" required="required" value="" name="'+new_position+'[title]" class="form-control"></div><input type="hidden" value="1" name="'+new_position+'[is_visible]"><input type="hidden" value="-1" name="'+new_position+'[id]"><input type="hidden" value="0" name="'+new_position+'[delete]"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+	var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_menu_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" value="" name="'+new_position+'[path]" class="form-control"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Title" required="required" value="" name="'+new_position+'[title]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[login_only]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[admin_only]" class="form-control"></div><input type="hidden" value="1" name="'+new_position+'[is_visible]"><input type="hidden" value="-1" name="'+new_position+'[id]"><input type="hidden" value="0" name="'+new_position+'[delete]"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
 	$(this).parent().parent().parent().children('#admin_menu_list').append(content);
 	return false;
 	});

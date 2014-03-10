@@ -30,7 +30,7 @@ class Log
 --------------------------------------------------------------------------*/
 	private static function Init()
 		{
-		$config=Config::Get_Instance()->Get_Config();
+		global $config;
 		if(isset($config['infolog']))
 			{
 			self::$info_log=$config['infolog'];

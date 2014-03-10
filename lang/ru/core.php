@@ -36,6 +36,7 @@ define('ERROR_READING_CONFIG','Ошибка чтения конфигураци�
 define('ERROR_CONECTING_TO_DB','Ошибка соединения с базой данных');
 define('ERROR_STANDART_MESSAGE','Ой! У нас проблема...');
 define('ERROR_IN_ERROR_CATCHER','Параметр, переданный от '.__METHOD__.' должен быть числом');
+define('ERROR_SHOULD_BE_STRING','Сообщение об ошибке должно быть строкой');
 define('ERROR_IN_PATH','Указан неверный путь для перенаправлении');
 define('ERROR_SESSION_SECTION','Неверно указан путь к секции сессии');
 define('ERROR_SESSION_SUBSECTION','Неверно указан путь к под-секции сессии');
@@ -48,6 +49,7 @@ define('ERROR_SQL_SELECT','Ошибкка выборки данных из та�
 define('ERROR_VIEW_URL','Неверный URL. Ошибка вызова метода ');
 define('ADMIN_MENU_TITLE_CONFIG','Конфигурация');
 define('ADMIN_MENU_TITLE_MENU','Меню');
+define('ADMIN_MENU_TITLE_ACL','Контроль доступа');
 define('ADMIN_MENU_TITLE_SHOP','Магазин');
 define('ADMIN_MENU_TITLE_PRODUCTS','Товары');
 define('ADMIN_PRODUCT_TITLE_GENERAL','Главное');

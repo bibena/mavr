@@ -14,11 +14,6 @@ catch (Flag_Error $e)
 
 class Model
 	{
-	function __construct()
-		{}
-
-
-
 	function __call($mname,$args)
 		{
 		try

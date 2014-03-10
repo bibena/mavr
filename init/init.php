@@ -44,6 +44,8 @@ spl_autoload_register(
 		}
 	);
 
+$config=Config::Get_Instance()->Get_Config();
+
 include_once(INIT_DIR.DS.'constant'.DS.'constant.php');
 
 new Lang();

@@ -115,6 +115,8 @@ class Admin_Model extends Pattern_Model
 												"set"=>array("sort"=>$sort,
 															"link"=>trim(SUB_DIR.$value["path"],'/'),
 															"title"=>$value["title"],
+															"login_only"=>isset($value["login_only"])?1:0,
+															"admin_only"=>(isset($value["login_only"]) && isset($value["admin_only"]))?1:0,
 															"is_deleted"=>$value["delete"],
 															"is_visible"=>$value["is_visible"]),
 												"where"=>array('id','=',$value["id"])));
@@ -125,6 +127,8 @@ class Admin_Model extends Pattern_Model
 												"set"=>array("sort"=>$sort,
 															"link"=>trim(SUB_DIR.$value["path"],'/'),
 															"title"=>$value["title"],
+															"login_only"=>isset($value["login_only"])?1:0,
+															"admin_only"=>(isset($value["login_only"]) && isset($value["admin_only"]))?1:0,
 															"is_visible"=>$value["is_visible"])));
 							}
 						}
@@ -143,6 +147,51 @@ class Admin_Model extends Pattern_Model
 			}
 		return $this->Main($menu_content);
 		}
+
+
+
+	function Acl()
+		{
+		try
+			{
+			global $db,$sql;
+			if(count($this->form)>0)
+				{
+				foreach($this->form as $sort=>$value)
+					{
+					if(is_numeric($sort))
+						{
+						if($value["id"]>0 && $value["id"]!=-1)
+							{
+							$sql->Update(array("tablename"=>'acl',
+												"set"=>array("login_only"=>isset($value["login_only"])?1:0,
+															"admin_only"=>(isset($value["login_only"]) && isset($value["admin_only"]))?1:0),
+												"where"=>array('id','=',$value["id"])));
+							}
+						else
+							{
+							if((isset($value["login_only"]) && isset($value["admin_only"])) || isset($value["login_only"]))
+								{
+								$sql->Insert(array("tablename"=>'acl',
+													"set"=>array("class_name"=>$value["class_name"],
+																"method_name"=>$value["method_name"],
+																"login_only"=>1,
+																"admin_only"=>(isset($value["admin_only"]))?1:0)));
+								}
+							}
+						}
+					}
+				}
+			$acl_array=Acl::Get_Current_Methods();
+			$acl_content=$this->view->Content_Create(__METHOD__,$acl_array);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($acl_content);
+		}
+
 
 
 	function Shop()

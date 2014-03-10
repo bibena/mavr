@@ -215,6 +215,34 @@ class Session
  *
  * Return: nothing
 --------------------------------------------------------------------------*/
+	public function Set_Error($error_message)
+		{
+		try
+			{
+			if(is_string($error_message))
+				{
+				$_SESSION["last_error"]=$error_message;
+				}
+			else
+				{
+				throw new Error(ERROR_SHOULD_BE_STRING);
+				}
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		}
+
+
+
+/*-------------------------------------------------------------------------
+ * Set sessions user_agent section
+ *
+ * Session::Set_Agent()
+ *
+ * Return: nothing
+--------------------------------------------------------------------------*/
 	private function Set_Agent()
 		{
 		try
@@ -284,7 +312,7 @@ class Session
 				}
 			else
 				{
-				$_SESSION["last_error"]=$message;
+				$_SESSION["lastr"]=$message;
 				}
 			}
 		catch (Error $e)
