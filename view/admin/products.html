@@ -41,43 +41,46 @@
 </form>
 
 <script>
-$(function()
+if(counter_once_checker==1)
 	{
-	$('#admin_products_list').sortable({distance: 100,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
-	});
-
-$(document).on('click','.glyphicon.glyphicon-eye-open',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(0);
-	$editor.css('opacity',0.5);
-	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-eye-close',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(1);
-	$editor.css('opacity',1);
-	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-trash',function()
-	{
-	var $row=$(this).parent().parent();
-	$row.hide();
-	$row.children("input[name*='delete']").val(1);
-	});
-
-$(document).on('click','div.admin_products_save>button',function()
-	{
-	$(this).parent().parent().children('#admin_products_list').children('.admin_products_item').each(function(position)
+	$(function()
 		{
-		$(this).children('input').each(function()
+		$('#admin_products_list').sortable({distance: 100,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		$row.hide();
+		$row.children("input[name*='delete']").val(1);
+		});
+
+	$(document).on('click','div.admin_products_save>button',function()
+		{
+		$(this).parent().parent().children('#admin_products_list').children('.admin_products_item').each(function(position)
 			{
-			var old_position=parseInt($(this).attr('name')).toString().length;
-			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			$(this).children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
 			});
 		});
-	});
+	}
 </script>

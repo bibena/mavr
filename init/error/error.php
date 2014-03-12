@@ -50,11 +50,12 @@ class Error extends Exception
 				$page=new Page_Controller;
 				if($config['show_error'])
 					{
-					$page->Error($number,nl2br($error));
 					$session->Set_Error(nl2br($error));
+					$page->Error($number,nl2br($error));
 					}
 				else
 					{
+					$session->Set_Error('');
 					$page->Error($number);
 					}
 				die();

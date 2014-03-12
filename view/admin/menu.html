@@ -40,68 +40,71 @@
 </form>
 
 <script>
-$(function()
+if(counter_once_checker==1)
 	{
-	$('#admin_menu_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
-	});
-
-$(document).on('click','.glyphicon.glyphicon-eye-open',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='is_visible']").val(0);
-	$editor.css('opacity',0.5);
-	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-eye-close',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='is_visible']").val(1);
-	$editor.css('opacity',1);
-	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-	});
-
-$(document).on('click','.glyphicon.glyphicon-trash',function()
-	{
-	var $row=$(this).parent().parent();
-	if($row.children("input[name*='id']").val()>-1)
+	$(function()
 		{
-		$row.hide();
-		$row.children("input[name*='delete']").val(1);		
-		}
-	else
-		{
-		$row.remove();
-		}
-	});
-
-$(document).on('click','div.admin_menu_add>button',function()
-	{
-	var new_position=0;
-	$(this).parent().parent().parent().children('#admin_menu_list').children('.admin_menu_item').each(function()
-		{
-		var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
-		new_position=(position>=new_position)?(position+1):new_position;
+		$('#admin_menu_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 		});
-	var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_menu_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" value="" name="'+new_position+'[path]" class="form-control"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Title" required="required" value="" name="'+new_position+'[title]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[login_only]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[admin_only]" class="form-control"></div><input type="hidden" value="1" name="'+new_position+'[is_visible]"><input type="hidden" value="-1" name="'+new_position+'[id]"><input type="hidden" value="0" name="'+new_position+'[delete]"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
-	$(this).parent().parent().parent().children('#admin_menu_list').append(content);
-	return false;
-	});
 
-$(document).on('click','div.admin_menu_save>button',function()
-	{
-	$(this).parent().parent().parent().children('#admin_menu_list').children('.admin_menu_item').each(function(position)
+	$(document).on('click','.glyphicon.glyphicon-eye-open',function()
 		{
-		$(this).children('input').each(function()
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		if($row.children("input[name*='id']").val()>-1)
 			{
-			var old_position=parseInt($(this).attr('name')).toString().length;
-			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			$row.hide();
+			$row.children("input[name*='delete']").val(1);		
+			}
+		else
+			{
+			$row.remove();
+			}
+		});
+
+	$(document).on('click','div.admin_menu_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().parent().children('#admin_menu_list').children('.admin_menu_item').each(function()
+			{
+			var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
+			new_position=(position>=new_position)?(position+1):new_position;
 			});
-		$(this).children().children('input').each(function()
+		var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_menu_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input placeholder="Path" value="" name="'+new_position+'[path]" class="form-control"></div><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" placeholder="Title" required="required" value="" name="'+new_position+'[title]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[login_only]" class="form-control"></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group"><input type="checkbox" value="1" name="'+new_position+'[admin_only]" class="form-control"></div><input type="hidden" value="1" name="'+new_position+'[is_visible]"><input type="hidden" value="-1" name="'+new_position+'[id]"><input type="hidden" value="0" name="'+new_position+'[delete]"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().parent().children('#admin_menu_list').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_menu_save>button',function()
+		{
+		$(this).parent().parent().parent().children('#admin_menu_list').children('.admin_menu_item').each(function(position)
 			{
-			var old_position=parseInt($(this).attr('name')).toString().length;
-			$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+			$(this).children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			$(this).children().children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
 			});
 		});
-	});
+	}
 </script>

@@ -1,7 +1,38 @@
+var uri_once_checker=window.location.pathname;
+var counter_once_checker = 0;
+var load_once_checker = (function()
+	{
+	var history={};
+	return function() 
+		{
+		uri_array = uri_once_checker.substr(1).split('/');
+
+		if(history[uri_array[0]] !== undefined)
+			{
+			if(history[uri_array[0]][uri_array[1]] !== undefined)
+				{
+				history[uri_array[0]][uri_array[1]]++;
+				}
+			else
+				{
+				history[uri_array[0]][uri_array[1]]=1;
+				}
+			}
+		else
+			{
+			history[uri_array[0]]={};			
+			history[uri_array[0]][uri_array[1]]=1;
+			}
+		counter_once_checker = history[uri_array[0]][uri_array[1]];
+		return history[uri_array[0]][uri_array[1]];
+		};
+	})();
+
 $(function()
 	{
 	menuSwitcher();
 	})
+
 function menuSwitcher()
 	{
 	$('.nav.navbar-nav').children('li').each(function()
@@ -42,8 +73,11 @@ function menuSwitcher()
 			}
 		});
 	}
+
 function uriLoader(uri,flag)
 	{
+	uri_once_checker=uri;
+	load_once_checker();
 	$.ajax({
 		url:'/ajax/link',
 		dataType:'text',
@@ -72,12 +106,16 @@ function uriLoader(uri,flag)
 			}
 		});
 	}
+
 $(document).on('click',"a.link[href*='/']",function()
 	{
 	uriLoader($(this).attr('href'),1);
 	return false;
 	})
+
 window.onpopstate = function(event) 
 	{
 	uriLoader(document.location.pathname,0);
 	};
+
+load_once_checker();

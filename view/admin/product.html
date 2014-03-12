@@ -142,155 +142,158 @@
 
 
 <script>
-(function()
+if(counter_once_checker==1)
 	{
-	$('head').append('<link rel="stylesheet" href="/view/admin/redactor.css">');
-	$('head').append('<script src="/view/admin/redactor.min.js"><'+'/script>');
-	})();
-$(document).ready(function()
-	{
-	$("textarea[name*='description']").redactor();
-	});
-$(function()
-	{
-	$('#params').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
-	$('#images').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
-	});
-
-$('ul.nav.nav-tabs>li>a').click(function (e) 
-	{
-	($(this).attr('href')=='#params')?$('.admin_product_param_add').show():$('.admin_product_param_add').hide();
-	($(this).attr('href')=='#images')?$('.admin_product_image_add').show():$('.admin_product_image_add').hide();
-	});
-
-$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-eye-open',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(0);
-	$editor.css('opacity',0.5);
-	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-	});
-
-$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-eye-close',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(1);
-	$editor.css('opacity',1);
-	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-	});
-
-$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-trash',function()
-	{
-	var $row=$(this).parent().parent();
-	if($row.children("input[name*='pp_id']").val()=='-1')
+	(function()
 		{
-		$row.remove();	
-		}
-	else
+		$('head').append('<link rel="stylesheet" href="/view/admin/redactor.css">');
+		$('head').append('<script src="/view/admin/redactor.min.js"><'+'/script>');
+		})();
+	$(document).ready(function()
 		{
-		$row.hide();
-		$row.children("input[name*='delete']").val(1);	
-		}
-	});
-
-$(document).on('change','div.admin_product_images_item>div>input[name*="images"]',function()
-	{
-	if(this.files!=undefined)
-		{
-		var file=this.files[0],
-			reader = new FileReader(),
-			elem = $(this);
-		reader.onload = function(e)
-			{
-			elem.parent().parent().children('div').children('img').attr('src',e.target.result);
-			};
-		reader.readAsDataURL(file);
-		}
-	});
-
-$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-open',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='visible']").val(0);
-	$editor.css('opacity',0.5);
-	$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
-	});
-
-$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-close',function()
-	{
-	var $editor=$(this).parent().parent();
-	$editor.children("input[name*='is_visible']").val(1);
-	$editor.css('opacity',1);
-	$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-	});
-
-$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-trash',function()
-	{
-	var $row=$(this).parent().parent();
-	if($row.children("input[name*='id']").val()=='-1')
-		{
-		$row.remove();	
-		}
-	else
-		{
-		$row.hide();
-		$row.children("input[name*='delete']").val(1);	
-		}
-	});
-
-$(document).on('click','div.admin_product_param_add>button',function()
-	{
-	var new_position=0;
-	$(this).parent().parent().children('#params').children('.admin_product_params_item').each(function()
-		{
-		var position=parseInt($(this).children("input[name*='visible']").attr('name').substr(7));
-		new_position=(position>=new_position)?(position+1):new_position;
+		$("textarea[name*='description']").redactor();
 		});
-	var content='<div style="opacity:1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_params_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><select class="form-control" name="params['+new_position+'][id]" required="required"><?php foreach($content["all_params"] as $all_param): ?><option value="<?php echo $all_param["id"]; ?>"><?php  echo $all_param["param_name"]; ?></option><?php endforeach; ?></select></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="text" class="form-control" name="params['+new_position+'][value]" value="" required="required" placeholder="Param value"></div><input type="hidden" name="params['+new_position+'][pp_id]" value="-1"><input type="hidden" name="params['+new_position+'][delete]" value="0"><input type="hidden" name="params['+new_position+'][is_visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
-	$(this).parent().parent().children('#params').append(content);
-	return false;
-	});
+	$(function()
+		{
+		$('#params').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+		$('#images').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+		});
 
-$(document).on('click','div.admin_product_image_add>button',function()
-	{
-	var new_position=0;
-	$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function()
+	$('ul.nav.nav-tabs>li>a').click(function (e) 
 		{
-		var position=parseInt($(this).children("input[name*='id']").attr('name').substr(11));
-		new_position=(position>=new_position)?(position+1):new_position;
+		($(this).attr('href')=='#params')?$('.admin_product_param_add').show():$('.admin_product_param_add').hide();
+		($(this).attr('href')=='#images')?$('.admin_product_image_add').show():$('.admin_product_image_add').hide();
 		});
-	var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="#" style="max-width:100%;max-height:140px"></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="file" class="form-control" name="images['+new_position+']"></div><input type="hidden" name="imagesdata['+new_position+'][id]" value="-1"><input type="hidden" name="imagesdata['+new_position+'][delete]" value="0"><input type="hidden" name="imagesdata['+new_position+'][visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
-	$(this).parent().parent().children('#images').append(content);
-	return false;
-	});
 
-$(document).on('click','div.admin_product_save>button',function()
-	{
-	$(this).parent().parent().children('#params').children('.admin_product_params_item').each(function(position)
+	$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-eye-open',function()
 		{
-		$(this).children().children('select').each(function()
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','div.admin_product_params_item>div>span.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		if($row.children("input[name*='pp_id']").val()=='-1')
 			{
-			$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+			$row.remove();	
+			}
+		else
+			{
+			$row.hide();
+			$row.children("input[name*='delete']").val(1);	
+			}
+		});
+
+	$(document).on('change','div.admin_product_images_item>div>input[name*="images"]',function()
+		{
+		if(this.files!=undefined)
+			{
+			var file=this.files[0],
+				reader = new FileReader(),
+				elem = $(this);
+			reader.onload = function(e)
+				{
+				elem.parent().parent().children('div').children('img').attr('src',e.target.result);
+				};
+			reader.readAsDataURL(file);
+			}
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-open',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		if($row.children("input[name*='id']").val()=='-1')
+			{
+			$row.remove();	
+			}
+		else
+			{
+			$row.hide();
+			$row.children("input[name*='delete']").val(1);	
+			}
+		});
+
+	$(document).on('click','div.admin_product_param_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().children('#params').children('.admin_product_params_item').each(function()
+			{
+			var position=parseInt($(this).children("input[name*='visible']").attr('name').substr(7));
+			new_position=(position>=new_position)?(position+1):new_position;
 			});
-		$(this).children('input').each(function()
+		var content='<div style="opacity:1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_params_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><select class="form-control" name="params['+new_position+'][id]" required="required"><?php foreach($content["all_params"] as $all_param): ?><option value="<?php echo $all_param["id"]; ?>"><?php  echo $all_param["param_name"]; ?></option><?php endforeach; ?></select></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="text" class="form-control" name="params['+new_position+'][value]" value="" required="required" placeholder="Param value"></div><input type="hidden" name="params['+new_position+'][pp_id]" value="-1"><input type="hidden" name="params['+new_position+'][delete]" value="0"><input type="hidden" name="params['+new_position+'][is_visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().children('#params').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_product_image_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function()
 			{
-			$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+			var position=parseInt($(this).children("input[name*='id']").attr('name').substr(11));
+			new_position=(position>=new_position)?(position+1):new_position;
 			});
-		$(this).children().children('input').each(function()
+		var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="#" style="max-width:100%;max-height:140px"></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="file" class="form-control" name="images['+new_position+']"></div><input type="hidden" name="imagesdata['+new_position+'][id]" value="-1"><input type="hidden" name="imagesdata['+new_position+'][delete]" value="0"><input type="hidden" name="imagesdata['+new_position+'][visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().children('#images').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_product_save>button',function()
+		{
+		$(this).parent().parent().children('#params').children('.admin_product_params_item').each(function(position)
 			{
-			$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+			$(this).children().children('select').each(function()
+				{
+				$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+				});
+			$(this).children('input').each(function()
+				{
+				$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+				});
+			$(this).children().children('input').each(function()
+				{
+				$(this).attr('name','params['+(position+1)+$(this).attr('name').substr(8));
+				});
+			});
+		$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function(position)
+			{
+			$(this).children('input').each(function()
+				{
+				$(this).attr('name','imagesdata['+(position+1)+$(this).attr('name').substr(12));
+				});
+			$(this).children().children('input').each(function()
+				{
+				$(this).attr('name','images['+(position+1)+$(this).attr('name').substr(8));
+				});
 			});
 		});
-	$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function(position)
-		{
-		$(this).children('input').each(function()
-			{
-			$(this).attr('name','imagesdata['+(position+1)+$(this).attr('name').substr(12));
-			});
-		$(this).children().children('input').each(function()
-			{
-			$(this).attr('name','images['+(position+1)+$(this).attr('name').substr(8));
-			});
-		});
-	});
+	}
 </script>

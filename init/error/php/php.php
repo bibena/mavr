@@ -46,6 +46,10 @@ class Php_Error
 			{
 			$session->Set_Error(nl2br($error_message));
 			}
+		else
+			{
+			$session->Set_Error('');
+			}
 		Redirect::Page('page/error/500');
 		}
 
@@ -88,6 +92,10 @@ class Php_Error
 				if($config["show_error"])
 					{
 					$session->Set_Error(nl2br($error_message));
+					}
+				else
+					{
+					$session->Set_Error('');
 					}
 				Redirect::Page('page/error/500');
 				}
