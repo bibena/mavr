@@ -4,6 +4,8 @@
 		<li><a href="#manufacturers" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_MANUFACTURERS; ?></a></li>
 		<li><a href="#params" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_PARAMS; ?></a></li>
 		<li><a href="#countries" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_COUNTRIES; ?></a></li>
+		<li><a href="#regions" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_REGIONS; ?></a></li>
+		<li><a href="#cities" data-toggle="tab"><?php echo ADMIN_PRODUCT_TITLE_CITIES; ?></a></li>
 	</ul>
 				
 	<div class="tab-pane active" id="categories">
@@ -152,6 +154,100 @@
 			</div>
 		</form>
 	</div>
+
+	<div class="tab-pane" id="regions">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop">
+			<div id="admin_shop_regions_list">
+				<?php if(isset($content['regions']) && is_array($content['regions'])): ?>
+					<?php foreach($content['regions'] as $region): ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_regions_item" style="opacity:<?php echo (($region["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<input type="text" required placeholder="Name" value="<?php echo $region["region_name"]; ?>" name="<?php echo $region["sort"]; ?>[region_name]" class="form-control">
+							</div>
+							<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group">
+								<select required name="<?php echo $region["sort"]; ?>[country_id]" class="form-control">
+									<?php foreach($content["countries"] as $country): ?>
+										<?php if($country["is_visible"]): ?>
+											<option value="<?php echo $country["id"]; ?>"<?php echo (($country["id"]==$region["country_id"])?' selected':''); ?>><?php echo $country["country_name"]; ?></option>
+										<?php endif; ?>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							<input type="hidden" value="<?php echo $region["is_visible"]; ?>" name="<?php echo $region["sort"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $region["id"]; ?>" name="<?php echo $region["sort"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $region["sort"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($region["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>			
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="regions" name="tab">				
+			</div>
+			<div class="admin_shop_region_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></button>
+			</div>
+			<div class="admin_shop_region_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
+			</div>
+		</form>
+	</div>
+
+	<div class="tab-pane" id="cities">
+		<form class="form-horizontal" role="form" method="post" action="<?php echo SUB_DIR; ?>admin/shop">
+			<div id="admin_shop_cities_list">
+				<?php if(isset($content['cities']) && is_array($content['cities'])): ?>
+					<?php foreach($content['cities'] as $city): ?>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_cities_item" style="opacity:<?php echo (($city["is_visible"])?'1':'0.5'); ?>;">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+								<input type="text" required placeholder="Name" value="<?php echo $city["city_name"]; ?>" name="<?php echo $city["sort"]; ?>[city_name]" class="form-control">
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+								<select required name="<?php echo $city["sort"]; ?>[country_id]" class="form-control">
+									<?php foreach($content["countries"] as $country): ?>
+										<?php if($country["is_visible"]): ?>
+											<option value="<?php echo $country["id"]; ?>"<?php echo (($country["id"]==$city["country_id"])?' selected':''); ?>><?php echo $country["country_name"]; ?></option>
+										<?php endif; ?>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group">
+								<select name="<?php echo $city["sort"]; ?>[region_id]" class="form-control">
+									<option value=""></option>
+									<?php foreach($content["regions"] as $region): ?>
+										<?php if($region["is_visible"]): ?>
+											<option value="<?php echo $region["id"]; ?>"<?php echo (($region["id"]==$city["region_id"])?' selected':''); ?>><?php echo $region["region_name"]; ?></option>
+										<?php endif; ?>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							<input type="hidden" value="<?php echo $city["is_visible"]; ?>" name="<?php echo $city["sort"]; ?>[is_visible]">
+							<input type="hidden" value="<?php echo $city["id"]; ?>" name="<?php echo $city["sort"]; ?>[id]">
+							<input type="hidden" value="0" name="<?php echo $city["sort"]; ?>[delete]">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-eye-<?php echo (($city["is_visible"])?'open':'close'); ?>"></span>
+							</div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>			
+				<input type="hidden" value="1" name="flag">
+				<input type="hidden" value="cities" name="tab">				
+			</div>
+			<div class="admin_shop_city_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+				<button class="btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></button>
+			</div>
+			<div class="admin_shop_city_save col-xs-2 col-sm-2 col-md-2 col-lg-2">	
+				<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
+			</div>
+		</form>
+	</div>
 </div>
 
 <script>
@@ -162,6 +258,8 @@ if(counter_once_checker==1)
 		$('#admin_shop_categories_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 		$('#admin_shop_manufacturers_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 		$('#admin_shop_countries_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+		$('#admin_shop_regions_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
+		$('#admin_shop_cities_list').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
 		});
 
 	$('#nav-tabs a').click(function (e) {
@@ -300,6 +398,76 @@ if(counter_once_checker==1)
 				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
 				});
 			$(this).children().children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			});
+		});
+
+	$(document).on('click','div.admin_shop_region_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().children('#admin_shop_regions_list').children('.admin_shop_regions_item').each(function()
+			{
+			var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
+			new_position=(position>=new_position)?(position+1):new_position;
+			});	
+		var content='<div style="opacity:1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_regions_item"><div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group"><input type="text" class="form-control" name="'+new_position+'[region_name]" value="" placeholder="Name" required=""></div><div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 input-group"><select class="form-control" name="'+new_position+'[country_id]" required=""><?php foreach($content["countries"] as $country): ?><?php if($country["is_visible"]): ?><option value="<?php echo $country["id"]; ?>"><?php echo $country["country_name"]; ?></option><?php endif; ?><?php endforeach; ?></select></div><input type="hidden" name="'+new_position+'[is_visible]" value="1"><input type="hidden" name="'+new_position+'[id]" value="-1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().children('#admin_shop_regions_list').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_shop_region_save>button',function()
+		{
+		$(this).parent().parent().children('#admin_shop_regions_list').children('.admin_shop_regions_item').each(function(position)
+			{
+			$(this).children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			$(this).children().children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			$(this).children().children('select').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			});
+		});
+
+	$(document).on('click','div.admin_shop_city_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().children('#admin_shop_cities_list').children('.admin_shop_cities_item').each(function()
+			{
+			var position=parseInt($(this).children("input[name*='is_visible']").attr('name'));
+			new_position=(position>=new_position)?(position+1):new_position;
+			});
+		var content='<div style="opacity:1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_shop_cities_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group"><input type="text" class="form-control" name="'+new_position+'[city_name]" value="" placeholder="Name" required=""></div><div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group"><select class="form-control" name="'+new_position+'[country_id]" required=""><?php foreach($content["countries"] as $country): ?><?php if($country["is_visible"]): ?><option value="<?php echo $country["id"]; ?>"><?php echo $country["country_name"]; ?></option><?php endif; ?><?php endforeach; ?></select></div><div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 input-group"><select class="form-control" name="'+new_position+'[region_id]"><option value=""></option><?php foreach($content["regions"] as $region): ?><?php if($region["is_visible"]): ?><option value="<?php echo $region["id"]; ?>"><?php echo $region["region_name"]; ?></option><?php endif; ?><?php endforeach; ?></select></div><input type="hidden" name="'+new_position+'[is_visible]" value="1"><input type="hidden" name="'+new_position+'[id]" value="-1"><input type="hidden" name="'+new_position+'[delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().children('#admin_shop_cities_list').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_shop_city_save>button',function()
+		{
+		$(this).parent().parent().children('#admin_shop_cities_list').children('.admin_shop_cities_item').each(function(position)
+			{
+			$(this).children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			$(this).children().children('input').each(function()
+				{
+				var old_position=parseInt($(this).attr('name')).toString().length;
+				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));
+				});
+			$(this).children().children('select').each(function()
 				{
 				var old_position=parseInt($(this).attr('name')).toString().length;
 				$(this).attr('name',(position+1)+$(this).attr('name').substr(old_position));

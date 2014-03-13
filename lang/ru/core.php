@@ -66,6 +66,8 @@ define('ADMIN_PRODUCT_TITLE_DESCRIPTION','Описание');
 define('MISSING_PRODUCT_DESCRIPTION','Отсутствует описание для товара');
 define('ADMIN_PRODUCT_TITLE_MANUFACTURERS','Производители');
 define('ADMIN_PRODUCT_TITLE_COUNTRIES','Страны');
+define('ADMIN_PRODUCT_TITLE_REGIONS','Области');
+define('ADMIN_PRODUCT_TITLE_CITIES','Города');
 define('ERROR_MODEL_UNNOWN_CLASS','Имя класса не было передано');
 define('ERROR_WRONG_URI','Неверный URI');
 define('ERROR_FORM_SENDED','Неверный URL. Форма было отправлена с другого сайта');

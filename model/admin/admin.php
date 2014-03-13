@@ -217,6 +217,12 @@ class Admin_Model extends Pattern_Model
 					case 'countries':
 						$this->helper->Admin_Shop_Countries_Save($this->form);
 						break;
+					case 'regions':
+						$this->helper->Admin_Shop_Regions_Save($this->form);
+						break;
+					case 'cities':
+						$this->helper->Admin_Shop_Cities_Save($this->form);
+						break;
 					default:
 						break;
 					}
@@ -237,6 +243,16 @@ class Admin_Model extends Pattern_Model
 																	"value"=>0),
 													"order_by"=>array("field"=>'param_name')));
 			$shop_array["countries"]=$sql->Select(array("tablename"=>'countries',
+														"where"=>array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0),
+														"order_by"=>array("field"=>'sort')));
+			$shop_array["regions"]=$sql->Select(array("tablename"=>'regions',
+														"where"=>array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0),
+														"order_by"=>array("field"=>'sort')));
+			$shop_array["cities"]=$sql->Select(array("tablename"=>'cities',
 														"where"=>array("field"=>'is_deleted',
 																		"symbol"=>'=',
 																		"value"=>0),

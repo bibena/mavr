@@ -382,8 +382,8 @@ class Admin_Helper
 											"set"=>array("sort"=>$sort,
 														"country_name"=>$value["country_name"],
 														"phone_code"=>$value["phone_code"],
-														"is_visible"=>$value["is_visible"]),
-														"is_deleted"=>$value["delete"],
+														"is_visible"=>$value["is_visible"],
+														"is_deleted"=>$value["delete"]),
 											"where"=>array('id','=',$value["id"])));
 						}
 					else
@@ -392,6 +392,108 @@ class Admin_Helper
 											"set"=>array("sort"=>$sort,
 														"country_name"=>$value["country_name"],
 														"phone_code"=>$value["phone_code"],
+														"is_visible"=>$value["is_visible"])));
+						}
+					}
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return true;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Regions_Save($form)
+		{
+		try 
+			{
+			global $db,$sql;
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					if($value["id"]>0 && $value["id"]!=-1)
+						{
+						$sql->Update(array("tablename"=>'regions',
+											"set"=>array("sort"=>$sort,
+														"country_id"=>$value["country_id"],
+														"region_name"=>$value["region_name"],
+														"is_visible"=>$value["is_visible"],
+														"is_deleted"=>$value["delete"]),
+											"where"=>array('id','=',$value["id"])));
+						}
+					else
+						{
+						$sql->Insert(array("tablename"=>'regions',
+											"set"=>array("sort"=>$sort,
+														"country_id"=>$value["country_id"],
+														"region_name"=>$value["region_name"],
+														"is_visible"=>$value["is_visible"])));
+						}
+					}
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return true;
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Shop_Cities_Save($form)
+		{
+		try 
+			{
+			global $db,$sql;
+			foreach($form as $sort=>$value)
+				{
+				if(is_numeric($sort))
+					{
+					if($value["id"]>0 && $value["id"]!=-1)
+						{
+						$sql->Update(array("tablename"=>'cities',
+											"set"=>array("sort"=>$sort,
+														"country_id"=>$value["country_id"],
+														"region_id"=>($value["region_id"])?$value["region_id"]:null,
+														"city_name"=>$value["city_name"],
+														"is_visible"=>$value["is_visible"],
+														"is_deleted"=>$value["delete"]),
+											"where"=>array('id','=',$value["id"])));
+						}
+					else
+						{
+						$sql->Insert(array("tablename"=>'cities',
+											"set"=>array("sort"=>$sort,
+														"country_id"=>$value["country_id"],
+														"region_id"=>($value["region_id"])?$value["region_id"]:null,
+														"city_name"=>$value["city_name"],
 														"is_visible"=>$value["is_visible"])));
 						}
 					}
