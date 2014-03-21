@@ -66,6 +66,20 @@ class Admin_Controller extends Pattern_Controller
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
+	function Users()
+		{
+//---call User_Model::Registration();
+		$model_answer=$this->model->Users($this->mname);
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
+		}
+	function User($user_id)
+		{
+//---call User_Model::Registration();
+		$model_answer=$this->model->User($this->mname,array($user_id));
+//---call User_View::Registration();
+		$this->view->Display($model_answer);
+		}
 	function Shop()
 		{
 //---call User_Model::Registration();

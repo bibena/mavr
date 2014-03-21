@@ -92,7 +92,7 @@ class User_Model extends Pattern_Model
 //if was sent form
 			if(count($this->form)>0)
 				{
-				$is_user_login=$this->helper->User_Login_Check($this->form);
+				$is_user_login=$this->helper->User_Login_Save($this->form);
 				if(is_array($is_user_login))
 					{
 					$content["content"]=$this->view->Content_Create(__METHOD__,$is_user_login);

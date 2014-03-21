@@ -31,7 +31,7 @@ class User_Helper
 
 
 
-	public function User_Login_Check($form)
+	public function User_Login_Save($form)
 		{
 		try
 			{
@@ -95,17 +95,18 @@ class User_Helper
 		{
 		try
 			{
-			$db=Db::Get_Instance();
+			global $db,$sql;
 			if(!(isset($form["email"]) && filter_var($form["email"],FILTER_VALIDATE_EMAIL)))
 				{
 				$error["error"]["email"]=1;
 				}
 			else
 				{
-				$sql="SELECT `id` FROM `users` where `email` = :email;";
-				$prepare=$db->prepare($sql);
-				$prepare->execute(array(":email"=>$form["email"]));
-				$email_exists=$prepare->fetchColumn();
+				$email_exists=$sql->Select(array("tablename"=>'users',
+													"fields"=>'id',
+													"where"=>array("field"=>'email',
+																	"symbol"=>'=',
+																	"value"=>$form["email"])));
 				if($email_exists)
 					{
 					$error["error"]["email"]=1;
@@ -132,17 +133,13 @@ class User_Helper
 			else
 				{
 //check data from this form
-				$sql="INSERT INTO `users` (`email`,`password`,`first_name`,`last_name`,`country_id`,`city_id`) VALUES (:email,:password,:first_name,:last_name,:country_id,:city_id);";
-				$form_data=array(":email"=>$form["email"],
-								":password"=>password_hash($form["password"],PASSWORD_BCRYPT,array("cost"=>9)),
-								":first_name"=>$form["name"],
-								":last_name"=>'',
-								":country_id"=>'1',
-								":city_id"=>'1');
-				$prepare=$db->prepare($sql);
-				$prepare->execute($form_data);
-				$new_user_id=$db->lastInsertId();
-				$return=$new_user_id;
+				$sql->Insert(array("tablename"=>'users',
+									"set"=>array("email"=>$form["email"],
+												"password"=>password_hash($form["password"],PASSWORD_BCRYPT,array("cost"=>12)),
+												"first_name"=>$form["name"],
+												"country_id"=>1,
+												"city_id"=>1)));
+				$return=$db->lastInsertId();
 				}
 			}
 		catch (Db_Error $e) 

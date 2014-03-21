@@ -1,0 +1,262 @@
+<form class="form-horizontal" role="form" method="post" enctype="multipart/form-data" action="<?php echo SUB_DIR; ?>admin/user/<?php echo $content["id"]; ?>">
+	<div class="tab-content admin-user-tab">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#general" data-toggle="tab"><?php echo ADMIN_USER_TITLE_GENERAL; ?></a></li>
+			<li><a href="#orders" data-toggle="tab"><?php echo ADMIN_USER_TITLE_ORDERS; ?></a></li>
+			<li><a href="#images" data-toggle="tab"><?php echo ADMIN_USER_TITLE_IMAGES; ?></a></li>
+		</ul>
+
+		<div class="tab-pane active" id="general">
+			<input type="hidden" name="id" value="<?php echo $content["id"]; ?>">
+			<div class="form-group">
+				<label for="user_visible" class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_VISIBLE; ?></label>
+				<div class="col-sm-10">
+					<label class="checkbox-inline">
+						<input type="checkbox" name="is_visible" value="1"<?php echo (($content["is_visible"])?' checked':''); ?> class="form-control" id="user_visible">
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="user_admin" class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_ADMIN; ?></label>
+				<div class="col-sm-10">
+					<label class="checkbox-inline">
+						<input type="checkbox" name="is_admin" value="1"<?php echo (($content["is_admin"])?' checked':''); ?> class="form-control" id="user_admin">
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_EMAIL; ?></label>
+				<div class="col-sm-10">
+					<input type="email" required class="form-control" name="email" value="<?php echo $content["email"]; ?>" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo (($content["id"]==-1)?ADMIN_USER_TITLE_PASSWORD:ADMIN_USER_TITLE_NEW_PASSWORD); ?></label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" name="password">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_FIRST_NAME; ?></label>
+				<div class="col-sm-10">
+					<input required class="form-control" name="first_name" value="<?php echo $content["first_name"]; ?>" placeholder="First name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_LAST_NAME; ?></label>
+				<div class="col-sm-10">
+					<input class="form-control" name="last_name" value="<?php echo $content["last_name"]; ?>" placeholder="Last name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_PHONE; ?></label>
+				<div class="col-sm-10">
+					<input type="phone" class="form-control" name="phone" value="<?php echo $content["phone"]; ?>" placeholder="Phone">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_COUNTRY; ?></label>
+				<div class="col-sm-10">
+					<select required name="country_id" class="form-control">
+						<?php foreach($content["countries"] as $country): ?>
+							<option value="<?php echo $country["id"]; ?>"<?php echo (($country["id"]==$content["country_id"])?' selected':''); ?>><?php echo $country["country_name"]; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_REGION; ?></label>
+				<div class="col-sm-10">
+					<select name="region_id" class="form-control">
+						<option value=""></option>
+						<?php foreach($content["regions"] as $region): ?>
+							<option value="<?php echo $region["id"]; ?>"<?php echo (($region["id"]==$content["region_id"])?' selected':''); ?>><?php echo $region["region_name"]; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_CITY; ?></label>
+				<div class="col-sm-10">
+					<select required name="city_id" class="form-control">
+						<?php foreach($content["cities"] as $city): ?>
+							<option value="<?php echo $city["id"]; ?>"<?php echo (($city["id"]==$content["city_id"])?' selected':''); ?>><?php echo $city["city_name"]; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><?php echo ADMIN_USER_TITLE_ADDRESS; ?></label>
+				<div class="col-sm-10">
+					<input class="form-control" name="address" value="<?php echo $content["address"]; ?>" placeholder="Address">
+				</div>
+			</div>
+		</div>
+
+<!--
+
+<?//xml version="1.0" encoding="utf-8"?>
+<file>
+<auth>064086f1c1a6ea501b2e51ea3e1634e6</auth>
+<warenhouse/>
+</file>
+
+-->
+
+
+
+
+		<div class="tab-pane" id="orders">
+			<?php if(isset($content["orders"]) && is_array($content["orders"])): ?>
+				<?php foreach($content["orders"] as $order): ?>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_params_item" style="opacity:<?php echo (($param["is_visible"])?'1':'0.5'); ?>;">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 input-group">
+							<select required="required" name="params[<?php echo $param["sort"]; ?>][id]" class="form-control">
+								<?php foreach($content["all_params"] as $all_param): ?>
+									<option value="<?php echo $all_param["id"]; ?>"<?php echo (($all_param["id"]==$param["id"])?' selected':''); ?>><?php echo $all_param["param_name"]; ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group">
+							<input type="text" placeholder="Param value" required="required" value="<?php echo htmlentities($param["value"]); ?>" name="params[<?php echo $param["sort"]; ?>][value]" class="form-control">
+						</div>
+						<input type="hidden" value="<?php echo $param["pp_id"]; ?>" name="params[<?php echo $param["sort"]; ?>][pp_id]">
+						<input type="hidden" value="0" name="params[<?php echo $param["sort"]; ?>][delete]">
+						<input type="hidden" value="<?php echo $param["is_visible"]; ?>" name="params[<?php echo $param["sort"]; ?>][is_visible]">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-eye-<?php echo (($param["is_visible"])?'open':'close'); ?>"></span>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-trash"></span>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
+		</div>
+
+		<div class="tab-pane" id="images">
+			<?php if(isset($content["images"]) && is_array($content["images"])): ?>
+				<?php foreach($content["images"] as $image): ?>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item" style="opacity:<?php echo (($image["is_visible"])?'1':'0.5'); ?>;">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<img alt="<?php echo $image["image_name"]; ?>" style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/products/<?php echo $content["id"].'/'.$image["path"]; ?>">
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group">
+							<input type="file" name="images[<?php echo $image["sort"]; ?>]" class="form-control">
+						</div>
+						<input type="hidden" value="<?php echo $image["id"]; ?>" name="imagesdata[<?php echo $image["sort"]; ?>][id]">
+						<input type="hidden" value="<?php echo $image["is_visible"]; ?>" name="imagesdata[<?php echo $image["sort"]; ?>][visible]">
+						<input type="hidden" value="0" name="imagesdata[<?php echo $image["sort"]; ?>][delete]">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-eye-<?php echo (($image["is_visible"])?'open':'close'); ?>"></span>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+							<span class="glyphicon glyphicon-trash"></span>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
+		</div>
+
+		<input type="hidden" name="flag" value="1">	
+		<div class="admin_user_image_add col-xs-2 col-sm-2 col-md-2 col-lg-2" style="display:none;">
+			<button class="btn btn-success" type="submit"><?php echo ADD_BUTTON_TITLE; ?></button>
+		</div>		
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+			<a href="<?php echo SUB_DIR; ?>admin/users" class="link btn btn-info"><?php echo BACK_BUTTON_TITLE; ?></a>
+		</div>
+		<div class="admin_user_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
+		</div>
+	</div>
+</form>
+
+
+<script>
+if(counter_once_checker==1)
+	{
+	$('#nav-tabs a').click(function (e) 
+		{
+		e.preventDefault();
+		$(this).tab('show');
+		})
+
+	$('ul.nav.nav-tabs>li>a').click(function (e) 
+		{
+		($(this).attr('href')=='#images')?$('.admin_user_image_add').show():$('.admin_user_image_add').hide();
+		});
+
+	$(document).on('change','div.admin_product_images_item>div>input[name*="images"]',function()
+		{
+		if(this.files!=undefined)
+			{
+			var file=this.files[0],
+				reader = new FileReader(),
+				elem = $(this);
+			reader.onload = function(e)
+				{
+				elem.parent().parent().children('div').children('img').attr('src',e.target.result);
+				};
+			reader.readAsDataURL(file);
+			}
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-open',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		if($row.children("input[name*='id']").val()=='-1')
+			{
+			$row.remove();	
+			}
+		else
+			{
+			$row.hide();
+			$row.children("input[name*='delete']").val(1);	
+			}
+		});
+
+	$(document).on('click','div.admin_product_image_add>button',function()
+		{
+		var new_position=0;
+		$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function()
+			{
+			var position=parseInt($(this).children("input[name*='id']").attr('name').substr(11));
+			new_position=(position>=new_position)?(position+1):new_position;
+			});
+		var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="#" style="max-width:100%;max-height:140px"></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="file" class="form-control" name="images['+new_position+']"></div><input type="hidden" name="imagesdata['+new_position+'][id]" value="-1"><input type="hidden" name="imagesdata['+new_position+'][delete]" value="0"><input type="hidden" name="imagesdata['+new_position+'][visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		$(this).parent().parent().children('#images').append(content);
+		return false;
+		});
+
+	$(document).on('click','div.admin_user_save>button',function()
+		{
+		$(this).parent().parent().children('#images').children('.admin_user_images_item').each(function(position)
+			{
+			$(this).children('input').each(function()
+				{
+				$(this).attr('name','imagesdata['+(position+1)+$(this).attr('name').substr(12));
+				});
+			$(this).children().children('input').each(function()
+				{
+				$(this).attr('name','images['+(position+1)+$(this).attr('name').substr(8));
+				});
+			});
+		});
+	}
+</script>

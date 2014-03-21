@@ -1,0 +1,68 @@
+<form action="<?php echo SUB_DIR; ?>admin/users" method="post" role="form" class="form-horizontal">
+	<div class="row" id="admin_users_list">
+		<?php if(isset($content) && is_array($content)): ?>
+			<?php foreach($content as $user): ?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_user_item" style="opacity:<?php echo (($user["is_visible"])?'1':'0.5'); ?>;">
+
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<a class="link" href="<?php echo SUB_DIR; ?>admin/user/<?php echo $user["id"]; ?>"><img style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/<?php echo (($user["path"])?'users/'.$user["id"].'/'.$user["path"]:'no_image.png'); ?>"></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<a class="link" href="<?php echo SUB_DIR; ?>admin/user/<?php echo $user["id"]; ?>"><?php echo $user["first_name"],(($user["last_name"])?' '.$user["last_name"]:'no_image.png'); ?></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<a class="link" href="<?php echo SUB_DIR; ?>admin/user/<?php echo $user["id"]; ?>"><?php echo $user["email"]; ?></a>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 input-group">
+						<input type="checkbox" class="form-control" name="<?php echo $user["id"]; ?>[is_admin]" value="1" <?php echo (($user["is_admin"])?'checked':''); ?>>
+					</div>
+					<input name="<?php echo $user["id"]; ?>[is_visible]" type="hidden" value="<?php echo $user["is_visible"]; ?>">
+					<input name="<?php echo $user["id"]; ?>[delete]" type="hidden" value="0">
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-<?php echo (($user["is_visible"])?'open':'close'); ?>"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div>
+		<div class="admin_user_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+			<a href="<?php echo SUB_DIR; ?>admin/user/-1" class="link btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></a>
+		</div>
+		<div class="admin_users_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
+		</div>
+	</div>
+</form>
+
+<script>
+if(counter_once_checker==1)
+	{
+	$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		$row.hide();
+		$row.children("input[name*='delete']").val(1);
+		});
+	}
+</script>

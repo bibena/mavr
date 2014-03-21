@@ -98,6 +98,7 @@ class Admin_Model extends Pattern_Model
 		}
 
 
+
 	function Menu()
 		{
 		try
@@ -191,6 +192,140 @@ class Admin_Model extends Pattern_Model
 			}
 		return $this->Main($acl_content);
 		}
+
+
+
+	function Users()
+		{
+		try
+			{
+			global $db,$sql;
+			if(count($this->form)>0)
+				{
+				foreach($this->form as $id=>$value)
+					{
+					if(is_numeric($id))
+						{
+						$sql->Update(array("tablename"=>'users',
+											"set"=>array("is_admin"=>isset($value["is_admin"])?1:0,
+														"is_visible"=>$value["is_visible"],
+														"is_deleted"=>$value["delete"]),
+											"where"=>array('id','=',$id)));
+						if($value["delete"])
+							{
+							$delete_image=$sql->Select(array("tablename"=>'users_images',
+															"fields"=>array('image_id'),
+															"where"=>array("field"=>'user_id',
+																			"symbol"=>'=',
+																			"value"=>$id),
+															"single"=>'single'));
+							if(isset($delete_image))
+								{
+								$sql->Update(array("tablename"=>'images',
+													"set"=>array("is_deleted"=>1),
+													"where"=>array('id','=',$delete_image["image_id"])));
+								}
+							}
+						}
+					}
+				}
+			$users_array=$sql->Select(array("tablename"=>'users',
+											"where"=>array("field"=>'is_deleted',
+															"symbol"=>'=',
+															"value"=>0)));
+			$users_content=$this->view->Content_Create(__METHOD__,$users_array);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($users_content);
+		}
+
+
+
+
+	function User($args)
+		{
+		try
+			{
+			global $db,$sql;
+			list($user_id)=$args;
+			if(count($this->form)>0)
+				{
+				$user_id=$this->helper->Admin_User_Save($this->form);
+				}
+			if($user_id>0)
+				{
+				$user_array=$sql->Select(array("tablename"=>'users',
+													"fields"=>array('id','email','first_name','last_name','country_id','region_id','city_id','address','phone','is_visible','is_admin'),
+													"where"=>array(array("field"=>'id',
+																		"symbol"=>'=',
+																		"value"=>$user_id),
+																	array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0)),
+													"single"=>'single'));
+
+				$user_array["images"]=$sql->Select(array("tablename"=>'users_images',
+															"fields"=>array("tablename"=>'images',
+																			"fields"=>array('id','image_name','path')),
+															"join"=>array("join"=>'left',
+																		"existed_table"=>'users_images',
+																		"existed_field"=>'image_id',
+																		"added_table"=>'images',
+																		"added_field"=>'id'),
+															"where"=>array(array("tablename"=>'users_images',
+																				"field"=>'user_id',
+																				"symbol"=>'=',
+																				"value"=>$user_id),
+																			array("tablename"=>'images',
+																				"field"=>'is_deleted',
+																				"symbol"=>'=',
+																				"value"=>0))));
+				}
+			else
+				{
+				$user_array["id"]=$user_id;
+				$user_array["is_visible"]=1;
+				$user_array["email"]=
+				$user_array["first_name"]=
+				$user_array["last_name"]=
+				$user_array["country_id"]=
+				$user_array["region_id"]=
+				$user_array["city_id"]=
+				$user_array["address"]=
+				$user_array["phone"]=
+				$user_array["images"]='';
+				}
+			$user_array["countries"]=$sql->Select(array("tablename"=>'countries',
+														"fields"=>array('id','country_name'),
+														"where"=>array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0),
+														"order_by"=>array("field"=>'sort')));
+			$user_array["regions"]=$sql->Select(array("tablename"=>'regions',
+														"fields"=>array('id','region_name'),
+														"where"=>array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0),
+														"order_by"=>array("field"=>'sort')));
+			$user_array["cities"]=$sql->Select(array("tablename"=>'cities',
+														"fields"=>array('id','city_name'),
+														"where"=>array("field"=>'is_deleted',
+																		"symbol"=>'=',
+																		"value"=>0),
+														"order_by"=>array("field"=>'sort')));
+			$user_content=$this->view->Content_Create(__METHOD__,$user_array);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($user_content);
+		}
+
+
 
 
 
