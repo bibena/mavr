@@ -28,9 +28,6 @@ class Page_Controller extends Pattern_Controller
 		{
 		parent::__construct();
 		}
-
-
-
 /*-------------------------------------------------------------------------
 * Example of Registration function
 *
@@ -45,11 +42,38 @@ class Page_Controller extends Pattern_Controller
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
 		}
+
+
+
+/*-------------------------------------------------------------------------
+* Example of __call method
+*
+* Class::Unknown_Method();
+*
+* Return: throw an exception.
+--------------------------------------------------------------------------*/
+	function __call($name, $arguments)
+		{
+//---if were calling unknown method throw an exception
+		try
+			{
+//---call User_Model::Registration();
+			$model_answer=$this->model->$name($this->mname);
+//---call User_View::Registration();
+			$this->view->Display($model_answer);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}	
+		}
+
+/*
 	function Main()
 		{
 //---call User_Model::Registration();
 		$model_answer=$this->model->Main($this->mname);
 //---call User_View::Registration();
 		$this->view->Display($model_answer);
-		}
+		}*/
 	}

@@ -3,7 +3,6 @@
 		<?php if(isset($content) && is_array($content)): ?>
 			<?php foreach($content as $user): ?>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_user_item" style="opacity:<?php echo (($user["is_visible"])?'1':'0.5'); ?>;">
-
 					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 						<a class="link" href="<?php echo SUB_DIR; ?>admin/user/<?php echo $user["id"]; ?>"><img style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/<?php echo (($user["path"])?'users/'.$user["id"].'/'.$user["path"]:'no_image.png'); ?>"></a>
 					</div>

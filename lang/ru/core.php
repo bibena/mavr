@@ -51,6 +51,7 @@ define('ADMIN_MENU_TITLE_CONFIG','Конфигурация');
 define('ADMIN_MENU_TITLE_MENU','Меню');
 define('ADMIN_MENU_TITLE_ACL','Контроль доступа');
 define('ADMIN_MENU_TITLE_USERS','Пользователи');
+define('ADMIN_MENU_TITLE_PAGES','Страницы');
 define('ADMIN_MENU_TITLE_SHOP','Магазин');
 define('ADMIN_MENU_TITLE_PRODUCTS','Товары');
 define('ADMIN_PRODUCT_TITLE_GENERAL','Главное');

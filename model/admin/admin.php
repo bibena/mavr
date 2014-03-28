@@ -229,10 +229,42 @@ class Admin_Model extends Pattern_Model
 						}
 					}
 				}
-			$users_array=$sql->Select(array("tablename"=>'users',
-											"where"=>array("field"=>'is_deleted',
+			$sub_select=$sql->Select(array("tablename"=>'users_images',
+										"join"=>array("existed_table"=>'users_images',
+													"existed_field"=>'image_id',
+													"added_table"=>'images',
+													"added_field"=>'id'),
+										"where"=>array(array("tablename"=>'images',
+															"field"=>'is_visible',
 															"symbol"=>'=',
-															"value"=>0)));
+															"value"=>1),
+														array("tablename"=>'images',
+															"field"=>'is_deleted',
+															"symbol"=>'=',
+															"value"=>0)),
+										"order_by"=>array("tablename"=>'users_images',
+														"field"=>'user_id'),
+										"query"=>'query'));
+			$users_array=$sql->Select(array("tablename"=>'users',
+												"fields"=>array(array("tablename"=>'users',
+																	"fields"=>array('id','email','first_name','last_name','country_id','region_id','city_id','address','phone','is_visible','is_admin')),
+																array("tablename"=>'user_images',
+																	"fields"=>array('path'))),
+												"join"=>array("join"=>'left',
+																"sql"=>$sub_select,
+																"existed_table"=>'users',
+																"existed_field"=>'id',
+																"added_table"=>'user_images',
+																"added_field"=>'user_id'),
+												"where"=>array("tablename"=>'users',
+																"field"=>'is_deleted',
+																"symbol"=>'=',
+																"value"=>0),
+												"group_by"=>array("tablename"=>'users',
+																"field"=>'id'),
+												"order_by"=>array("tablename"=>'users',
+																"field"=>'id'),
+												"having"=>array("sql"=>'min(`users`.`id`)')));
 			$users_content=$this->view->Content_Create(__METHOD__,$users_array);
 			}
 		catch (Error $e)
@@ -241,7 +273,6 @@ class Admin_Model extends Pattern_Model
 			}
 		return $this->Main($users_content);
 		}
-
 
 
 
@@ -258,18 +289,18 @@ class Admin_Model extends Pattern_Model
 			if($user_id>0)
 				{
 				$user_array=$sql->Select(array("tablename"=>'users',
-													"fields"=>array('id','email','first_name','last_name','country_id','region_id','city_id','address','phone','is_visible','is_admin'),
-													"where"=>array(array("field"=>'id',
-																		"symbol"=>'=',
-																		"value"=>$user_id),
-																	array("field"=>'is_deleted',
-																		"symbol"=>'=',
-																		"value"=>0)),
-													"single"=>'single'));
+												"fields"=>array('id','email','first_name','last_name','country_id','region_id','city_id','address','phone','is_visible','is_admin'),
+												"where"=>array(array("field"=>'id',
+																	"symbol"=>'=',
+																	"value"=>$user_id),
+																array("field"=>'is_deleted',
+																	"symbol"=>'=',
+																	"value"=>0)),
+												"single"=>'single'));
 
 				$user_array["images"]=$sql->Select(array("tablename"=>'users_images',
 															"fields"=>array("tablename"=>'images',
-																			"fields"=>array('id','image_name','path')),
+																			"fields"=>array('id','image_name','path','is_visible')),
 															"join"=>array("join"=>'left',
 																		"existed_table"=>'users_images',
 																		"existed_field"=>'image_id',
@@ -326,6 +357,41 @@ class Admin_Model extends Pattern_Model
 		}
 
 
+
+	function Pages()
+		{
+		try
+			{
+			global $sql;
+			if(count($this->form)>0)
+				{
+				foreach($this->form as $id=>$value)
+					{
+					if(is_numeric($id))
+						{
+						$sql->Update(array("tablename"=>'pages',
+											"set"=>array("alias"=>$value["alias"],
+														"page_name"=>$value["page_name"],
+														"is_visible"=>$value["is_visible"],
+														"is_deleted"=>$value["delete"]),
+											"where"=>array('id','=',$id)));
+						}
+					}
+				}
+			$users_array=$sql->Select(array("tablename"=>'pages',
+											"fields"=>array('id','alias','page_name','is_visible'),
+											"where"=>array("field"=>'is_deleted',
+															"symbol"=>'=',
+															"value"=>0),
+											"order_by"=>array("field"=>'id')));
+			$users_content=$this->view->Content_Create(__METHOD__,$users_array);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($users_content);
+		}
 
 
 

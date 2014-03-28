@@ -137,16 +137,16 @@
 		<div class="tab-pane" id="images">
 			<?php if(isset($content["images"]) && is_array($content["images"])): ?>
 				<?php foreach($content["images"] as $image): ?>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item" style="opacity:<?php echo (($image["is_visible"])?'1':'0.5'); ?>;">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_user_images_item" style="opacity:<?php echo (($image["is_visible"])?'1':'0.5'); ?>;">
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-							<img alt="<?php echo $image["image_name"]; ?>" style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/products/<?php echo $content["id"].'/'.$image["path"]; ?>">
+							<img alt="<?php echo $image["image_name"]; ?>" style="max-width:100%;max-height:140px" src="<?php echo SUB_DIR; ?>image/users/<?php echo $content["id"].'/'.$image["path"]; ?>">
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group">
-							<input type="file" name="images[<?php echo $image["sort"]; ?>]" class="form-control">
+							<input type="file" name="images[<?php echo $image["id"]; ?>]" class="form-control">
 						</div>
-						<input type="hidden" value="<?php echo $image["id"]; ?>" name="imagesdata[<?php echo $image["sort"]; ?>][id]">
-						<input type="hidden" value="<?php echo $image["is_visible"]; ?>" name="imagesdata[<?php echo $image["sort"]; ?>][visible]">
-						<input type="hidden" value="0" name="imagesdata[<?php echo $image["sort"]; ?>][delete]">
+						<input type="hidden" value="<?php echo $image["id"]; ?>" name="imagesdata[<?php echo $image["id"]; ?>][id]">
+						<input type="hidden" value="<?php echo $image["is_visible"]; ?>" name="imagesdata[<?php echo $image["id"]; ?>][visible]">
+						<input type="hidden" value="0" name="imagesdata[<?php echo $image["id"]; ?>][delete]">
 						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 							<span class="glyphicon glyphicon-eye-<?php echo (($image["is_visible"])?'open':'close'); ?>"></span>
 						</div>
@@ -186,7 +186,7 @@ if(counter_once_checker==1)
 		($(this).attr('href')=='#images')?$('.admin_user_image_add').show():$('.admin_user_image_add').hide();
 		});
 
-	$(document).on('change','div.admin_product_images_item>div>input[name*="images"]',function()
+	$(document).on('change','div.admin_user_images_item>div>input[name*="images"]',function()
 		{
 		if(this.files!=undefined)
 			{
@@ -201,7 +201,7 @@ if(counter_once_checker==1)
 			}
 		});
 
-	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-open',function()
+	$(document).on('click','div.admin_user_images_item>div>span.glyphicon.glyphicon-eye-open',function()
 		{
 		var $editor=$(this).parent().parent();
 		$editor.children("input[name*='visible']").val(0);
@@ -209,15 +209,15 @@ if(counter_once_checker==1)
 		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
 		});
 
-	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-eye-close',function()
+	$(document).on('click','div.admin_user_images_item>div>span.glyphicon.glyphicon-eye-close',function()
 		{
 		var $editor=$(this).parent().parent();
-		$editor.children("input[name*='is_visible']").val(1);
+		$editor.children("input[name*='visible']").val(1);
 		$editor.css('opacity',1);
 		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
 		});
 
-	$(document).on('click','div.admin_product_images_item>div>span.glyphicon.glyphicon-trash',function()
+	$(document).on('click','div.admin_user_images_item>div>span.glyphicon.glyphicon-trash',function()
 		{
 		var $row=$(this).parent().parent();
 		if($row.children("input[name*='id']").val()=='-1')
@@ -231,15 +231,15 @@ if(counter_once_checker==1)
 			}
 		});
 
-	$(document).on('click','div.admin_product_image_add>button',function()
+	$(document).on('click','div.admin_user_image_add>button',function()
 		{
 		var new_position=0;
-		$(this).parent().parent().children('#images').children('.admin_product_images_item').each(function()
+		$(this).parent().parent().children('#images').children('.admin_user_images_item').each(function()
 			{
 			var position=parseInt($(this).children("input[name*='id']").attr('name').substr(11));
 			new_position=(position>=new_position)?(position+1):new_position;
 			});
-		var content='<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_product_images_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="#" style="max-width:100%;max-height:140px"></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="file" class="form-control" name="images['+new_position+']"></div><input type="hidden" name="imagesdata['+new_position+'][id]" value="-1"><input type="hidden" name="imagesdata['+new_position+'][delete]" value="0"><input type="hidden" name="imagesdata['+new_position+'][visible]" value="1"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
+		var content='<div style="opacity:1;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_user_images_item"><div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="#" style="max-width:100%;max-height:140px"></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-group"><input type="file" class="form-control" name="images['+new_position+']"></div><input type="hidden" name="imagesdata['+new_position+'][id]" value="-1"><input type="hidden" name="imagesdata['+new_position+'][visible]" value="1"><input type="hidden" name="imagesdata['+new_position+'][delete]" value="0"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-eye-open"></span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><span class="glyphicon glyphicon-trash"></span></div></div>';
 		$(this).parent().parent().children('#images').append(content);
 		return false;
 		});

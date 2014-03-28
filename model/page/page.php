@@ -83,12 +83,45 @@ class Page_Model extends Pattern_Model
 
 
 
-	function Main()
+/*-------------------------------------------------------------------------
+* Example of __call method
+*
+* Class::Unknown_Method();
+*
+* Return: throw an exception.
+--------------------------------------------------------------------------*/
+	function __call($name, $arguments)
 		{
+//---if were calling unknown method throw an exception
+		try
+			{
+			global $sql;
 //include css and js
-		$content['assets']=implode("\n",$this->assets)."\n";
+			$content["assets"]=implode("\n",$this->assets)."\n";
+//select content if it exists.
+			$page_array=$sql->Select(array("tablename"=>'pages',
+											"fields"=>array('content'),
+											"where"=>array(array("field"=>'alias',
+																"symbol"=>'=',
+																"value"=>$name),
+															array("field"=>'is_visible',
+																"symbol"=>'=',
+																"value"=>1),
+															array("field"=>'is_deleted',
+																"symbol"=>'=',
+																"value"=>0)),
+											"single"=>'single'));
 //create content
-		$content['content']=$this->view->Content_Create(__METHOD__,array());
+			if(!($page_array && is_array($page_array) && isset($page_array["content"])))
+				{
+				return $this->Error(array(404));
+				}
+			$content["content"]=$this->view->Content_Create(__METHOD__,$page_array["content"]);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
 		return $content;
 		}
 	}

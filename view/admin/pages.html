@@ -1,0 +1,65 @@
+<form action="<?php echo SUB_DIR; ?>admin/pages" method="post" role="form" class="form-horizontal">
+	<div class="row" id="admin_pages_list">
+		<?php if(isset($content) && is_array($content)): ?>
+			<?php foreach($content as $page): ?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ui-state-default admin_page_item" style="opacity:<?php echo (($page["is_visible"])?'1':'0.5'); ?>;">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<input class="form-control" name="<?php echo $page["id"]; ?>[alias]" value="<?php echo $page["alias"]; ?>" required placeholder="Alias">
+					</div>
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+						<input class="form-control" name="<?php echo $page["id"]; ?>[page_name]" value="<?php echo $page["page_name"]; ?>" required placeholder="Name">
+					</div>
+					<input name="<?php echo $page["id"]; ?>[id]" type="hidden" value="<?php echo $page["id"]; ?>">
+					<input name="<?php echo $page["id"]; ?>[is_visible]" type="hidden" value="<?php echo $page["is_visible"]; ?>">
+					<input name="<?php echo $page["id"]; ?>[delete]" type="hidden" value="0">					
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<a href="<?php echo SUB_DIR; ?>admin/page/<?php echo $page["id"]; ?>"><span class="glyphicon glyphicon-edit"></span></a>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-eye-<?php echo (($page["is_visible"])?'open':'close'); ?>"></span>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<span class="glyphicon glyphicon-trash"></span>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
+	<input type="hidden" name="flag" value="1">
+	<div>
+		<div class="admin_page_add col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+			<a href="<?php echo SUB_DIR; ?>admin/page/-1" class="link btn btn-info"><?php echo ADD_BUTTON_TITLE; ?></a>
+		</div>
+		<div class="admin_pages_save col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<button class="btn btn-success" type="submit"><?php echo SAVE_BUTTON_TITLE; ?></button>
+		</div>
+	</div>
+</form>
+
+<script>
+if(counter_once_checker==1)
+	{
+	$(document).on('click','.glyphicon.glyphicon-eye-open',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(0);
+		$editor.css('opacity',0.5);
+		$(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-eye-close',function()
+		{
+		var $editor=$(this).parent().parent();
+		$editor.children("input[name*='is_visible']").val(1);
+		$editor.css('opacity',1);
+		$(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		});
+
+	$(document).on('click','.glyphicon.glyphicon-trash',function()
+		{
+		var $row=$(this).parent().parent();
+		$row.hide();
+		$row.children("input[name*='delete']").val(1);
+		});
+	}
+</script>
