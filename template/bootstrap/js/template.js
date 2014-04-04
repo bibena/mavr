@@ -53,7 +53,10 @@ function menuSwitcher()
 					{
 					$(this).addClass('active');
 					}
-				if(($(this).children('a').attr('href').split('/')[2]=='categories' && document.location.pathname.split('/')[2]=='category') || ($(this).children('a').attr('href').split('/')[2]=='categories' && document.location.pathname.split('/')[2]=='product'))
+				if(($(this).children('a').attr('href').split('/')[2]=='categories' && 
+				document.location.pathname.split('/')[2]=='category') || 
+				($(this).children('a').attr('href').split('/')[2]=='categories' && 
+				document.location.pathname.split('/')[2]=='product'))
 					{
 					$(this).addClass('active');
 					}
@@ -63,7 +66,13 @@ function menuSwitcher()
 					$('.nav.nav-pills.nav-stacked').children('li').each(function()
 						{
 						$(this).removeClass('active');
-						if($(this).children('a').attr('href').split('/')[2]==document.location.pathname.split('/')[2])
+						if($(this).children('a').attr('href').split('/')[2]==document.location.pathname.split('/')[2] || 
+						($(this).children('a').attr('href').split('/')[2]=='products' && 
+						document.location.pathname.split('/')[2]=='product') || 
+						($(this).children('a').attr('href').split('/')[2]=='pages' && 
+						document.location.pathname.split('/')[2]=='page') || 
+						($(this).children('a').attr('href').split('/')[2]=='users' && 
+						document.location.pathname.split('/')[2]=='user'))
 							{
 							$(this).addClass('active');
 							}

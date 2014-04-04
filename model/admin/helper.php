@@ -663,6 +663,34 @@ class Admin_Helper
 						$sql->Update(array("tablename"=>'products_images',
 											"set"=>array("sort"=>$sortid),
 											"where"=>array("image_id",'=',$imagedata["id"])));
+						if($imagedata["delete"])
+							{
+							$deleted_file=$sql->Select(array("tablename"=>'images',
+															"fields"=>array('path'),
+															"where"=>array("field"=>'id',
+																			"symbol"=>'=',
+																			"value"=>$imagedata["id"]),
+															"single"=>'single'));
+							if(is_array($deleted_file) && isset($deleted_file["path"]))
+								{
+								$deleted_dir=ROOT_DIR.DS.'image'.DS.'products'.DS.$form["id"];
+								if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+									{
+									unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+									if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+										{
+										if(!rmdir($deleted_dir))
+											{
+											throw new Error("Файл удален, но удалить пустую директорию не удалось");
+											}
+										}
+									}
+								else
+									{
+									throw new Error("Удаляемый файл отсутствует на диске");
+									}
+								}
+							}
 						}
 					}
 				}
@@ -769,6 +797,147 @@ class Admin_Helper
 											"set"=>array("is_visible"=>$imagedata["visible"],
 														"is_deleted"=>$imagedata["delete"]),
 											"where"=>array("id",'=',$imagedata["id"])));
+						if($imagedata["delete"])
+							{
+							$deleted_file=$sql->Select(array("tablename"=>'images',
+															"fields"=>array('path'),
+															"where"=>array("field"=>'id',
+																			"symbol"=>'=',
+																			"value"=>$imagedata["id"]),
+															"single"=>'single'));
+							if(is_array($deleted_file) && isset($deleted_file["path"]))
+								{
+								$deleted_dir=ROOT_DIR.DS.'image'.DS.'users'.DS.$form["id"];
+								if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+									{
+									unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+									if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+										{
+										if(!rmdir($deleted_dir))
+											{
+											throw new Error("Файл удален, но удалить пустую директорию не удалось");
+											}
+										}
+									}
+								else
+									{
+									throw new Error("Удаляемый файл отсутствует на диске");
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		catch (Db_Error $e) 
+			{
+			$e->Error();
+			}
+		catch (Error $e) 
+			{
+			$e->Error();
+			}
+		return $form["id"];
+		}
+
+
+
+/*****************************************************************************************************************
+ * 
+ * Functions to administrate page setting
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*****************************************************************************************************************
+ * 
+ * @input array with POST data from admin panel
+ * @return bool true
+ * 
+*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	public function Admin_Page_Save($form)
+		{
+		try
+			{
+			global $db,$sql;
+			if($form["id"]>0)
+				{
+//---update name,description,price,amount,visibility,modification_time
+				$sql->Update(array("tablename"=>'pages',
+									"set"=>array("alias"=>$form["alias"],
+												"page_name"=>$form["page_name"],
+												"content"=>$form["content"],
+												"is_visible"=>isset($form["is_visible"])?1:0),
+									"where"=>array('id','=',$form["id"])));
+				}
+			else
+				{
+				$sql->Insert(array("tablename"=>'pages',
+									"set"=>array("alias"=>$form["alias"],
+												"page_name"=>$form["page_name"],
+												"content"=>$form["content"],
+												"is_visible"=>isset($form["is_visible"])?1:0)));
+				$form["id"]=$db->lastInsertId();
+				}
+//---update images
+			if(isset($form["postfiles"]) && isset($form["imagesdata"]))
+				{
+				foreach($form["imagesdata"] as $sortid=>$imagedata)
+					{
+					if($imagedata["id"]=="-1")
+						{
+						if(strpos($form["postfiles"]["images"]["type"][$sortid],'image')!==false)
+							{
+							$path=call_user_func('end',explode('/',$form["postfiles"]["images"]["tmp_name"][$sortid]));
+							$sql->Insert(array("tablename"=>'images',
+												"set"=>array("image_name"=>$form["postfiles"]["images"]["name"][$sortid],
+															"path"=>$path)));
+							$lastid=$db->lastInsertId();
+							if(!file_exists(ROOT_DIR.DS.'image'.DS.'pages'.DS.$form["id"]))
+								{
+								mkdir(ROOT_DIR.DS.'image'.DS.'pages'.DS.$form["id"]);
+								}
+							rename(ROOT_DIR.DS.'temp'.DS.$path,ROOT_DIR.DS.'image'.DS.'pages'.DS.$form["id"].DS.$path);
+							$sql->Insert(array("tablename"=>'pages_images',
+												"set"=>array("image_id"=>$lastid,
+															"page_id"=>$form["id"])));
+							}
+						}
+					else
+						{
+						$sql->Update(array("tablename"=>'images',
+											"set"=>array("is_deleted"=>$imagedata["delete"]),
+											"where"=>array("id",'=',$imagedata["id"])));
+						if($imagedata["delete"])
+							{
+							$deleted_file=$sql->Select(array("tablename"=>'images',
+															"fields"=>array('path'),
+															"where"=>array("field"=>'id',
+																			"symbol"=>'=',
+																			"value"=>$imagedata["id"]),
+															"single"=>'single'));
+							if(is_array($deleted_file) && isset($deleted_file["path"]))
+								{
+								$deleted_dir=ROOT_DIR.DS.'image'.DS.'pages'.DS.$form["id"];
+								if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+									{
+									unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+									if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+										{
+										if(!rmdir($deleted_dir))
+											{
+											throw new Error("Файл удален, но удалить пустую директорию не удалось");
+											}
+										}
+									}
+								else
+									{
+									throw new Error("Удаляемый файл отсутствует на диске");
+									}
+								}
+							}
 						}
 					}
 				}

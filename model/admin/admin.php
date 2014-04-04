@@ -224,6 +224,32 @@ class Admin_Model extends Pattern_Model
 								$sql->Update(array("tablename"=>'images',
 													"set"=>array("is_deleted"=>1),
 													"where"=>array('id','=',$delete_image["image_id"])));
+
+								$deleted_file=$sql->Select(array("tablename"=>'images',
+																"fields"=>array('path'),
+																"where"=>array("field"=>'id',
+																				"symbol"=>'=',
+																				"value"=>$delete_image["image_id"]),
+																"single"=>'single'));
+								if(is_array($deleted_file) && isset($deleted_file["path"]))
+									{
+									$deleted_dir=ROOT_DIR.DS.'image'.DS.'users'.DS.$id;
+									if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+										{
+										unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+										if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+											{
+											if(!rmdir($deleted_dir))
+												{
+												throw new Error("Файл удален, но удалить пустую директорию не удалось");
+												}
+											}
+										}
+									else
+										{
+										throw new Error("Удаляемый файл отсутствует на диске");
+										}
+									}
 								}
 							}
 						}
@@ -375,6 +401,47 @@ class Admin_Model extends Pattern_Model
 														"is_visible"=>$value["is_visible"],
 														"is_deleted"=>$value["delete"]),
 											"where"=>array('id','=',$id)));
+						if($value["delete"])
+							{
+							$delete_image=$sql->Select(array("tablename"=>'pages_images',
+															"fields"=>array('image_id'),
+															"where"=>array("field"=>'page_id',
+																			"symbol"=>'=',
+																			"value"=>$id),
+															"single"=>'single'));
+							if(isset($delete_image))
+								{
+								$sql->Update(array("tablename"=>'images',
+													"set"=>array("is_deleted"=>1),
+													"where"=>array('id','=',$delete_image["image_id"])));
+
+								$deleted_file=$sql->Select(array("tablename"=>'images',
+																"fields"=>array('path'),
+																"where"=>array("field"=>'id',
+																				"symbol"=>'=',
+																				"value"=>$delete_image["image_id"]),
+																"single"=>'single'));
+								if(is_array($deleted_file) && isset($deleted_file["path"]))
+									{
+									$deleted_dir=ROOT_DIR.DS.'image'.DS.'pages'.DS.$id;
+									if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+										{
+										unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+										if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+											{
+											if(!rmdir($deleted_dir))
+												{
+												throw new Error("Файл удален, но удалить пустую директорию не удалось");
+												}
+											}
+										}
+									else
+										{
+										throw new Error("Удаляемый файл отсутствует на диске");
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -391,6 +458,65 @@ class Admin_Model extends Pattern_Model
 			$e->Error();
 			}
 		return $this->Main($users_content);
+		}
+
+
+
+	function Page($args)
+		{
+		try
+			{
+			global $sql;
+			list($page_id)=$args;
+			if(count($this->form)>0)
+				{
+				$page_id=$this->helper->Admin_Page_Save($this->form);
+				}
+			if($page_id>0)
+				{
+				$page_array=$sql->Select(array("tablename"=>'pages',
+												"fields"=>array('alias','content','page_name','is_visible'),
+												"where"=>array(array("field"=>'id',
+																	"symbol"=>'=',
+																	"value"=>$page_id),
+																array("field"=>'is_deleted',
+																	"symbol"=>'=',
+																	"value"=>0)),
+												"single"=>'single'));
+
+				$page_array["images"]=$sql->Select(array("tablename"=>'pages_images',
+															"fields"=>array("tablename"=>'images',
+																			"fields"=>array('id','image_name','path')),
+															"join"=>array("join"=>'left',
+																		"existed_table"=>'pages_images',
+																		"existed_field"=>'image_id',
+																		"added_table"=>'images',
+																		"added_field"=>'id'),
+															"where"=>array(array("tablename"=>'pages_images',
+																				"field"=>'page_id',
+																				"symbol"=>'=',
+																				"value"=>$page_id),
+																			array("tablename"=>'images',
+																				"field"=>'is_deleted',
+																				"symbol"=>'=',
+																				"value"=>0))));
+				}
+			else
+				{
+				$page_array["is_visible"]=1;
+				$page_array["alias"]=
+				$page_array["content"]=
+				$page_array["page_name"]='';
+				$page_array["images"]=array();
+				}
+			$page_array["id"]=$page_id;
+			$page_content=$this->view->Content_Create(__METHOD__,$page_array);
+			}
+		catch (Error $e)
+			{
+			$e->Error();
+			}
+		return $this->Main($page_content);
 		}
 
 
@@ -502,6 +628,32 @@ class Admin_Model extends Pattern_Model
 									$sql->Update(array("tablename"=>'images',
 														"set"=>array("is_deleted"=>1),
 														"where"=>array('id','=',$delete_image_item["image_id"])));
+
+									$deleted_file=$sql->Select(array("tablename"=>'images',
+																	"fields"=>array('path'),
+																	"where"=>array("field"=>'id',
+																					"symbol"=>'=',
+																					"value"=>$delete_image_item["image_id"]),
+																	"single"=>'single'));
+									if(is_array($deleted_file) && isset($deleted_file["path"]))
+										{
+										$deleted_dir=ROOT_DIR.DS.'image'.DS.'products'.DS.$value["id"];
+										if(file_exists($deleted_dir.DS.$deleted_file["path"]))
+											{
+											unlink($deleted_dir.DS.$deleted_file["path"]); //Delete file
+											if(count(scandir($deleted_dir))==2) //If dir is emty delete it too.
+												{
+												if(!rmdir($deleted_dir))
+													{
+													throw new Error("Файл удален, но удалить пустую директорию не удалось");
+													}
+												}
+											}
+										else
+											{
+											throw new Error("Удаляемый файл отсутствует на диске");
+											}
+										}
 									}
 								}
 							$sql->Update(array("tablename"=>'products_params',

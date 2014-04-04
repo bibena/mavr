@@ -142,6 +142,10 @@
 
 
 <script>
+$(document).ready(function()
+	{
+	$("textarea[name*='description']").redactor();
+	});
 if(counter_once_checker==1)
 	{
 	(function()
@@ -149,10 +153,7 @@ if(counter_once_checker==1)
 		$('head').append('<link rel="stylesheet" href="/view/admin/redactor.css">');
 		$('head').append('<script src="/view/admin/redactor.min.js"><'+'/script>');
 		})();
-	$(document).ready(function()
-		{
-		$("textarea[name*='description']").redactor();
-		});
+
 	$(function()
 		{
 		$('#params').sortable({distance: 15,placeholder: "ui-state-highlight",axis:'y',forcePlaceholderSize:true});
